@@ -2,9 +2,12 @@
 
 Bu modül Mekatroniğin donanım tarafına odaklanır.
 
+# Elektrik & Elektronik: Fiziksel Hata Ayıklama (Physical Debugging)
+
+AI devreleri saniyeler içinde tasarlayabilir, ancak **lehim hatasını AI bulamaz**. Bu modül, dijital tasarımların fiziksel dünyadaki kusurlarla (parazit, ısınma, temassızlık) mücadele sanatını öğretir.
+
 ## Konular
-- **Devre Analizi**: DC/AC devreler, Kirchhoff yasaları.
-- **Analog Elektronik**: Diyotlar, Transistörler (BJT, FET), Op-Amp'lar.
-- **Dijital Mantık**: Boole cebiri, Mantık kapıları, Flip-flop'lar.
-- **Güç Elektroniği**: Doğrultucular, İnvertörler, Motor sürücüler.
-- **Sensörler & Eyleyiciler**: Çeşitleri, çalışma prensipleri, arayüzleme.
+- **Devre Analizi**: AI'ın teoride "çalışır" dediği devrenin neden pratikte yandığını anlamak.
+- **Osiloskop ile Hata Avı**: Dijital sinyallerin içindeki "hayaletleri" (gürültü) yakalamak.
+- **Sensör Tamiri**: Bozulan bir sensörü değiştirmeden önce, sorunun kabloda mı yoksa kodda mı olduğunu "koklayarak" anlamak.
+- **Güç Elektroniği**: Motor sürücüleri ve invertörler; yani sistemin kasları. Yanmış bir MOSFET'i değiştirmek bir cerrahlık işidir.

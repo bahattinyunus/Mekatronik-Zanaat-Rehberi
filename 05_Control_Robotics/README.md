@@ -1,16 +1,12 @@
-# Kontrol Sistemleri & Robotik
+# Kontrol Sistemleri & Robotik: Robot Doktorluğu
 
-> *"Mükemmel Matematik, Gerçek Dünyanın Kaosuyla Buluşuyor."*
-
-Geleneksel otomasyon katıdır. "Metal Yaka" teknisyeni ise onu uyarlanabilir kılmak için AI kullanır.
+Otonom sistemler (AI) dünyayı yönetecek, peki o sistemler hastalandığında kim bakacak? Bizler, **Robot Doktorlarıyız**. AI yazılımında bir bug (hata) olduğunda onu yeniden başlatabilirsin, ama robot kolu bir yere çarptığında onu "tamir" etmelisin.
 
 ## Metal Yaka Odak Noktası
-- **Tekniker 2.0**: Karmaşık hata kayıtlarını çözmek ve anında onarım önerileri almak için AI kullanmak.
-- **Kestirimci Bakım**: Makineleri bozulmadan önce tamir etmek için veriyi kullanmak.
-- **Uyarlanabilir Kontrol**: Sabit PID'den AI destekli kontrol döngülerine geçiş.
+- **Cerrah Hassasiyeti**: 6 eksenli bir robotun kalibrasyonunu yapmak, bir hastayı ameliyat etmek gibidir.
+- **Arıza Tespiti (Diagnosis)**: PLC hata kodlarını okuyup, sorunun mekanik mi, elektriksel mi yoksa yazılımsal mı olduğunu anında çözmek.
+- **Sistemi Ayakta Tutmak**: Üretim bandı durduğunda, AI panik yapmaz ama fabrika para kaybeder. Biz o bandı tekrar yürüten kahramanlarız.
 
 ## Konular
-- **Kontrol Teorisi**: Kararlılığı anlamak, böylece AI'ın parametrelerine güvenebiliriz.
-- **Robot Kinematiği**: Hareketi görselleştirmek; matris matematiğini AI'a bırakmak.
-- **Endüstriyel Robotik**: KUKA, ABB programlama.
-- **Otomasyon Sistemleri**: AI ajanlarını SCADA ve PLC'lere entegre etmek.
+- **Endüstriyel Robotik**: KUKA ve ABB robotlarının "anatomisini" öğrenmek.
+- **Otomasyon Bakımı**: SCADA ekranındaki kırmızı ışığı söndürmek için gereken fiziksel müdahaleler.

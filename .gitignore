@@ -1,0 +1,49 @@
+# Basics
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# C++ / C
+*.exe
+*.dll
+*.obj
+*.o
+*.a
+*.lib
+*.ncb
+*.sdf
+*.suo
+*.pdb
+*.idb
+*.ilk
+*.tlog
+*.log
+*.tmp
+build/
+bin/
+
+# Matlab
+*.asv
+*.m~
+*.mex*
+*.mat
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arduino / PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+*.elf
+*.hex
+
+# PLC / Automation (Common extensions)
+*.bak
+*.opt

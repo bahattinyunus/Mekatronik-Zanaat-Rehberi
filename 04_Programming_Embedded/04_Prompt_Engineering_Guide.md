@@ -1,31 +1,44 @@
-# 🤖 İstemi Mühendisliği (Prompt Engineering): AI ile Kodlama
+# 🤖 İstemi Mühendisliği (Prompt Engineering): AI ile Donanım Kodlama
 
-> *"AI bir stajyerdir; ne kadar iyi tarif ederseniz o kadar iyi iş çıkarır. 'Bunu yap' derseniz saçmalar, 'Bunu şu standartta, şu kısıtlarla yap' derseniz harikalar yaratır."*
+> *"AI senin stajyerindir; ne kadar iyi tarif edersen (Prompt), o kadar kaliteli iş çıkarır. 'Bana kod yaz' dersen çöp verir. 'Bu register'ı şu bit maskesiyle set et' dersen, sana mühendislik harikası verir."*
 
-Gömülü sistemler için AI kullanırken, genel geçer kod değil, donanıma özel (hardware-aware) kod istemelisiniz.
+Bir Metal Yaka için kodlama, artık satır satır yazmak değil, AI'ya **ne yazacağını dikte etme** sanatıdır.
+
+---
 
 ## 1. Altın Şablon (The Golden Template)
 
-AI'dan (ChatGPT, Claude, Copilot) kod isterken şu şablonu kullanın:
+AI'dan (ChatGPT, Claude, Copilot) kod isterken şu şablonu "Kopyala-Yapıştır" yapın ve boşlukları doldurun:
 
-*   **Rol:** "Sen kıdemli bir Gömülü Sistem Mühendisisin (Senior Embedded Engineer)."
-*   **Donanım:** "Hedef işlemci: STM32F407VG. Saat hızı: 168MHz."
-*   **Kütüphane:** "STM32 HAL Kütüphanesini kullan. (Veya Register-level)"
-*   **Görev:** "UART üzerinden DMA ile veri alan ve veriyi Ring Buffer'a yazan bir sürücü yaz."
-*   **Kısıtlar (Çok Önemli):**
-    *   "Asla `HAL_Delay` veya blocking fonksiyon kullanma."
-    *   "Kesme (Interrupt) içinde minimum işlem yap."
-    *   "Hata durumlarını (Timeout, Overrun) yönet."
-    *   "Kodu C99 standardında yaz ve bol yorum satırı ekle."
-
-## 2. Hata Ayıklama İstemleri
-
-AI sadece kod yazmaz, hata da bulur.
-*   **İstemi:** "Aşağıdaki ISR (Kesme Servis Rutini) kodunda bir 'Race Condition' veya 'Priority Inversion' riski var mı? Varsa nasıl düzeltirim?"
-*   **İstemi:** "Bu `while` döngüsünün sonsuz döngüye girip sistemi kilitleme (Deadlock) ihtimali var mı? Bir watchdog veya timeout mekanizması ekle."
-
-## 3. Kod Optimizasyonu
-*   **İstemi:** "Bu fonksiyonu hızlandırmam lazım. Gereksiz değişken kopyalamalarını kaldır, pointer kullanarak `pass-by-reference` yap ve `inline` kullanmayı değerlendir."
+*   **ROL:** "Sen kıdemli bir Gömülü Sistem Mühendisisin (Senior Embedded Engineer) ve güvenlik kritik sistemler (Safety-Critical Systems) konusunda uzmansın."
+*   **DONANIM:** "Hedef işlemci: **STM32F407VG**. Saat hızı: **168MHz**. Derleyici: **GCC (ARM-NONE-EABI)**."
+*   **KÜTÜPHANE:** "**STM32 HAL Library** kullan. (Veya Register-level kod yaz)."
+*   **GÖREV:** "UART1 üzerinden, DMA (Doğrudan Bellek Erişimi) kullanarak, `0x0A` (Newline) karakteri gelene kadar veri okuyan ve bunu bir Ring Buffer'a (Dairesel Tampon) yazan bir C modülü oluştur."
+*   **KISITLAR (CONSTRAINT):**
+    *   "Asla `HAL_Delay` veya blocking (kilitleyici) fonksiyon kullanma."
+    *   "Kesme (Interrupt) fonksiyonları mümkün olduğunca kısa olsun."
+    *   "Olası hataları (Parity Error, Noise Error) yönet."
+    *   "State Machine (Durum Makinesi) mimarisi kullan."
 
 ---
-> **Ustanın Notu:** "AI'ın yazdığı kodu asla körü körüne kopyalama. O kodun işlemcinin hangi bacağını (GPIO) açtığını, hangi saati (RCC Clock) aktif ettiğini datasheet'ten doğrula. AI halüsinasyon görüp olmayan bir pini tanımlayabilir. Son sorumluluk her zaman senindir."
+
+## 2. Hata Ayıklama (Debugging) İstemleri
+
+AI sadece kod yazmaz, sizin yazdığınız (veya başkasının yazdığı) koddaki sinsi hataları bulur.
+
+### Race Condition Avcısı
+> **Prompt:** "Aşağıdaki C kodunda, ana döngü (Main Loop) ve Kesme (ISR) aynı global değişkene erişiyor. Burada bir **Race Condition** veya **Data Corruption** riski var mı? Varsa `volatile` değişken veya kritik bölüm (Critical Section) kullanarak düzelt."
+
+### Stack Overflow Analizi
+> **Prompt:** "Bu fonksiyonun iç içe (recursive) çağrıldığında stack taşması (Stack Overflow) yaratma riski nedir? Bu kodu nasıl daha güvenli, yinelemeli (iterative) hale getirebiliriz?"
+
+---
+
+## 3. Optimizasyon
+
+> **Prompt:** "Bu fonksiyon `sin()` ve `cos()` gibi ağır matematik işlemleri kullanıyor ve çok yavaş. Bunu hızlandırmak için **Lookup Table (LUT)** veya **Fixed-Point Arithmetic** (Sabit Noktalı Aritmetik) kullanarak tekrar yaz."
+
+---
+
+> **Ustanın Uyarısı (AI Halüsinasyonu):**
+> AI, bazen olmayan donanım uydurur. Size "Timer 14'ü kullan" der, ama kullandığınız çipte Timer 14 yoktur. AI'ın verdiği her register adını ve pin numarasını **Datasheet** ile karşılaştırın. Güven ama doğrula.

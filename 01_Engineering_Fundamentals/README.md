@@ -1,35 +1,68 @@
-# Mühendislik Temelleri: Makinenin Dili ve Kainatın Sırları
+# 01. Mühendislik Temelleri: Makinenin Dili, Kainatın Sırları ve Arıza Teşhisi (Diagnosis)
 
-> *"Matematik bize okulda ödev çözmek için verilen sıkıcı bir araç değil, makinenin hayati verilerini okumak ve evrenin değişmez kurallarıyla konuşmak için bahşedilmiş kutsal bir dildir."*
-
-Mühendislik temelleri, genellikle öğrencilerin "bunu gerçek hayatta nerede kullanacağız?" diye sorguladığı, ancak mezun olduktan sonra eksikliğini en acı şekilde hissettiği derslerdir. Bir "Metal Yaka" teknoloji mimarı için bu dersler, bir sanatçının fırçası veya bir cerrahın neşteri kadar hayatidir. Diferansiyel denklemi sadece teorik olarak çözemezseniz, sahada salınım yapan bir kontrolcüyü (PID) asla tam olarak anlayamazsınız. Statik bilmezseniz, tasarladığınız robot kolunun neden yük altında titrediğini veya neden beklenen hassasiyette çalışmadığını asla göremezsiniz.
-
-Bu modülde, akademik ispatların soğuk dünyasından çıkıp, **teşhis (diagnosis)** ve **öngörü (prediction)** dünyasına adım atıyoruz.
-
-## 🛠️ Metal Yaka Perspektifi: Neden ve Nasıl Öğreniyoruz?
-
-### 1. Kalkülüs = Değişimin ve Geleceğin Dili
-Bir makine duruyorsa ya kapalıdır ya da tamirdedir. Çalışan bir makine sürekli bir "değişim" halindedir. Isınır, hızlanır, yavaşlar, basınçlanır ve titreşir. Kalkülüs, işte bu değişimi anlama sanatıdır.
-*   **Türev (Derivative) ve Hata Hızı:** Bizim için türev sadece grafikteki bir teğet doğrusunun eğimi değildir. Türev, hatanın ne kadar hızlı büyüdüğünü (Error Rate) anlatan bir uyarı sistemidir. PID kontrolcüsündeki 'D' (Derivative) terimi, geleceği tahmin eder. Hatanın gidişatına bakarak, hata daha oluşmadan sistemi frenler. Türev bilmeyen bir mühendis, fren yapmayı bilmeyen bir şoför gibidir; duvara çarpmadan duramaz.
-*   **İntegral (Integral) ve Geçmişin Yükü:** İntegral, biriken şeylerdir. Geçmişte yapılan hataların toplamıdır (Accumulated Error). PID'deki 'I' terimi, geçmişteki o küçük ama sürekli hataları temizler. İntegral mantığını anlamayan bir tekniker, sistemdeki o milimetrik sapmanın neden asla düzelmediğini (Steady-State Error) çözemez.
-
-### 2. Fizik = Mühendisliğin Anayasası
-Yazılım dünyasında kuralları programcı koyar; gerekirse o kuralları değiştirebilir, esnetebilir veya baştan yazabilir. Ancak fiziksel dünyada kurallar evrenindir ve bu kurallar (Newton, Termodinamik, Maxwell) asla tartışılamaz, değiştirilemez.
-*   **Termodinamik ve Isı Yönetimi:** Yanmış bir işlemci veya patlamış bir sürücü kartı, termodinamiğin "enerji yok olmaz, ancak biçim değiştirir ve genellikle ısıya dönüşür" kuralının basit bir sonucudur. Soğutucu bloğunu, fan devrini ve termal direnci hesaplamazsanız, kodunuz dünyanın en iyi algoritması olsa bile sistem fiziksel gerçekliğe yenilir ve ölür.
-*   **Elektromanyetizma ve Görünmez Savaş:** Döşediğiniz her kablo, sadece elektriği taşıyan bir bakır tel değildir. O aynı zamanda çevredeki sinyalleri toplayan bir anten ve akıma direnen bir dirençtir. Yüksek frekanslı anahtarlamada (PWM) o kablonun bir indüktör gibi davrandığını, etrafa manyetik parazit (EMI) yaydığını bilmezseniz, sisteminizdeki o hayalet arızaları asla çözemezsiniz.
-
-## 📚 Konu Başlıkları ve Derinlemesine Saha Uygulamaları
-
-### Matematik: Saha Notları ve Teşhis Araçları
-*   **Lineer Cebir ve Robotik:** Robot kinematiği, aslında robotun uzaydaki konumunu hesaplama sanatıdır. Matris çarpımı yapmadan, dönme matrislerini (Rotation Matrices) ve homojen dönüşümleri anlamadan 6 eksenli bir robotu kontrol edemezsiniz. AI sizin için kodu yazabilir, kütüphaneyi verebilir; ama robot "Singularity" noktasına girip kilitlendiğinde, sorunun o matrisin determinantının sıfır olmasıyla ilgili olduğunu bilmek sizin işinizdir.
-*   **İstatistik ve Olasılık:** Gerçek dünyada hiçbir sensör verisi %100 temiz ve doğru değildir (Noise). Gürültülü, titrek ve hatalı veriden gerçeği ayıklamak için (örneğin Kalman Filtresi kullanırken) standart sapma, varyans ve olasılık dağılımlarını bilmelisiniz.
-
-### Fizik: Mekanik Arıza Tespit Rehberi
-*   **Newton Kanunları ve Tork:** Robot motoru neden yandı? Cevap genellikle "Tork = Kuvvet x Yol" formülündedir. Robot kolunu gereğinden fazla uzatırsanız (yol artar), gereken tork karesel veya doğrusal olarak artar. Motorun tork limiti aşılırsa, sargılar ısınır ve vernik erir. Suçlu yazılım hatası değil, fizik kurallarının ihmal edilmesidir. Moment kolunu hesaplamadan robot tasarlamak, fiziğe savaş açmaktır.
-
-### Teknik Resim: Mühendisliğin Mavi Baskısını Okumak
-*   Bir teknik resim, makinenin sadece şeklini değil, ruhunu ve kalitesini anlatır. AI size mükemmel bir 3D model çizebilir. Ancak o parçanın CNC tezgahında nasıl işleneceğini, hangi tolerans aralıklarında (H7/g6 gibi) üretileceğini ve yüzey kalitesinin ne olması gerektiğini teknik resimdeki o küçük semboller anlatır. Bir rulmanın yuvaya "tatlı sıkı" mı yoksa "boşluklu" mu gireceğini bilmek, makinenin ömrünü belirler.
+> *"Matematik bize okulda ödev çözmek için verilen sıkıcı bir araç değil; makinenin hayati verilerini okumak, 'can çekişen' bir sistemin çığlığını duymak ve evrenin değişmez kurallarıyla konuşmak için bahşedilmiş kutsal bir dildir."*
 
 ---
 
-> **Ustanın Bilgelik Notu:** "Formülleri ezberlemek için hafızanızı yormayın, onların grafiklerini ve fiziksel anlamlarını gözünüzde canlandırın. Bir sinüs dalgası gördüğünüzde aklınıza trigonometri sınavları gelmesin; aklınıza saniyede 50 kez yön değiştiren şebeke voltajı veya harmonik hareket yapan bir yay sistemi gelsin. Matematik kağıt üzerinde değil, makinenin içinde yaşar."
+## 🛡️ Metal Yaka Perspektifi: Neden ve Nasıl Öğreniyoruz?
+
+Mühendislik temelleri (Matematik, Fizik, Kimya), genellikle öğrencilerin "Bunu gerçek hayatta nerede kullanacağız?" diye sorguladığı, ancak mezun olduktan sonra eksikliğini en acı şekilde hissettiği derslerdir. Bir **"Metal Yaka"** (AI Destekli Teknoloji Mimarı) için bu dersler, bir ressamın fırçası, bir cerrahın neşteri veya bir dedektifin büyüteci kadar hayatidir.
+
+Biz bu dersleri; **akademik sınavları geçmek için değil, sanayi sahasında hayatta kalmak için** öğreniyoruz.
+
+*   Diferansiyel denklemi sadece teorik olarak çözemezseniz; sahada deli gibi titreyen, kararsızlığa düşmüş bir PID kontrolcüsünü asla sakinleştiremezsiniz.
+*   Statik ve Mukavemet bilmezseniz; tasarladığınız robot kolunun neden yük altında esnediğini, neden beklenen hassasiyette (tekrarlanabilirlik) çalışmadığını asla anlayamazsınız.
+*   Termodinamik bilmezseniz; dünyanın en iyi kodunu da yazsanız, o işlemcinin neden sürekli "Thermal Throttling" yaparak sistemi yavaşlattığını çözemezsiniz.
+
+Bu modülde, akademik ispatların steril ve soğuk dünyasından çıkıp; gürültülü, yağlı ve gerçek olan **teşhis (diagnosis)**, **kestirimci bakım (predictive maintenance)** ve **öngörü (prediction)** dünyasına adım atıyoruz.
+
+---
+
+## 🧠 1. Kalkülüs: Değişimin ve Geleceğin Lisanı
+
+Sanayide "duran" bir makine ya kapalıdır ya da bozuktur. Çalışan, değer üreten her makine sürekli bir **değişim** halindedir. Isınır, hızlanır, yavaşlar, basınçlanır, titreşir ve aşınır. Kalkülüs, işte bu değişimi anlama ve yönetme sanatıdır.
+
+### Türev (Derivative): Hatanın Ayak Sesleri
+Bizim için türev, grafikteki bir teğetin eğimi değildir. Türev, **geleceğin bilgisidir**.
+*   **Hata Hızı (Rate of Error):** Sensör verisindeki anlık değişim hızı, bize hatanın ne kadar hızlı büyüdüğünü söyler.
+*   **Öngörü:** PID kontrolcüsündeki 'D' (Derivative) terimi, türev sayesinde geleceği tahmin eder. "Hata şu an küçük ama çok hızlı artıyor, hemen fren yapmalıyım!" diyerek sistemi kaza yapmaktan kurtarır.
+*   **Saha Karşılığı:** Motorun sıcaklığı 1 saatte 5 derece arttıysa sorun yok (D düşük). Ama 1 dakikada 5 derece arttıysa (D çok yüksek), fan bozulmuş demektir. Termal koruma devreye girmelidir.
+
+### İntegral (Integral): Geçmişin Yükü ve Hafıza
+İntegral, birikimdir. Geçmişte yaşananların bugüne etkisidir.
+*   **Birikmiş Hata (Accumulated Error):** PID'deki 'I' (Integral) terimi, geçmişteki küçük ama giderilememiş hataları toplar ve "Yeter artık, hedefe ulaşmak için daha fazla güç uygulamalıyız" der.
+*   **Saha Karşılığı:** Hidrolik tankındaki mikro sızıntıyı anlık basınç sensörü fark etmez (Türev sıfıra yakın). Ama sızıntıyı zamana göre integre ederseniz (toplarsanız), tankın yarısının boşaldığını görürsün. İntegral, sinsi hataları yakalar.
+
+---
+
+## ⚛️ 2. Fizik: Mühendisliğin Değişmez Anayasası
+
+Yazılım dünyasında kuralları programcı koyar; gerekirse o kuralları değiştirebilir, esnetebilir ("hack") veya baştan yazabilir. Ancak fiziksel dünyada kurallar evrenindir (Newton, Termodinamik, Maxwell) ve bu kurallar asla tartışılamaz, rüşvet verilemez.
+
+*   **Eylemsizlik (Inertia):** "Duran durmak, giden gitmek ister." 200 kg'lık bir robot kolunu 2 m/s hızla sürerken birden durduramazsınız. Durdurmaya çalışırsanız, o enerji bir yerden çıkar (redüktör dişlisini kırar, kayışı koparır, robotun taban cıvatalarını söker).
+*   **Enerjinin Korunumu:** Enerji yok olmaz, sadece şekil değiştirir. Genellikle de istemediğimiz bir şekle: **Isı**. Verimsiz her sistem, faturayı ısı olarak öder.
+
+---
+
+## 📐 3. Lineer Cebir: Robotik Uzayın Haritası
+
+Bir robot kolunun, uç noktasının (Tool Center Point - TCP) uzayda nerede olduğunu bilmesi için sadece geometri yetmez, **Lineer Cebir** gerekir.
+*   **Matrisler ve Dönüşüm:** Robotun her bir eklemi bir matris, her hareketi bir matris çarpımıdır.
+*   **Singularity (Tekillik):** Robotun kilitlendiği, sonsuz hıza çıkmaya çalıştığı o korkunç an, aslında matematiksel bir **determinantın sıfır olması** durumudur. Matrisin tersinin alınamadığı (inverse kinematics fail) noktadır. Sahada robotu tamir eden tekniker, aslında matristeki o "sıfırı" yok etmeye çalışır.
+
+---
+
+## 📚 Modül İçeriği ve Saha Rehberi
+
+Bu klasörde, teorik ders kitaplarının aksine, "Bu bilgi ile sahada nasıl arıza çözerim?" sorusuna odaklanan notlar bulacaksınız.
+
+| Dosya | Açıklama | Saha Uygulaması |
+| :--- | :--- | :--- |
+| **[`01_Calculus_Diagnostics.md`](./01_Calculus_Diagnostics.md)** | Kalkülüs ile Sistem Teşhisi | PID ayarı, Isı artış analizi, Sızıntı tespiti. |
+| **[`01_Physics_Safety.md`](./01_Physics_Safety.md)** | Fizik Yasaları ve İş Güvenliği | Eylemsizlik momenti, Tork hesabı, Potansiyel enerji tehlikeleri. |
+| **[`02_Linear_Algebra_Robotics.md`](./02_Linear_Algebra_Robotics.md)** | Robotik için Matrisler | İleri/Ters Kinematik, Singularity, Koordinat sistemleri. |
+
+---
+
+> **Ustanın Bilgelik Notu:**  
+> "Formülleri ezberlemek için hafızanızı yormayın; onların grafiklerini, fiziksel hissini ve sesini hayal edin. Bir sinüs dalgası gördüğünüzde aklınıza trigonometri sınavları gelmesin; aklınıza saniyede 50 kez yön değiştiren şebeke voltajı (AC) veya harmonik hareket yapan, titreyen bir yay sistemi gelsin. Matematik kağıt üzerinde değil, makinenin metal gövdesinde yaşar."

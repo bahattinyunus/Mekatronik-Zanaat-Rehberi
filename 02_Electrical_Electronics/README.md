@@ -1,39 +1,78 @@
-# Elektrik & Elektronik: Devre Cerrahlığı ve Fiziksel Hata Ayıklama
+# 02. Elektrik & Elektronik: Devre Cerrahlığı, Dumanın Ruhu ve Fiziksel Hata Ayıklama
 
-> *"Elektronikte duman bir kez çıktıysa, o komponentin ruhu bedeni terk etmiştir ve geri döndürülemez."*
-
-Elektronik, mekatronik sistemin sinir sistemidir. Yazılım (beyin) emirleri verir, mekanik (kas) bu emirleri uygular; ancak bu emirleri taşıyan, ileten, güçlendiren ve gücü sağlayan elektroniktir. Bir yazılımcı hata yaptığında genellikle zararsız bir hata mesajı veya "bip" sesi duyar. Ancak bir elektronik mühendisi hata yaptığında şiddetli bir **patlama** sesi duyar, ardından o karakteristik ve geniz yakan yanık silikon kokusunu alır.
-
-Bu modül, sadece teorik devre şemaları çizmekten ziyade, "çalışmayan" veya "yanmış" bir devreyi hayata döndürme sanatına odaklanır. Biz buna **Fiziksel Hata Ayıklama (Physical Debugging)** veya daha havalı bir tabirle **Devre Cerrahlığı** diyoruz.
-
-## 🛠️ Metal Yaka Perspektifi: Devre Cerrahlığı Prensipleri
-
-### 1. Dumanı Asla Geri Koyamazsın
-Elektronik dünyasında "Ctrl+Z" veya "Undo" tuşu yoktur. Bir MOSFET'i yanlış tetikleyip yaktıysan, o artık yanmıştır. Bu yüzden "önce ölç, sonra enerji ver" kuralı bizim değişmez kanunumuzdur.
-*   **Cerrahın Neşteri (Havya):** İyi bir lehim, parlak, pürüzsüz ve konik yapısıyla bir sanat eseridir. "Soğuk lehim" ise sistemin gizli kanseridir; bazen temas eder çalışır, bazen etmez durur. En zor bulunan, saç baş yolduran arızalar genellikle çatlak bir lehimin eseridir.
-
-### 2. Görünmez Düşman: Elektriksel Gürültü (Noise)
-Dijital simülasyon dünyasında sadece net 1 ve net 0 vardır. Fiziksel dünyada ise 0.9V, 3.3V, 5.1V, anlık dikenler (spikes), parazitler ve dalgalanmalar vardır.
-*   **Osiloskop (Zamanın Mikroskobu):** Elektronikçinin gerçek gözüdür. Multimetre size voltajın ortalamasını gösterir ve bu bazen yalandır. Osiloskop ise size sinyalin gerçeğini, anlık bozulmaları, gürültüyü ve dalga formunu gösterir. PWM sinyalinin köşeleri ne kadar dik? I2C hattında "ringing" var mı? Bunu sadece osiloskopla görebilirsiniz.
-
-## 📚 Konu Başlıkları ve Derinlemesine Saha Uygulamaları
-
-### Temel Analiz ve Hata Avı Sanatı
-*   **Ohm ve Kirchhoff Yasaları:** Bunlar sadece sınav geçmek için değil, arızayı eliyle koymuş gibi bulmak içindir. Bir kabloda veya bağlantı noktasında beklenmedik bir voltaj düşümü (Voltage Drop) varsa, orada istenmeyen bir direnç vardır. Kablo gevşemiştir, klemens oksitlenmiştir veya lehim çatlamıştır.
-*   **Kısa Devre Takibi:** Bir kartın beslemesi kısa devre mi gösteriyor? Hangi parçanın yandığını bulmak için laboratuvar tipi güç kaynağı ile akımı sınırlayıp voltaj vermek ve ısınan parçayı (termal kamera veya dikkatli bir parmak testi ile) bulmak, gerçek bir dedektiflik işidir.
-
-### Analog Elektronik: Sinyal İşleme
-*   **Op-Amp'lar (Operasyonel Yükselteçler):** Sensörden gelen cılız milivolt seviyesindeki sinyali, mikrodenetleyicinin okuyabileceği seviyeye yükseltmek. AI'a giden veri buradan geçer. Eğer bu kat bozuksa veya gürültülü ise, AI çöp veriyle eğitilir ve kararlar alır.
-*   **Filtreler ve Gürültü Bastırma:** Fabrika ortamı elektriksel olarak "çok kirlidir". Büyük motorların sürücüleri şebekeye parazit yayar. Kondansatörler (Bypass/Decoupling) ve bobinlerle bu sinyalleri temizlemek, sistemin kararlılığı için hayati önem taşır.
-
-### Güç Elektroniği: Sistemin Kasları ve Gücü
-*   **MOSFET ve IGBT:** Bunlar sistemin dijital anahtarlarıdır. Ancak evdeki ışık anahtarı gibi değil; saniyede 20.000 (20kHz) veya daha fazla kez açılıp kapanırlar. Eğer "Gate" bacağını yeterince hızlı ve güçlü süremezseniz, MOSFET "doğrusal bölgeye" girer, ısınır ve patlar.
-*   **H-Köprüsü Sürücüler:** Motoru hem ileri hem geri sürmek için kullanılan devre. Eğer yazılım hatasıyla köprünün iki tarafını (üst ve alt anahtarı) aynı anda açarsanız (Shoot-through), köprüyü milisaniyeler içinde havaya uçurursunuz. Donanımsal "dead-time" eklemenin neden hayat kurtardığını burada öğreniriz.
-
-### Sensörler: Makinenin Duyu Organları
-*   Sıcaklık (NTC/PTC), Mesafe (Ultrasonik/Lidar), Konum (Encoder), İvme (IMU).
-*   **Saha Arıza Senaryosu:** Encoder kablosunun ekranlaması (shield) topraklanmazsa ne olur? Motorun manyetik alanı kabloya parazit basar, işlemci robotun 1000 tur attığını sanar ama robot yerinden bile oynamamıştır. Sonuç: Robot aniden son hızla duvara çarpar. Bu sorunu yazılımla çözemezsiniz, donanımla çözmelisiniz.
+> *"Yazılımda hata yaparsan ekranda bir uyarı çıkar; elektronikte hata yaparsan bir patlama sesi duyarsın ve o korkunç yanık silikon kokusunu alırsın. Ve unutma, duman bir kez çıktıysa, o komponentin ruhu bedeni terk etmiştir; geri döndürülemez."*
 
 ---
 
-> **Ustanın Bilgelik Notu:** "Multimetren senin kılıcın, osiloskobun ise kalkanındır. Yanında bunlar olmadan asla elektronik savaşına (sahaya) çıkma. Ve asla unutma: Bir elektronikçinin en iyi sensörü kendi burnudur; çünkü yanık silikon kokusu asla yalan söylemez ve unutulmaz."
+## ⚡ Metal Yaka Perspektifi: Devre Cerrahlığı
+
+Mezun olduğunuzda kimse sizden Kirchhoff kanunlarını kağıt üzerinde ispatlamanızı istemeyecek. Sizden beklenen; durmuş bir üretim hattındaki panoyu açıp, yüzlerce kablo ve onlarca kart arasından arızalı olan o **tek bir komponenti** bulmanız ve sistemi hayata döndürmenizdir.
+
+Yazılım "Sanal Beyin" ise, Elektronik "Sinir Sistemi" ve "Kardiyovasküler Sistem"dir.
+*   **Voltaj:** Kan Basıncıdır.
+*   **Akım:** Kan Akışıdır.
+*   **Kablo Kesiti:** Damar genişliğidir.
+*   **Kısa Devre:** Aort damarının parçalanmasıdır.
+
+Bu modül, sadece teorik şemaları değil, **"Çalışmayan"** veya **"Yanmış"** bir devreyi teşhis etme (diagnosis) ve onarma sanatını; yani **Devre Cerrahlığını** anlatır.
+
+---
+
+## 🛠️ 1. Duman Prensibi ve Geri Dönülmezlik
+
+Elektronik dünyasında "Ctrl+Z" (Geri Al) tuşu yoktur.
+*   Bir MOSFET'i yanlış tetikleyip yaktıysan, o artık kömürdür.
+*   Bir kondansatörü ters bağlayıp patlattıysan, o artık bir şarapneldir.
+*   **Kural:** "Önce Ölç, Sonra Enerji Ver."
+
+### Görünmez Düşman: Gürültü (Noise) ve EMI
+Dijital dünyada mantık temizdir (0 veya 1). Fiziksel dünyada ise kaos vardır.
+*   **Senaryo:** Motor çalışınca sensör saçmalıyor. Motor durunca düzeliyor.
+*   **Teşhis:** Motor kablosu, bir yayın anteni gibi etrafa elektromanyetik parazit (EMI) yayıyor. Sensör kablosu da bir anten gibi bu paraziti topluyor.
+*   **Çözüm:** Ekranlı (Shielded) kablo kullanmak, ekranı **tek noktadan** topraklamak, Ferrit boncuk takmak. Yazılımla bunu çözemezsin.
+
+---
+
+## 🧰 2. Teşhis Aletleri: Cerrahın Çantası
+
+### A. Multimetre: Stetoskop
+*   **Voltaj:** Devrede can var mı?
+*   **Direnç:** Kablo kopuk mu (sonsuz ohm), kısa devre mi (0 ohm)?
+*   **Diiyot Modu:** Yarı iletkenler (Transistör, Regülatör) sağlam mı? PN jonksiyonu 0.6V-0.7V gösteriyor mu?
+
+### B. Osiloskop: Zamanın Mikroskobu ve Röntgen
+Multimetre size yalan söyler. Multimetre size voltajın "ortalamasını" gösterir.
+*   3.3V sandığınız DC gerilim, belki de saniyede 1 milyon kez 0V ile 5V arasında dalgalanıyordur (Ripple).
+*   PWM sinyalinin kare dalgası bozulmuş mu? Köpekbalığı yüzgecine mi benziyor? (Kapasitif yük sorunu).
+*   Haberleşme hattında (I2C/UART) parazit var mı?
+*   **Osiloskopsuz elektronikçi, kör bir nişancı gibidir.**
+
+### C. Laboratuvar Güç Kaynağı: Yaşam Destek Ünitesi
+*   **Akım Sınırlama (Current Limiting):** Kartı tamir ettikten sonra direkt prize takarsan tekrar patlayabilir. Güç kaynağını 0.1 Amper'e ayarla. Eğer kısa devre varsa, güç kaynağı voltajı keser (CC Mode) ve kartı korur.
+
+### D. Termal Kamera: Isı Haritası
+*   Kısa devre olan parça, enerjiyi ısıya çevirir. Karta enerji verip termal kamerayla bakarsan, arızalı parça **"Ben Buradayım!"** diye parlar.
+
+---
+
+## 📚 Modül İçeriği ve Saha Rehberi
+
+| Dosya | Açıklama | Saha Uygulaması |
+| :--- | :--- | :--- |
+| **[`02_Oscilloscope_Guide.md`](./02_Oscilloscope_Guide.md)** | Osiloskop Rehberi | Sinyal yakalama, PWM analizi, Gürültü tespiti. |
+| **[`02_Soldering_Art.md`](./02_Soldering_Art.md)** | Lehim Sanatı | Soğuk lehim tespiti, Flux kullanımı, SMD lehimleme. |
+| **[`03_Component_Failure.md`](./03_Component_Failure.md)** | Komponent Arıza Kataloğu | Bir parça neden ve nasıl yanar? Görsel otopsi. |
+| **[`04_Grounding_Noise.md`](./04_Grounding_Noise.md)** | Topraklama ve Gürültü | Şase döngüleri (Ground Loops), ekranlama, parazit. |
+
+---
+
+## 🩸 Güç Elektroniği: Sistemin Kasları
+
+Sistem sadece 5V ve 3.3V'dan ibaret değildir. Motorları süren 24V, 48V veya 380V güç katı vardır.
+*   **H-Köprüsü (H-Bridge):** Motoru ileri-geri süren 4 anahtarlı yapı.
+*   **Shoot-Through (Kısa Devre Vuruşu):** Aynı hattaki üst ve alt anahtarı (MOSFET) aynı anda açarsan, güç kaynağını kısa devre edersin (Bom!). Donanımsal **"Dead-Time"** (Ölü Zaman) koymak zorundasın.
+
+---
+
+> **Ustanın Bilgelik Notu:**  
+> "İyi bir elektronikçi, devrenin şemasına değil, kokusuna ve sıcaklığına güvenir. Yanık bir direnç, sebep değil sonuçtur. O direnci yakan asıl suçluyu (genellikle kısa devre olmuş bir kondansatör veya transistör) bulmadan sakın yenisini takma."

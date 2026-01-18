@@ -28,7 +28,17 @@ Her proje için bu şablonu kopyalayın ve her büyük çöküşte/patlamada dol
 4.  **Neden sıkıştı?** -> Dişli kutusuna kablo girmiş.
 5.  **Kök Neden:** Kablolama hatası ve kablo bağının (zip tie) atılmaması.
 
-### 4. Çözüm (Fix)
+### 4. Kanıtlar (Olay Yeri İnceleme)
+*   **Fotoğraflar:** (Yanmış parçanın, dağılmış mekaniğin fotosunu buraya ekle)
+*   **Kod/Devre Kesiti:** (Hataya sebep olan o kod bloğu veya yanlış çizilmiş devre şeması)
+    ```c
+    // Hatalı Kod Örneği
+    while(1) {
+        motor_run(SPEED_MAX); // Sonsuz köngüde motoru zorladık
+    }
+    ```
+
+### 5. Çözüm (Fix)
 *   **Geçici Çözüm:** Sürücü değiştirildi, kablo kenara çekildi.
 *   **Kalıcı Çözüm:** Tüm kablolar spirale alındı ve şaseye sabitlendi. Dişli kutusu kapalı hale getirildi.
 

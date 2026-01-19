@@ -42,4 +42,25 @@ Derleyici (Compiler) akıllıdır. Kodunuzu hızlandırmak için optimizasyon ya
 
 ---
 
+---
+
+## 🛡️ 5. Savunma Sanatları: Canary ve Watchdog
+
+Hata kaçınılmazdır. Önemli olan hatayı yakalamaktır.
+
+### A. Stack Canary (Kömür Madenindeki Kanarya)
+Taşmayı (Overflow) nasıl anlarsın?
+*   **Teknik:** Stack hafızasının en sonuna özel bir sayı (Canary Word) yazarsın. Örn: `0xDEADBEEF`.
+*   **Kontrol:** Ana döngüde ara sıra bu adrese bak. Eğer `0xDEADBEEF` yerine başka bir şey görüyorsan, stack taşmış ve orayı ezmiştir.
+*   **Aksiyon:** Sistemi güvenli bir şekilde kapat (Fail-Safe Reset).
+
+### B. Watchdog Timer (Bekçi Köpeği)
+İşlemci donarsa (Sonsuz döngü, kilitlenme) kim reset atacak?
+*   **Mantık:** İşlemcinin içinde bağımsız bir sayaç vardır (Örn: 100ms'den geriye sayar).
+*   **Görevin:** Ana döngüde bu sayacı sürekli sıfırlamaktır (Köpeği sevmek / Kick the dog).
+*   **Olay:** Eğer yazılımın donarsa, köpeği sevemezsin. Sayaç sıfıra iner ve "Hav!" diyerek işlemciye **Hard Reset** atar.
+*   **Metal Yaka Kuralı:** Watchdog olmadan endüstriyel ürün olmaz.
+
+---
+
 > **Ustanın Özeti:** "Derleyici uyarılarını (Warnings) asla görmezden gelme. 'Warning' demek, 'Şimdilik çalışıyorum ama ilk virajda kaza yapacağım' demektir. Code Analysis araçlarını (MISRA-C) kullan."

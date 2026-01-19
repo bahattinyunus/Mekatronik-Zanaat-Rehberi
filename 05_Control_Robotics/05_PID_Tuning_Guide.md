@@ -53,4 +53,34 @@ Engel kalktığı anda, o birikmiş devasa enerjiyle robot mermi gibi fırlar.
 
 ---
 
+---
+
+## 🚀 5. Feedforward (İleri Besleme): Kahin Kontrolü
+
+PID "Hata olunca düzeltirim" der (Reaktif). Feedforward "Hata olacağını biliyorum, önlemini alıyorum" der (Proaktif).
+
+*   **Örnek:** Robot koluna 5kg yük aldın.
+    *   **Sadece PID:** Kol aşağı sarkmaya başlar (Hata oluşur). I terimi "Aaa hata var" der ve güç verir. (Geç kaldı).
+    *   **Feedforward:** "Elimde 5kg yük var, yerçekimi bunu aşağı çekecek. Daha hareket etmeden motorlara +%20 güç veriyorum."
+*   **Formül:** `Çıkış = PID + (Yük * Yerçekimi_Katsayısı)`
+*   **Sonuç:** Hata hiç oluşmadan engellenir. Mükemmel takip.
+
+### Step Response (Basamak Cevabı) Referans Tablosu
+
+```text
+Grafik: Hedef Çizgisine Ulaşma Şekli
+
+     Hedef -----------------------------------
+            /   \      (Overshoot - Aşma)
+           /     \________ (Settling - Oturma)
+          /
+Giriş ___/
+
+1. Overdamped (Aşırı Sönümlü): Hedefe çok yavaş gider, hiç aşmaz. Güvenlidir ama hantaldır.
+2. Underdamped (Az Sönümlü): Hızlı gider, hedefi geçer, titrer.
+3. Critically Damped (Kritik): En kısa sürede hedefe gider ve durur. (Metal Yaka Hedefi).
+```
+
+---
+
 > **Ustanın Notu:** "Mükemmel ayar yoktur, 'yeterince iyi' ayar vardır. Robot ısınıyorsa ayar kötüdür, ses çıkarıyorsa kötüdür. Sessiz ve soğuk çalışan robot, mutlu robottur."

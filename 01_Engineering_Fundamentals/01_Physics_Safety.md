@@ -67,4 +67,22 @@ Elektronik sistemlerin bir numaralı katili ısıdır.
 
 ---
 
+---
+
+## 🔒 6. LOTO (Lock Out, Tag Out) ve 5 Enerji Türü
+
+LOTO sadece "elektrik şalterini indirmek" değildir. Makinenin içinde uyuyan tüm canavarları kafese kapatmaktır.
+1.  **Elektriksel Enerji:** Şalteri indir + Kilitle.
+2.  **Mekanik Enerji:** Dönen fan durdu mu? (Volan etkisi).
+3.  **Potansiyel Enerji (Kütleçekim):** Havada asılı pres var mı? Takozla sabitle.
+4.  **Hidrolik/Pnömatik Enerji:** Borularda basınç var mı? Vanayı kapat ve sistemdeki basıncı boşalt (Bleed Valve).
+5.  **Termal Enerji:** Kazan hala sıcak mı? Soğumasını bekle.
+
+### ⚡ Ark Parlaması (Arc Flash)
+Elektrik çarpması (şok) seni titretir. **Ark Parlaması** ise seni buharlaştırır.
+*   Yüksek voltajlı bir panoda (örn: 380V, 1000A) kısa devre yaparsan, bakır kablo anında plazmaya dönüşür (20.000°C - Güneş yüzeyinden sıcak).
+*   **Metal Yaka Kuralı:** Enerji altındaki bir panonun kapağını açarken asla tam karşısında durma. Yan dur ve yüzünü çevir. (Don't face the flash).
+
+---
+
 > **Ustanın Notu:** "Yerçekimi asla uyumaz, asla mola vermez ve asla hata yapmaz. Siz de yapmayın. İş güvenliği, fiziğe duyulan saygıdır."

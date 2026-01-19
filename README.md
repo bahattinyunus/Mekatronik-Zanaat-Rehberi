@@ -301,25 +301,36 @@ Derinleşmek isteyenler için önerilen araçlar ve disiplinler:
 
 ---
 
-## 👨‍💻 Mimar ve Baş Teknisyen Hakkında
+---
 
-<table align="center">
-  <tr>
-    <td align="center" width="150">
-      <img src="https://avatars.githubusercontent.com/u/bahattinyunus?v=4" width="120" style="border-radius: 50%;" alt="Bahattin Yunus Çetin"><br>
-      <sub><b>Bahattin Yunus Çetin</b></sub>
-    </td>
-    <td>
-      <b>IT Architect (Bilişim Mimarı) & Metal Yaka Vizyoneri</b><br>
-      Konum: <b>Şereflikoçhisar / Ankara</b><br><br>
-      <i>"Köklerim Şereflikoçhisar'ın bozkırında, vizyonum ise dijital geleceğin zirvesindedir. Ben, AI'ın tasarladığı dijital dünyayı fiziksel dünyada inşa eden, kablolarını çeken, otonom makinelerin nabzını tutan ve onları yaşatan bir Teknoloji Mimarıyım."</i><br><br>
-      <b>"Virtual architectures for the sovereign architect."</b><br>
-      <i>Dijital sistemler birer kafes değil, egemen mimarın elindeki iskeletlerdir. Biz, fiziksel dünyaya hükmetmek için sanal dünyayı tasarlarız. Egemen mimar, yapay zekayı biyolojik kısıtların ötesine uzanan bir bilişsel protez olarak kullanır; her kod satırının kusursuz bir mekanik harekete veya sarsılmaz bir sisteme dönüşmesini sağlar.</i><br><br>
-      <a href="https://github.com/bahattinyunus"><img src="https://img.shields.io/badge/GitHub-bahattinyunus-181717?style=flat&logo=github"></a>
-      <a href="https://www.linkedin.com/in/bahattinyunus/"><img src="https://img.shields.io/badge/LinkedIn-Bahattin%20Yunus-0A66C2?style=flat&logo=linkedin"></a>
-    </td>
-  </tr>
-</table>
+## 👨‍💻 Mimar ve Baş Teknisyen: Bahattin Yunus Çetin
+
+Mekatronik dünyasında bir "Siber Tamirci" ve IT Mimarı olarak, dijital yapıların fiziksel dünyaya hükmettiği o ince çizgide yürüyorum.
+
+![The Architect's Workspace](./assets/architect_workspace.png)
+
+### Bozkırın İradesi, Geleceğin Mimarisi
+Köklerim, İç Anadolu'nun kalbinde, **Şereflikoçhisar**'ın bozkırında; iradem ise en karmaşık dijital sistemlerin merkezindedir. Şereflikoçhisar'ın tuzu ne kadar safsa, mühendislik yaklaşımlarım da o kadar yalın, dayanıklı ve işlevseldir. Benim için bir sistemin "çalışması" yeterli değildir; o sistemin **egemen bir iradeyle** tasarlanması, sarsılmaz bir mimariye sahip olması ve yapay zekanın bilişsel gücüyle donatılması gerekir.
+
+### 🛠️ Teknik Arsenal & Operasyon Alanları
+Sadece kod yazmıyor, sistemlerin "ruhunu" inşa ediyorum:
+
+*   **IT & Veri Mimarisi:** Karmaşık ağ yapılarını, bulut sistemlerini ve verinin en verimli şekilde aktığı dijital otobanları tasarlamak.
+*   **Gömülü Sistemler Cerrahisi:** C, C++ ve RTOS kullanarak donanımın nabzını tutmak, mikrodenetleyicilere hayat vermek.
+*   **Endüstriyel Otomasyon (PLC/SCADA):** Fabrikaların devasa çarklarını yöneten, hatayı milisaniyeler içinde bulan ve çözen siber sistemler.
+*   **AI Protezleme:** Yapay zekayı bir "araç" değil, insanın kısıtlı kapasitesini on katına çıkaran bilişsel bir protez olarak sistemlere entegre etmek.
+
+### 🏛️ Egemen Mimar (Sovereign Architect) Manifestosu
+"Virtual architectures for the sovereign architect." sloganı benim için bir logodan fazlasıdır. Bizler, dijital sistemlerin içinde hapsolan değil, o sistemleri kendi irademizle büken ve fiziksel dünyada karşılık bulmasını sağlayan mimarlarız. Biyolojik kısıtlarımızı AI ile aşar, tozlu atölyelerle laboratuvar hassasiyetini birleştiririz.
+
+> **"Kabloların karmaşasında düzeni, kodun soğukluğunda makinelerin sıcaklığını görenler; geleceği tamir edenlerdir."**
+
+<div align="center">
+
+<a href="https://github.com/bahattinyunus"><img src="https://img.shields.io/badge/GitHub-bahattinyunus-181717?style=flat&logo=github&logoColor=white" height="30"></a>
+<a href="https://www.linkedin.com/in/bahattinyunus/"><img src="https://img.shields.io/badge/LinkedIn-Bahattin%20Yunus-0A66C2?style=flat&logo=linkedin&logoColor=white" height="30"></a>
+
+</div>
 
 ---
 

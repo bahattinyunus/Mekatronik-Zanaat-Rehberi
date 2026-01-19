@@ -50,4 +50,37 @@ NASA'nın Mars aracı bu yüzden az kalsın görevini kaybediyordu.
 
 ---
 
+---
+
+## ⚡ 4. Kesmeler (Interrupts): RTOS Düşmanı mı Dostu mu?
+
+Kesmeler (ISR), RTOS'tan bile daha önceliklidir. Kesme geldiğinde RTOS durur.
+*   **Altın Kural:** Kesme içinde ASLA bekleme yapma (`delay` yok, `printf` yok).
+*   **Deferred Interrupt Processing:** Kesme sadece "Veri geldi!" bayrağını kaldırıp hemen çıkar. Asıl işi (veriyi işleme, hesaplama) bir RTOS görevine (Task) devreder. Binbaşı (ISR) sadece emri verir, asker (Task) işi yapar.
+
+### Örnek Kod (FreeRTOS Basit Task)
+
+```c
+// Task 1: LED Yak Söndür (Düşük Öncelik)
+void Task_Blink(void *pvParameters) {
+    while(1) {
+        HAL_GPIO_TogglePin(LED_PORT, LED_PIN);
+        vTaskDelay(500); // 500ms bekle (İşlemciyi meşgul etmez, uyur)
+    }
+}
+
+// Task 2: Motor Kontrol (Yüksek Öncelik)
+void Task_Motor(void *pvParameters) {
+    while(1) {
+        if(xSemaphoreTake(xMutex, 100) == pdTRUE) { // Kaynağı kitle
+            Motor_Run();
+            xSemaphoreGive(xMutex); // Bırak
+        }
+        vTaskDelay(10); // 10ms'de bir kontrol et
+    }
+}
+```
+
+---
+
 > **Ustanın Notu:** "RTOS kullanmak, çok şeritli otobanda araba sürmek gibidir. Trafik kurallarına (Mutex, Semaphore) uymazsanız kaza (Crash) kaçınılmazdır. En büyük düşman 'Stack Overflow'dur. Her göreve yetecek kadar hafıza ayırdığından emin ol."

@@ -57,4 +57,21 @@ Yeni başlayanların en büyük yanılgısı, lehimi bir "yapıştırıcı" gibi
 
 ---
 
+## 🔬 4. İleri Teknikler: SMD ve Sıcak Hava
+
+Artık devreler küçüldü. Through-hole (Delikten geçme) bitti, SMD (Yüzey Montaj) çağı başladı.
+*   **Sıcak Hava Tabancası (Hot Air):** Havyanın ucu entegrenin 64 bacağına aynı anda değemez. Sıcak hava ise değebilir.
+    *   **Teknik:** 350°C, düşük üfleme hızı.
+    *   **Reflow:** Pedlere lehim pastası (Solder Paste) sür, malzemeyi cımbızla koy, sıcak havayı tut. Lehim eriyince (sıvılaşınca) yüzey gerilimi sayesinde çip "tık" diye yerine oturur. Büyü gibidir.
+
+### Flux Seçim Rehberi
+
+| Flux Türü | Özellik | Kullanım Alanı | Temizlik |
+| :--- | :--- | :--- | :--- |
+| **Rosin (R/RMA)** | Klasik, reçine bazlı. | Genel lehimleme. | Gerekmez (Ama yapışkan kalır). |
+| **No-Clean (NC)** | Düşük artık bırakır. | Seri üretim, SMD. | Temizlemeye gerek yok. |
+| **Water Soluble (WS)** | Çok agresif, çok iyi temizler. | Zor, oksitli yüzeyler. | **ZORUNLU!** Su ile hemen yıkanmalı yoksa kartı yer. |
+
+---
+
 > **Ustanın Notu:** "Flux dumanı zehirlidir (kolofan içerir). Bunu akciğerlerine çekme, fan kullan. Ve havya ucunu asla zımpara veya bıçakla kazıma! Uçtaki koruyucu kaplamayı yok edersen, bakır uç saniyeler içinde oksitlenir ve çöp olur. Sadece ıslak sünger veya pirinç tel yumak kullan."

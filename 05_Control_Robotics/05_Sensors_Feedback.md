@@ -38,4 +38,24 @@ Mükemmel bir sensörünüz olabilir ama kablosu bir motor sürücünün (VFD) y
 *   **Endüktif Sensör:** Sadece metali algılar. Temassızdır, ömrü uzundur.
 *   **Kapasitif Sensör:** Her şeyi algılar (El, plastik, sıvı). Yanlış tetiklemeye (False Positive) çok müsaittir.
 
+---
+
+## 🧙‍♂️ 5. Sensör Füzyonu ve Kalman Filtresi
+
+Tek bir sensöre asla güvenme.
+*   **Jiroskop:** Hızlıdır ama zamanla kayar (Drift). 1 saat sonra yönünü 180 derece şaşırabilir.
+*   **İvmeölçer:** Kaymaz ama çok gürültülüdür. Titreşimden etkilenir.
+*   **Kalman Filtresi:** Bu iki "yalancı" sensörü dinler ve gerçeği bulur.
+    *   *Mantık:* "Jiroskop 'Sağa döndüm' diyor, İvmeölçer 'Düz duruyorum' diyor. Jiroskop hızlı hareketlerde daha güvenilir, ona inanayım. Ama dururken İvmeölçer haklıdır, ona döneyim."
+    *   Metal Yaka için Kalman, matematiksel formül değil; **güven yönetimi (trust management)** algoritmasıdır.
+
+## ⚡ 6. Topraklama Döngüsü (Ground Loop) - Sessiz Katil
+
+İki cihazı birbirine bağlarken (Örn: PC ve PLC), eğer elektrik prizleri farklı yerlerden besleniyorsa, aralarında voltaj farkı oluşur.
+*   Sen USB kablosunu taktığın anda, o voltaj farkı senin narin USB kablonun "GND" hattından akmaya çalışır.
+*   **Sonuç:** Kablo ısınır, iletişim kopar, port yanar.
+*   **Çözüm:** Tüm cihazları **tek bir noktadan** (Star Grounding) toprakla. Veya araya **İzolatör (Optocoupler/Galvanic Isolator)** koy.
+
+---
+
 > **Ustanın İpucu:** "Bir sensörün çalışıp çalışmadığını anlamak için LED'ine bakma. LED yanabilir ama kablo kopuk olabilir. PLC girişindeki ışığa bak veya multimetre ile çıkış voltajını ölç."

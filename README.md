@@ -77,33 +77,48 @@ Bu depo, akademik dünyanın köklü **teorik derinliği** ile; Türkiye'nin dö
 
 > *"Bizler sadece sınav kağıdı dolduran öğrenciler değiliz; bizler dijital çağın ameliyat ekibiyiz. Mühendis sistemi tasarlar, AI kodunu yazar, biz ise o sistemi MYO laboratuvarından çıkarıp fabrikanın kalbinde yaşatırız."*
 
-![Dijital Tesisatçılık](./assets/manifesto_digital_plumber.png)
+![Cyber Repair Workshop](./assets/cyber_repair.png)
 
 Mekatronik Önlisans eğitimi, bir teorik bilgi yığını değil, bir **hayatta kalma ve çözüm üretme** eğitimidir. Bu depo, klasik beyaz yaka mühendislik yaklaşımlarının "sahada çuvalladığı" noktalarda, bir teknikerin nasıl parladığını anlatır. Amacımız, sadece diploma almak değil, **"Arıza benden sorulur"** diyen sarsılmaz bir özgüven inşa etmektir.
 
+#### 🌌 Dijital İkizlerden Gerçek Yağ Lekelerine
+Modern sanayi, "Digital Twin" (Dijital İkiz) kavramıyla simülasyonların gücüne güveniyor. Ancak hiçbir simülasyon, bir hidrolik hortumun patladığı andaki kaosu veya bir sensörün üzerine binen toz tabakasının yarattığı gürültüyü tam olarak tahmin edemez. Bizler, o simülasyonların bittiği ve gerçek dünyanın yıpratıcı kurallarının başladığı yerde devreye gireriz.
+
 **Metal Yaka İnisiyatifi**'nin kalbi MYO'larda ve teknik eğitim merkezlerinde atar. Bizler, iki dünya (Soyut Tasarım ve Somut Arıza) arasındaki en kritik halkayız. AI bir robotu tasarlar; bizler ise o robotun "tesisatını" döşer, "damarlarındaki" tıkanıklığı açar ve sistem sustuğunda onu uyandıran ilk nefes oluruz. İşte bu, **Tekniker 2.0**'ın; yani elinde multimetre, zihninde AI gücü olan siber zanaatkarın geleceğidir.
+
+![AI Metal Fusion](./assets/ai_metal_fusion.png)
 
 ### 🎯 Vizyon & Misyon: Yeni Tamircilik Kültürü
 
-*   **Vizyon:** Yapay zeka destekli ileri tasarım tekniklerini, yüzyılların getirdiği "Usta-Çırak" ve Anadolu'nun "Ahi" kültürüyle, modern endüstriyel zanaatkarlıkla harmanlayan; "masa başı" raporlayan değil "tezgah başı" çözüm üreten; duran fabrikaları, arıza yapan otonom sistemleri, kilitlenen robotları hayata döndüren **"Metal Yaka"** iş gücünü oluşturmak.
-*   **Misyon:** Karmaşık teorik hesaplamaların yükünü AI asistanlarına devredip, insanın odak noktasını "Arıza Tespiti (Diagnosis)", "Sistem Entegrasyonu" ve "Sistemi Ayakta Tutma" sanatına kaydırarak; AI'ın kusursuz hesaplamalarını gerçek, fiziksel ve çalışan makinelere dönüştürmek için gereken pratik, tecrübeye dayalı "kirli el" bilgisini **tüm Türkiye için** erişilebilir kılmak (demokratize etmek).
+*   **Vizyon:** Yapay zeka destekli ileri tasarım tekniklerini, yüzyılların getirdiği "Usta-Çırak" ve Anadolu'nun "Ahi" kültürüyle harmanlayan; duran fabrikaları, arıza yapan otonom sistemleri, kilitlenen robotları hayata döndüren bir nesil yetiştirmek.
+*   **Misyon:** Karmaşık teorik hesaplamaların yükünü AI asistanlarına devredip, insanın odak noktasını "Arıza Tespiti (Diagnosis)", "Sistem Entegrasyonu" ve "Sistemi Ayakta Tutma" sanatına kaydırarak; pratik, tecrübeye dayalı "kirli el" bilgisini herkes için erişilebilir kılmak.
 
-![Siber Tamir Atölyesi](./assets/vision_cyber_repair.png)
+---
+
+### 🚀 Kariyer Yolu: Önlisans'tan Sektör Liderliğine
+
+Mekatronik Önlisans mezunu bir öğrenci için kariyer yolu sadece "bir fabrikada bakımcı olmak" değildir. Modern dünyada önünüzde açılan kapılar şunlardır:
+
+1.  **Saha Entegrasyon Uzmanı:** AI tarafından tasarlanan sistemlerin fiziksel montajını ve devreye alımını yönetmek.
+2.  **Kestirimci Bakım Analisti:** Sensör verilerini okuyarak (Türev ve İntegral bilgisiyle) makinenin ne zaman arıza yapacağını önceden tahmin etmek.
+3.  **Robotik Hücre Operatörü:** Endüstriyel robot kollarının programlanması, kalibrasyonu ve zorlu saha şartlarında onarımı.
+4.  **Gömülü Sistem Tamircisi:** Arıza yapan PLC, MCU veya sürücü kartlarının komponent seviyesinde tamiri ve optimizasyonu.
 
 ---
 
 ## 🏗️ Depo Yapısı ve "Tamircinin Bakış Açısı"
 
-Bu depo, YÖK uyumlu modern bir Mekatronik/Otomasyon müfredatını, akademik başlıklar altında ancak tamamen endüstriyel "bakım/onarım/entegrasyon" ihtiyaçlarını yansıtacak şekilde yeniden yorumlamıştır. Her modül bir "Saha El Kitabı"dır.
+Bu depo, bir teknikerin zihnindeki "Arıza Çözme Algoritması"na göre yapılandırılmıştır. Her modül, sahada karşılaşılan bir sorunun çözüm basamağını temsil eder.
 
-| Dizin | Konvansiyonel İsim | SİBER TAMİRCİ ODAĞI & METAL YAKA PERSPEKTİFİ |
+| Dizin | Odak Noktası | Tekniker Ne Yapar? |
 |-----------|-------------|----------------------------------------------------|
-| [`01_Engineering_Fundamentals`](./01_Engineering_Fundamentals/) | Mühendislik Temelleri | **Teori Değil, Teşhis (Diagnosis):** Biz Kalkülüs ve Fiziği; köprü tasarlamak için değil, AI tarafından tasarlanan köprünün neden rüzgarda titrediğini anlamak için öğreniyoruz. Diferansiyel denklem bizim için bir "arıza tespit cihazı"dır. Türev, hatanın artış hızıdır. İntegral, birikmiş hatadır. Formüller, makinenin röntgenidir. |
-| [`02_Electrical_Electronics`](./02_Electrical_Electronics/) | Elektrik & Elektronik | **Fiziksel Hata Ayıklama (Physical Debugging):** Yazılımcı kodundaki hatayı 'debug' eder, "Undo" yapar. Biz ise yanmış bir MOSFET'i, temassızlık yapan paslı bir konnektörü 'debug' ederiz. Elektronikte "Undo" yoktur, "Patlama" vardır. Osiloskop, lehim havyası ve multimetre ile "Devre Cerrahlığı" yaparız. AI şemayı çizer, ama soğuk lehimdeki temassızlığı AI göremez, biz görürüz. |
-| [`03_Mechanics_Materials`](./03_Mechanics_Materials/) | Mekanik & Malzeme | **Metalin Yorgunluğu ve Ruhu:** Dijital simülasyonlarda malzeme asla yorulmaz, yağ bitmez, vida gevşemez. Gerçek dünyada ise metal yorulur ve kırılır. AI'ın simülasyonlarını gerçek dünyanın yıpratıcı şartlarıyla (toz, yağ, titreşim, korozyon) test ederiz. Bir makineyi tamir etmek, onun nasıl kırıldığını anlamakla başlar. Dişli boşluğunu (backlash) ve sürtünmeyi yönetiriz. |
-| [`04_Programming_Embedded`](./04_Programming_Embedded/) | Programlama & Gömülü | **İstemi Mühendisliği (Prompt Engineering) & Kod Enjeksiyonu:** Sıfırdan C++ sürücüsü yazmakla vakit kaybetmeyiz; bunu AI'a yazdırırız. Bizim işimiz, o kodu alıp STM32'nin kısıtlı hafızasına sığdırmak (Gömme), gerçek zamanlı (Real-Time) çalışmasını sağlamak, kesmeleri (interrupts) yönetmek ve donanımla konuşurken "kekelemediğinden" emin olmaktır. Biz kodun donanımla dansını yönetiriz. |
-| [`05_Control_Robotics`](./05_Control_Robotics/) | Kontrol & Robotik | **Robot Doktorluğu & Acil Servis:** 6 eksenli devasa bir robot kolu 'Singularity' (Tekillik) noktasına girip kilitlendiğinde veya enkoder hatası verdiğinde, AI ekrana sadece "Error 404" yazar. O robotu "ameliyat" edip, frenlerini açıp, manuel olarak eksenlerini sıfırlayıp hayata döndüren biziz. Biz otonom ve akıllı sistemlerin acil servis ekibiyiz. |
-| [`06_Projects_Labs`](./06_Projects_Labs/) | Projeler & Laboratuvar | **İspat Meydanı ve Hurdalık:** "Hello World" yazan kodlar değil, "Hello World" diyerek hareket eden, iş yapan makineler. Burası, teorinin pratiğe çarptığı sert duvardır. Çalışmayan projeleri, yanan motorları, patlayan kondansatörleri burada belgeleriz. Çünkü en iyi mühendis, en çok parça bozan ve hatasını anlayandır. |
+| [`01_Engineering_Fundamentals`](./01_Engineering_Fundamentals/) | Teşhis | Makinenin dilini (fiziğini) anlar, anomalileri tespit eder. |
+| [`02_Electrical_Electronics`](./02_Electrical_Electronics/) | Müdahale | Devreye cerrah titizliğiyle yaklaşır, arızalı parçayı bulur. |
+| [`03_Mechanics_Materials`](./03_Mechanics_Materials/) | Restorasyon | Aşınan, kırılan, yorulan metalin sesini duyar ve onarır. |
+| [`04_Programming_Embedded`](./04_Programming_Embedded/) | Canlandırma | Kodu metale enjekte eder, donanımı hayata döndürür. |
+| [`05_Control_Robotics`](./05_Control_Robotics/) | Senkronizasyon | Karmaşık hareketleri yönetir, robotları hizaya sokar. |
+| [`06_Projects_Labs`](./06_Projects_Labs/) | Deneyim | Hata yapar, patlatır, öğrenir ve tecrübeyi günlüğe yazar. |
+
 
 ---
 

@@ -43,4 +43,22 @@ Elektronik tamirinde en önemli yetenek, "Yanık İzlerini Okuma" sanatıdır. B
 
 ---
 
+---
+
+## 6. Rulman ve Mekanik Arıza: Gresin Dili
+
+Elektronik sessiz ölür; rulman çığlık atarak ölür. Rulmanın içindeki gresin rengi, cinayet silahıdır.
+
+*   **Sütlü Kahve / Gri:** Su karışmış. Conta sızdırıyor veya basınçlı yıkama yapılmış.
+*   **Simsiyah / Zift:** Aşırı sıcaklık. Rulman yanmış, gres karbonlaşmış.
+*   **Metalik Parlaklık (Simli):** Aşınma. Rulmanın bilyaları veya yatağı yenmiş, metal talaşı grese karışmış. (Kanserin son evresi).
+*   **Kuru / Sabunlaşmış:** Gres ömrünü tamamlamış, yağı uçmuş geriye sabunu kalmış.
+
+**Arıza Öncesi Teşhis (Metal Yaka Kulakları):**
+*   Düzgün "Vınlama": Normal.
+*   "Hırıltı / Gürültü": Yağsız çalışıyor.
+*   "Tak... Tak... Tak...": Bilyada veya yatakta çatlak (Brinelling) var.
+
+---
+
 > **Ustanın Özeti:** "Arıza ararken yanmış parçayı sök. Ama yenisini takmadan önce sor: **'Seni kim bu hale getirdi?'** Eğer katili bulamazsan, yeni parçanı da kurban edersin."

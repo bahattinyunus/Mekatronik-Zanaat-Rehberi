@@ -41,4 +41,25 @@ Sac metal (Sheet Metal) işleme.
 
 ---
 
+---
+
+## 4. Karar Matrisi: Hangi Yöntem? (Cost vs Performance)
+
+Mühendislik "en iyisini" yapmak değil, "işi gören en ucuzunu" yapmaktır.
+
+| Özellik | CNC (Alüminyum) | 3D Baskı (FDM) | Lazer (Sac) |
+| :--- | :--- | :--- | :--- |
+| **Mukavemet** | 10/10 (Tank gibi) | 3/10 (Katmandan kırılır) | 8/10 (Büküme bağlı) |
+| **Hassasiyet** | ±0.01 mm | ±0.2 mm | ±0.1 mm |
+| **Maliyet (1 Adet)** | 💰💰💰💰💰 (Çok Pahalı) | 💰 (Bedava gibi) | 💰💰 (Makul) |
+| **Hız** | Yavaş (Setup gerekir) | Orta (Gece bas sabah al) | Çok Hızlı |
+| **En İyi Kullanım**| Robot Gövdesi, Motor Yatağı | Sensör Tutucu, Kablo Kanalı | Şase Kapakları, Braket |
+
+### DFM (Design for Manufacturing) İlkeleri
+1.  **CNC için:** İç köşelere radyüs at. Matkap kare delik açamaz.
+2.  **3D Baskı için:** 45 dereceden fazla çıkıntı (overhang) yapma, destek (support) gerekir.
+3.  **Lazer için:** Delik çapı sac kalınlığından küçük olamaz (Lazer geri teper).
+
+---
+
 > **Ustanın Notu:** "3D yazıcı, fikirleri denemek içindir. CNC, o fikirleri kalıcı kılmak içindir. Bir robotun ana gövdesini PLA plastikten basarsan, yazın güneş altında eridiğini veya cıvataların plastiği ezip gevşediğini görürsün (Creep). Mühendislik plastiğe güvenmez demiyorum; doğru plastiği (PETG/ABS/Nylon) seçmeyi bil diyorum."

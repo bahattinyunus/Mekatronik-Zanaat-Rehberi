@@ -61,4 +61,23 @@ Ekranda sürekli kayan, durmayan anlamsız çizgiler görüyorsanız, **Trigger 
 
 ---
 
+---
+
+## 🎨 5. X-Y Modu ve Lissajous Şekilleri
+
+Osiloskop sadece zamanı (Voltage vs Time) göstermez. İki sinyali birbirine karşı (Voltage A vs Voltage B) da çizebilir. Buna **X-Y Modu** denir.
+
+*   **Peki neden?** Faz farkını ölçmek için.
+*   iki sinüs dalgası verin.
+    *   Ekranda **Düz bir çizgi (/)** varsa: Faz farkı 0 derecedir (Aynı anda artıp azalıyorlar).
+    *   Ekranda **Tam bir Daire (O)** varsa: Faz farkı 90 derecedir (Biri tepe noktasındayken diğeri sıfırda).
+    *   Ekranda **Elips** varsa: Arada bir değerdir.
+*   **Metal Yaka Uygulaması:** Encoder sinyallerini (A ve B fazı) kontrol ederken X-Y moduna al. Ekranda temiz bir daire görmüyorsan, encoder yalpalı dönüyordur veya cam diski kirlenmiştir.
+
+### Hold-Off Ayarı
+Bazen sinyal o kadar karmaşıktır ki (örneğin bir veri paketi), osiloskop yanlış yerde tetiklenir (Trigger) ve görüntü titrer.
+*   **Çözüm:** `Trigger Hold-off` ayarını aç. Bu ayar osiloskoba şunu der: "Bir kere tetiklendikten sonra, şu kadar süre (örn. 5ms) boyunca kör ol, tekrar tetiklenme." Böylece paket bitene kadar bekler ve sabit bir görüntü alırsın.
+
+---
+
 > **Ustanın Notu:** "Osiloskop sadece bir ölçü aleti değil, bir zaman makinesidir. Size mikrosaniyeler içinde gerçekleşen ve gözün asla göremeyeceği olayları gösterir. Ona güvenin ama **Toprak (Ground)** klipsine asla arkanızı dönmeyin."

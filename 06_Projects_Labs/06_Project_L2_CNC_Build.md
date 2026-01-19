@@ -59,4 +59,27 @@ Bu değeri GRBL `$100` parametresine girmezsen, makinen yanlış ölçüde keser
 
 ---
 
+---
+
+## 📜 6. Metal Yaka Sözlüğü: G-Code
+
+Makineyle konuşmanın dili. Bunu bilmeden CAM programı kullanamazsın.
+
+*   **G00 (Rapid Move):** "Maksimum hızla o noktaya git. Kesim yapma!" (Boşta hareket).
+*   **G01 (Linear Feed):** "Şu hızla (F) doğrusal kesim yap." (Talaş kaldırırken).
+*   **G02 / G03:** Saat yönünde / Tersine dairesel hareket. (Köşeleri dönerken).
+*   **G28:** "Eve dön!" (Homing). Makine kaybolursa bunu söyleyin.
+*   **M03 / M05:** Spindle Motoru Çalıştır / Durdur.
+*   **M08 / M09:** Soğutma Sıvısını Aç / Kapat. (Su basmak istemiyorsan dikkat et).
+
+### 🎼 Step Motor Rezonansı (Mid-Band Resonance)
+Motor belli bir hızda (genelde orta hızlarda) "zırrr" diye bağırır ve olduğu yerde titrer, dönmez. Bu bir arıza değil, fiziktir.
+*   **Sebep:** Motorun adım frekansı ile rotorun doğal frekansı çakışır. Enerji harekete değil, titreşime gider.
+*   **Çözüm:**
+    1.  O hızı "atla". (Yazılımda start hızını rezonansın üstüne ayarla).
+    2.  Microstepping ayarını artır (1/8 yerine 1/16 yap). Adımlar küçülürse titreşim azalır.
+    3.  Motor miline "Damper" (Titreşim sönümleyici ağırlık) tak.
+
+---
+
 > **Ustanın Tavsiyesi:** "Bir CNC'nin kalitesi motorundan değil, gövdesinden belli olur. Gövde esnerse (Rijitlik yoksa), 1 mikronluk hassas motorun hiçbir anlamı yoktur. Önce sağlam bir iskelet kur."

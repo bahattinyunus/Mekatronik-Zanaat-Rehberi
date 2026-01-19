@@ -52,6 +52,34 @@ Sadece konumu (X, Y, Z) değil, kuvveti de kontrol ediyoruz.
 
 ---
 
+---
+
+## 🦾 4. Homojen Dönüşüm Matrisi (The 4x4 Magic)
+
+Robotikte neden 3x3 değil de 4x4 matris kullanıyoruz? Çünkü 3x3 matris sadece **Dönmeyi (Rotation)** ifade edebilir, **Ötelemeyi (Translation)** yani "şuraya git"i ifade edemez.
+
+İşte robotun beynindeki o meşhur matris:
+
+```text
+| r11 r12 r13 | Tx |  ---> (r: Dönme / Rotation)
+| r21 r22 r23 | Ty |  ---> (T: Konum / Translation - X,Y,Z)
+| r31 r32 r33 | Tz |
+|  0   0   0  |  1 |  ---> (Ölçekleme / Scaling - Genelde 0001)
+```
+
+**Metal Yaka Ders:** Bir robotun "Pozisyon Verisi"ne baktığında bu 16 sayıyı görüyorsan korkma.
+*   En sağdaki sütun (`Tx, Ty, Tz`) robotun ucunun milimetre cinsinden nerede olduğunu söyler.
+*   Soldaki 3x3 blok (Rotasyon matrisi) ise robotun bileğinin hangi açıya baktığını söyler.
+
+### Sağ El Kuralı (Right Hand Rule)
+Uzayda kaybolmamak için elini kullan.
+*   **Baş Parmak:** Z Ekseni (Genelde yukarı).
+*   **İşaret Parmağı:** X Ekseni (İleri).
+*   **Orta Parmak:** Y Ekseni (Sola).
+Robotun koordinat sistemi her zaman bu kurala uyar. Eğer Z ekseni aşağı bakıyorsa, diğer parmakların yönü de değişir.
+
+---
+
 > **Ustanın Özeti:**
 > *   Robotun "eli" neresidir? Bunu matrisle (TCP) tanımlamazsan, robot kör bir insan gibi eşyaları devirir.
 > *   Singularity, robotun matematiksel felcidir. Onu bu duruma sokma.

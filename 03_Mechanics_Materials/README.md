@@ -10,7 +10,7 @@
 
 ---
 
-# 03. Mekanik & Malzeme: Metalin Ruhu, Sürtünme ve Konstrüksiyon Sanatıalin Ruhu
+# 03. Mekanik & Malzeme: Metalin Ruhu ve Konstrüksiyon Sanatı
 
 > *"Yazılım esnektir, güncellenebilir ve sanaldır; hatası kolayca düzeltilir. Demir ise serttir, ağırdır ve affetmez. Yazılımı güncellersin, ama kırılan bir mili 'update' edemezsin, ancak değiştirebilirsin."*
 

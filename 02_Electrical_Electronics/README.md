@@ -1,4 +1,16 @@
-# 02. Elektrik & Elektronik: Devre Cerrahlığı, Dumanın Ruhu ve Fiziksel Hata Ayıklama
+<p align="center">
+  <a href="../README.md">🏠 Home</a> | 
+  <a href="../01_Engineering_Fundamentals/README.md">📚 Fundamentals</a> | 
+  <b>[ ⚡ Electronics ]</b> | 
+  <a href="../03_Mechanics_Materials/README.md">⚙️ Mechanics</a> | 
+  <a href="../04_Programming_Embedded/README.md">💾 Embedded</a> | 
+  <a href="../05_Control_Robotics/README.md">🦾 Robotics</a> | 
+  <a href="../06_Projects_Labs/README.md">🧪 Laboratory</a>
+</p>
+
+---
+
+# 02. Elektrik & Elektronik: Devre Cerrahlığı ve Dumanın Ruhu
 
 ![High Voltage](https://img.shields.io/badge/DANGER-High%20Voltage-red?style=for-the-badge&logo=electricity)
 ![Skill](https://img.shields.io/badge/Skill-Soldering-blue?style=for-the-badge&logo=espressif)

@@ -1,4 +1,16 @@
-# 04. Programlama & Gömülü Sistemler: Silikon Beyin Cerrahlığı ve Dijital Entegrasyon
+<p align="center">
+  <a href="../README.md">🏠 Home</a> | 
+  <a href="../01_Engineering_Fundamentals/README.md">📚 Fundamentals</a> | 
+  <a href="../02_Electrical_Electronics/README.md">⚡ Electronics</a> | 
+  <a href="../03_Mechanics_Materials/README.md">⚙️ Mechanics</a> | 
+  <b>[ 💾 Embedded ]</b> | 
+  <a href="../05_Control_Robotics/README.md">🦾 Robotics</a> | 
+  <a href="../06_Projects_Labs/README.md">🧪 Laboratory</a>
+</p>
+
+---
+
+# 04. Yazılım & Gömülü Sistemler: Silikon Beyin Cerrahlığı
 
 > *"Kod, silikonun ruhudur. Ancak kötü yazılmış bir kod, silikonu ısıtır, yorar, kafasını karıştırır ve sonunda sistemi öldürür. Bizler kod yazıcı değil, silikon cerrahlarıyız."*
 

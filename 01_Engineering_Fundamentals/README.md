@@ -10,23 +10,12 @@
 
 ---
 
-# 01. Mühendislik Temelleri: Makinenin Dili, Kainatın Sırları ve Arıza Teşhisi (Diagnosis)
+# 01. Mühendislik Temelleri: Makinenin Dili ve Arıza Teşhisi
 
-> *"Matematik bize okulda ödev çözmek için verilen sıkıcı bir araç değil; makinenin hayati verilerini okumak, 'can çekişen' bir sistemin çığlığını duymak ve evrenin değişmez kurallarıyla konuşmak için bahşedilmiş kutsal bir dildir."*
-
----
-
-<p align="center">
-  <a href="../README.md">🏠 Home</a> | 
-  <b>[ 📚 Fundamentals ]</b> | 
-  <a href="../02_Electrical_Electronics/README.md">⚡ Electronics</a> | 
-  <a href="../03_Mechanics_Materials/README.md">⚙️ Mechanics</a> | 
-  <a href="../04_Programming_Embedded/README.md">💾 Embedded</a> | 
-  <a href="../05_Control_Robotics/README.md">🦾 Robotics</a> | 
-  <a href="../06_Projects_Labs/README.md">🧪 Laboratory</a>
-</p>
+> *"Matematik bize okulda ödev çözmek için verilen sıkıcı bir araç değil; makinenin hayati verilerini okumak, 'can çekişen' bir sistemin çığlığını duymak için bahşedilmiş kutsal bir dildir."*
 
 ---
+
 
 ## 🛡️ Metal Yaka Perspektifi: Neden ve Nasıl Öğreniyoruz?
 

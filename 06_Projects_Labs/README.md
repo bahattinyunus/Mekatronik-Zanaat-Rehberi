@@ -1,4 +1,16 @@
-# 06. Projeler & Laboratuvarlar: İspat Meydanı ve Hurdalık (The Proving Ground)
+<p align="center">
+  <a href="../README.md">🏠 Home</a> | 
+  <a href="../01_Engineering_Fundamentals/README.md">📚 Fundamentals</a> | 
+  <a href="../02_Electrical_Electronics/README.md">⚡ Electronics</a> | 
+  <a href="../03_Mechanics_Materials/README.md">⚙️ Mechanics</a> | 
+  <a href="../04_Programming_Embedded/README.md">💾 Embedded</a> | 
+  <a href="../05_Control_Robotics/README.md">🦾 Robotics</a> | 
+  <b>[ 🧪 Laboratory ]</b>
+</p>
+
+---
+
+# 06. Projeler & Laboratuvar: İspat Meydanı ve Hurdalık
 
 ![Challenge](https://img.shields.io/badge/Challenge-ACCEPTED-success?style=for-the-badge&logo=target)
 ![Mode](https://img.shields.io/badge/Mode-Survival-critical?style=for-the-badge)

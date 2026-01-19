@@ -1,21 +1,16 @@
 <p align="center">
-  <a href="../README.md">🏠 Home</a> | 
+  <a href="../README.md">🏠 Home</a>| 
   <a href="../01_Engineering_Fundamentals/README.md">📚 Fundamentals</a> | 
   <a href="../02_Electrical_Electronics/README.md">⚡ Electronics</a> | 
   <a href="../03_Mechanics_Materials/README.md">⚙️ Mechanics</a> | 
   <a href="../04_Programming_Embedded/README.md">💾 Embedded</a> | 
-  <a href="../README.md">🏠 Home</a> |
-  <a href="../01_Engineering_Fundamentals/README.md">📚 Fundamentals</a> |
-  <a href="../02_Electrical_Electronics/README.md">⚡ Electronics</a> |
-  <a href="../03_Mechanics_Materials/README.md">⚙️ Mechanics</a> |
-  <a href="../04_Programming_Embedded/README.md">💾 Embedded</a> |
-  <a href="../05_Control_Robotics/README.md">🦾 Robotics</a> |
-  <b>[ 🧪 Laboratory ]</b>
+  <b>[ 🦾 Robotics ]</b> | 
+  <a href="../06_Projects_Labs/README.md">🧪 Laboratory</a>
 </p>
 
 ---
 
-# 06. Projeler & Laboratuvar: Siber Tamir Atölyesi ve İspat Meydanıhlığı
+# 05. Kontrol Sistemleri & Robotik: Robot Doktorluğu ve Sistem Cerrahlığı
 
 > *"Otonom sistemler (AI) dünyayı yönetecek olabilir; peki o sistemler hastalandığında, delirdiğinde veya travma geçirdiğinde (Kaza) onlara kim bakacak? Bizler, Robot Doktorlarıyız."*
 
@@ -34,34 +29,6 @@ Robotun ekranında beliren hata kodu: **"Eksen 4 - Aşırı Akım Hatası (Overc
 *   **Metal Yaka (Cerrah) Yaklaşımı:** Robotun yanına gider.
     *   Eksen 4'ün motoruna elini koyar. "Çok mu ısınmış?" (Ateşine bakar).
     *   Freni manuel olarak açıp ekseni eliyle hareket ettirmeye çalışır. "Mekanik sıkışma var mı?".
-    *   Belki de 4. eksendeki elektromanyetik fren balatası yapışmıştır ve motor freni yenmeye çalışırken aşırı akım çekiyordur.
-    *   **Çözüm:** Yazılım değil, balata temizliğidir. İşte bu, veriyle değil, **hisle ve fizik yasalarıyla** yapılan bir teşhistir.
-
-### 2. Kalibrasyon: Robotun Sıfır Noktası
-Robotun uzayda nerede olduğunu bilmesi gerekir. Her robotun bir "Home" veya "Zero" pozisyonu vardır. Bir çarpışma (Collision) sonrası veya kayış değişiminden sonra bu "sıfır noktası" kayar.
-*   Robotu (Mastering/Zeroing) yeniden kalibre etmek, bir virtüözün enstrümanını akort etmesi gibidir. Çok hassas, büyük sabır isteyen ve mükemmel bir "kulak" (tecrübe) gerektiren bir sanattır.
-
----
-
-## 🏗️ Konu Başlıkları ve Derinlemesine Saha Uygulamaları
-
-### Kontrol Teorisi: Denge ve Kararlılık
-*   **PID Kontrol:** Bu sadece bir formül değildir (Oransal, İntegral, Türev). Sistemin karakteridir, mizacıdır.
-    *   **P (Agresiflik):** Şimdiki hataya tepki verir. Çok yüksekse sistem sinirlidir, titrer.
-    *   **I (Takıntı/Hafıza):** Geçmiş hataları asla unutmaz, hedefe tam oturana kadar zorlar.
-    *   **D (Öngörü/Refleks):** Geleceği tahmin eder, frene basar. Titreşimi öldürür.
-    *   **Tuning (Terbiye Etmek):** Hırçın bir atı (robotu) evcilleştirmek gibidir. Matematiksel formüller (Ziegler-Nichols) sahada her zaman çalışmaz; motorun sesini dinleyerek ayar yapmalısınız.
-
-### Robot Kinematiği: Hareketin Geometrisi
-*   **İleri Kinematik:** "Motorlara açı verdim, elim nereye gitti?"
-*   **Ters Kinematik (IK):** "Elimin şuraya gitmesini istiyorum, motorlar kaç derece dönmeli?"
-*   **Tekillik (Singularity):** Robotun matematiksel karadelikleri.
-    *   Robotun eklemlerinin aynı hizaya geldiği ve matematiksel çözümün kaybolduğu (Sonsuz hız gerektiren) pozisyonlar.
-    *   Bir Metal Yaka, robotu programlarken bu "ölüm bölgelerinden" (Singularity Zones) uzak tutar. Çünkü robot burada kontrolsüzce savrulur.
-
-### Endüstriyel Otomasyon: Fabrikanın Beyni
-*   **PLC (Programlanabilir Mantık Denetleyicisi):** Endüstrinin kalbi. Mavi ekran vermez, virüs bulaşmaz, tozdan etkilenmez.
-*   **SCADA:** Fabrikanın kokpiti. Binlerce sensörü izlemek. Kırmızı ışık yandığında, arızanın hangi sensörde olduğunu **sahaya gitmeden** bulabilmek.
 
 ---
 
@@ -69,12 +36,11 @@ Robotun uzayda nerede olduğunu bilmesi gerekir. Her robotun bir "Home" veya "Ze
 
 | Dosya | Açıklama | Saha Uygulaması |
 | :--- | :--- | :--- |
-| **[`05_PID_Tuning_Guide.md`](./05_PID_Tuning_Guide.md)** | PID Ayar Sanatı | Ziegler-Nichols değil, elle ve kulakla (Heuristic) ayar yapma. |
-| **[`05_Robot_Safety.md`](./05_Robot_Safety.md)** | Robot Güvenliği (LOTO) | Kill Zone, Deadman Switch ve Enerji İzolasyonu. |
-| **[`05_Sensors_Feedback.md`](./05_Sensors_Feedback.md)** | Sensörler ve Gürültü | Encoder, Resolver ve Gürültü filtreleme. |
-| **[`05_PLC_Ladder_Logic.md`](./05_PLC_Ladder_Logic.md)** | PLC & Ladder Mantığı | Fail-Safe (NC/NO) güvenliği, Tarama döngüsü ve Reliability. |
+| **[`05_PID_Tuning_Guide.md`](./05_PID_Tuning_Guide.md)** | PID Ayar Rehberi | Motor kararlılığı, salınım engelleme. |
+| **[`05_Sensors_Feedback.md`](./05_Sensors_Feedback.md)** | Sensörler ve Geri Besleme | Enkoder hataları, limit switch tamiri. |
+| **[`05_PLC_Ladder_Logic.md`](./05_PLC_Ladder_Logic.md)** | PLC Başlangıç Rehberi | Endüstriyel otomasyon mantığı. |
 
 ---
 
 > **Ustanın Bilgelik Notu:**  
-> "Robotun gücüne asla güvenme, sadece Acil Durdurma (Emergency Stop) butonuna güven. Robotun gözü yoktur (kamera takmadıysan), hissi yoktur (tork sensörü yoksa) ve vicdanı yoktur. Yörüngesinin önüne geçersen seni ezer geçer ve bir hata oluştuğunu bile anlamadan işine devam eder. Robotla şakalaşma."
+> "Robotun gücüne asla güvenme, onunla asla şakalaşma. Bir robotun freni açıldığında yerçekimi onun tek yöneticisidir. Her zaman acil durdurma (E-Stop) butonuna yakın dur."

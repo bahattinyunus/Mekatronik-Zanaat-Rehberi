@@ -183,6 +183,8 @@ Bu proje, bilginin özgürce dolaşımını ve herkesin erişimini desteklemek a
       <b>IT Architect (Bilişim Mimarı) & Metal Yaka Vizyoneri</b><br>
       Konum: <b>Şereflikoçhisar / Ankara</b><br><br>
       <i>"Köklerim Şereflikoçhisar'ın bozkırında, vizyonum ise dijital geleceğin zirvesindedir. Ben, AI'ın tasarladığı dijital dünyayı fiziksel dünyada inşa eden, kablolarını çeken, otonom makinelerin nabzını tutan ve onları yaşatan bir Teknoloji Mimarıyım."</i><br><br>
+      <b>"Virtual architectures for the sovereign architect."</b><br>
+      <i>Dijital sistemler birer kafes değil, egemen mimarın elindeki iskeletlerdir. Biz, fiziksel dünyaya hükmetmek için sanal dünyayı tasarlarız. Egemen mimar, yapay zekayı biyolojik kısıtların ötesine uzanan bir bilişsel protez olarak kullanır; her kod satırının kusursuz bir mekanik harekete veya sarsılmaz bir sisteme dönüşmesini sağlar.</i><br><br>
       <a href="https://github.com/bahattinyunus"><img src="https://img.shields.io/badge/GitHub-bahattinyunus-181717?style=flat&logo=github"></a>
       <a href="https://www.linkedin.com/in/bahattinyunus/"><img src="https://img.shields.io/badge/LinkedIn-Bahattin%20Yunus-0A66C2?style=flat&logo=linkedin"></a>
     </td>

@@ -94,6 +94,29 @@ Bu depo, YÖK uyumlu modern bir Mekatronik/Otomasyon müfredatını, akademik ba
 
 ---
 
+## 🎨 Metal Yaka Modül Galeresi
+
+Her bir modül, kendi uzmanlık alanında derinleşen birer disiplindir.
+
+![Modül İkonları](./assets/module_icons.png)
+
+---
+
+## 🔥 Metal Yaka Saha İpuçları (Field Hacks)
+
+Teori bazen sahada çöker. İşte "Usta" tecrübesiyle sabitlenmiş bazı kurallar:
+
+> [!TIP]
+> **Elektronik Kanunu:** Eğer devre balık gibi kokuyorsa (sıvı elektrolitik sızıntısı), bir kondansatör ölmek üzeredir. Eğer ozon kokuyorsa (ark yapma), hemen fişi çekin; yangın çıkmak üzeredir.
+
+> [!IMPORTANT]
+> **Mekanik Altın Kural:** Hareket etmesi gereken şey etmiyorsa; **WD-40**. Hareket etmemesi gereken şey ediyorsa; **Loctite (Vida Sabitleyici)**. İkisi de yetmiyorsa, yanlış kuvvet uyguluyorsunuzdur.
+
+> [!WARNING]
+> **Hata Ayıklama (Debugging):** Sistemin yarısı çalışıyor, yarısı saçmalıyorsa; sorunu kodda değil, **Güç Kaynağında (PSU)** veya **Topraklamada (GND)** arayın. Elektrik dalgalıysa beyin (CPU) sapıtır.
+
+---
+
 ## 🛠️ Teknoloji Yığını & Tamir Çantası
 
 Modern bir Mekatronik Teknikerinin, yani Metal Yaka mühendisinin alet çantası; hem dijital (yazılım/AI) hem de fiziksel (donanım/tamir) araçlarla doludur ve bu iki dünya arasında akışkan bir geçiş gerektirir.

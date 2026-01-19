@@ -140,6 +140,25 @@ Parçaları değil, sistemin bütününü, mimarisini ve ruhunu yönetirsiniz.
 
 ---
 
+---
+
+## 📜 Metal Yaka Manifestosu: 10 Emir
+
+Sahadaki her "Siber Tamirci"nin uyması gereken, kanla ve yanıklarla yazılmış kurallar:
+
+1.  **Asla Varsayma, Ölç:** "Elektrik yoktur" deme, kontrol kalemiyle bak. "Voltaj 5V'tur" deme, multimetreyle ölç. Varsayım, kazaların anasıdır.
+2.  **Topraklama Hayattır:** İyi bir topraklama yoksa, o sistem asla stabil çalışmaz. Hayalet arızalarla ömrünü çürütürsün.
+3.  **Önce Kapat, Sonra Dokun (LOTO):** Enerji altındaki panele elini sokma. Kilitle, Etiketle, Emniyete Al. Kahraman olma, hayatta kal.
+4.  **Datasheet Kutsal Kitabındır:** Bir parçayı kullanmadan önce onun sınırlarını (Max Ratings) oku. Okumazsan, dumanla haberleşirsin.
+5.  **Duman Çıktıysa O İş Bitmiştir:** Elektronikte "geri al" tuşu yoktur. Yanan parça, arkasındaki hatayı (kısa devre, aşırı yük) işaret eder. Sadece parçayı değiştirme, katili bul.
+6.  **Yedeğin Yedeği Vardır:** Sahaya tek kabloyla, tek sigortayla gidilmez. Murphy Kanunları her zaman devrededir.
+7.  **Temiz Kod Değil, Çalışan Kod:** En güzel kod, durmadan 10 yıl çalışan koddur. Karmaşık "Design Pattern"lar değil, hatayı tolere eden (Fault Tolerant) basit yapılar kur.
+8.  **Alet İşler, El Övünür:** Havya ucunu temiz tut, multimetrenin pilini kontrol et. Aletine bakmayan, kendine saygı duymaz.
+9.  **Bildiğini Saklama, Paylaş (Ahi Kültürü):** Bilgi paylaştıkça çoğalır. Çırağına öğret ki, sen yokken işler yürüsün.
+10. **Asla Pes Etme:** Her arızanın bir sebebi ve bir çözümü vardır. Makine insan yapımıdır, insan onu mutlaka çözer.
+
+---
+
 ## 🤝 Katkıda Bulunma: Atölyeye Hoş Geldiniz
 
 Açık kaynak felsefesine ve Anadolu'nun İmece kültürüne yürekten inanıyoruz. İster bir meslek lisesi öğrencisi olun, ister bir MYO öğrencisi, isterse sahada yıllanmış bir usta. Bilgi ve tecrübeniz bu kütüphane için paha biçilemezdir.

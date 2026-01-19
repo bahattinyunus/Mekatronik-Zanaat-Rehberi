@@ -54,6 +54,33 @@ Masa üzerine rastgele bırakılan renkli blokları (Kırmızı, Mavi, Yeşil) k
 
 ---
 
+    *   *Çözüm:* "Dur, Bak, Hesapla, Hareket Et" döngüsü kur.
+
+---
+
+## 📐 6. Ters Kinematik (Inverse Kinematics) - 2 Eksenli Çözüm
+
+Robotun ucunu (End Effector) `(x, y)` noktasına götürmek istiyorsun. Ama motorlar `(theta1, theta2)` açısı ister. Bunu nasıl çevireceğiz?
+
+Basit **Kosinüs Teoremi** ile:
+Bir üçgen düşün. Kenarları:
+*   `L1`: Birinci kol uzunluğu (Omuz-Dirsek)
+*   `L2`: İkinci kol uzunluğu (Dirsek-El)
+*   `r`: Merkezden hedefe olan uzaklık (`sqrt(x^2 + y^2)`)
+
+```python
+# Kosinüs Teoremi: c^2 = a^2 + b^2 - 2ab*cos(C)
+# Dirsek Açısı (Theta2) bulma:
+# r^2 = L1^2 + L2^2 - 2*L1*L2*cos(180 - theta2)
+
+cos_angle2 = (x**2 + y**2 - L1**2 - L2**2) / (2 * L1 * L2)
+theta2 = arccos(cos_angle2) // Radyan cinsinden
+
+# Omuz Açısı (Theta1) bulma:
+# Biraz daha karmaşık trigonometri (Atan2) ile bulunur.
+```
+Bu matematik korkutucu gelebilir ama bir kere koda dökünce robotunuz "tahmin ederek" değil, "bilerek" hareket eder. Pikselleri milimetrelere, milimetreleri açılara çeviren büyü budur.
+
 ---
 
 ## 📐 5. İlerlemiş Kalibrasyon Teknikleri

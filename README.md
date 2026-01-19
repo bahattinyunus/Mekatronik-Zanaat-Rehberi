@@ -196,8 +196,52 @@ Parçaları değil, sistemin bütününü, mimarisini ve ruhunu yönetirsiniz.
 
 ---
 
+## 🧠 Yapay Zeka Destekli Arıza Teşhisi (Cognitive Maintenance)
+
+Bir "Metal Yaka", AI'ı bir rakip olarak değil, bir **bilişsel protez** (cognitive prosthesis) olarak kullanır. Bir LLM (Large Language Model) ile arıza teşhisi yapmak, Google'da arama yapmaktan çok farklı bir sanattır.
+
+![The Cognitive Technician](./assets/the_cognitive_technician.png)
+
+### Teknikerler İçin Prompt Engineering
+Karmaşık bir arızayı AI'a tarif ederken "X makinesi çalışmıyor, neden?" demek yerine, **Hızlı Teşhis Konteksi** kullanmalısınız:
+
+> **Örnek Prompt:** "Sistem: Siemens S7-1200 PLC + V90 Servo Sürücü. Belirti: Servo motor, 15 Hz üzerinde titreme (chatter) yapıyor ve 'Current Limit' hatası veriyor. Bağlantı: Kablolar zırhlı ve topraklanmış. Son müdahale: Redüktör yağlaması yapıldı. Olası 5 mekanik ve 3 elektronik kök neden analizini yap ve ölçmem gereken noktaları (multimetre/osiloskop) sırala."
+
+### AI ile Arıza Matrisi
+*   **Log Analizi:** Hata mesajlarını kopyalayıp AI'a analiz ettirerek "sinsi" donanımsal çakışmaları saniyeler içinde bulun.
+*   **Devre Optimizasyonu:** Tasarladığınız bir devredeki ısınma sorunlarını veya gürültü kaynaklarını AI ile tartışarak tasarımınızı "Fail-Safe" hale getirin.
+
 ---
 
+## 📊 Kestirimci Bakım & Sensör Füzyonu (Predictive Maintenance)
+
+"Bozulunca tamir et" (Reactive) devri bitti. Modern tekniker, makinenin ne zaman bozulacağını **makine daha bilmeden** bilir.
+
+*   **FFT Analizi (Titreşim İmzası):** Rulmanlardaki mikro-çatlaklar, henüz duyulabilir bir ses çıkarmadan önce spesifik frekanslarda (vibration signatures) kendilerini belli eder.
+*   **Termografi (Isıl İmza):** Bir kontaktörün gevşek vidası, çıplak gözle görülmez ama termal kamerada 80°C'lik bir "parlama" ile "Ben yanacağım!" diye bağırır.
+*   **Ultrasonik Kaçak Tespiti:** Hava kaçaklarını duyamazsınız ama ultrasonik bir sensör, o gürültüyü sese dönüştürür. Basınç kaybı = Enerji israfı.
+
+---
+
+## 🧘 Saha Psikolojisi ve Kriz Yönetimi
+
+Fabrikarın durması, saniyeler içinde binlerce dolar kayıp demektir. Bu baskı altında karar verebilmek bir "Metal Yaka"nın en büyük silahıdır.
+
+*   **Duruş Süresi Maliyeti (Cost of Downtime):** Bir otomobil fabrikasında 1 dakika duruşun maliyeti ~$22,000 olabilir. Bu stres altında titremeyen bir el, sadece teknik bilgiyle değil, zihinsel hazırlıkla mümkündür.
+*   **"Isolate and Conquer" Stratejisi:** Büyük bir sistemde hata ararken paniklemeyin. Sistemi parçalara bölün. Sorun beslemede mi? Ana işlemcide mi? Kontrol sinyalinde mi?
+*   **Clean Desk / Clean Workbench:** Dağınık bir masa, dağınık bir arıza teşhisine yol açar. Aletler her zaman yerinde, kablolar her zaman etiketli olmalı.
+
+---
+
+## 🌑 Geleceğin Fabrikası: 2030 ve Ötesi
+
+Gelecekte bizi bekleyen "Karanlık Fabrikalar" (Lights-out Manufacturing), bir "Metal Yaka" için en büyük oyun alanıdır.
+
+*   **Remote Maintenance (Uzaktan Müdahale):** AR gözlüklerle dünyanın diğer ucundaki bir robota, oradaymış gibi müdahale etmek.
+*   **Dijital İkiz (Digital Twin) Senkronizasyonu:** Gerçek motor ısınırken sanal modelde de ısındığını görmek ve arızayı fiziksel olarak oluşmadan sanal ortamda simüle etmek.
+*   **Otonom Tamir Robotları:** Sizin tasarladığınız ve yönettiğiniz daha küçük robotların, ana üretim hattındaki arızaları otomatik olarak gidermesi.
+
+---
 ## 📜 Metal Yaka Manifestosu: 10 Emir
 
 Sahadaki her "Siber Tamirci"nin uyması gereken, kanla ve yanıklarla yazılmış kurallar:

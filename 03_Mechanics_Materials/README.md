@@ -1,4 +1,16 @@
-# 03. Mekanik & Malzeme: Canavarın Kemikleri ve Metalin Ruhu
+<p align="center">
+  <a href="../README.md">🏠 Home</a> | 
+  <a href="../01_Engineering_Fundamentals/README.md">📚 Fundamentals</a> | 
+  <a href="../02_Electrical_Electronics/README.md">⚡ Electronics</a> | 
+  <b>[ ⚙️ Mechanics ]</b> | 
+  <a href="../04_Programming_Embedded/README.md">💾 Embedded</a> | 
+  <a href="../05_Control_Robotics/README.md">🦾 Robotics</a> | 
+  <a href="../06_Projects_Labs/README.md">🧪 Laboratory</a>
+</p>
+
+---
+
+# 03. Mekanik & Malzeme: Metalin Ruhu, Sürtünme ve Konstrüksiyon Sanatıalin Ruhu
 
 > *"Yazılım esnektir, güncellenebilir ve sanaldır; hatası kolayca düzeltilir. Demir ise serttir, ağırdır ve affetmez. Yazılımı güncellersin, ama kırılan bir mili 'update' edemezsin, ancak değiştirebilirsin."*
 

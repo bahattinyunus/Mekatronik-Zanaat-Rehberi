@@ -1,4 +1,21 @@
-# 05. Kontrol Sistemleri & Robotik: Robot Doktorluğu ve Sistem Cerrahlığı
+<p align="center">
+  <a href="../README.md">🏠 Home</a> | 
+  <a href="../01_Engineering_Fundamentals/README.md">📚 Fundamentals</a> | 
+  <a href="../02_Electrical_Electronics/README.md">⚡ Electronics</a> | 
+  <a href="../03_Mechanics_Materials/README.md">⚙️ Mechanics</a> | 
+  <a href="../04_Programming_Embedded/README.md">💾 Embedded</a> | 
+  <a href="../README.md">🏠 Home</a> |
+  <a href="../01_Engineering_Fundamentals/README.md">📚 Fundamentals</a> |
+  <a href="../02_Electrical_Electronics/README.md">⚡ Electronics</a> |
+  <a href="../03_Mechanics_Materials/README.md">⚙️ Mechanics</a> |
+  <a href="../04_Programming_Embedded/README.md">💾 Embedded</a> |
+  <a href="../05_Control_Robotics/README.md">🦾 Robotics</a> |
+  <b>[ 🧪 Laboratory ]</b>
+</p>
+
+---
+
+# 06. Projeler & Laboratuvar: Siber Tamir Atölyesi ve İspat Meydanıhlığı
 
 > *"Otonom sistemler (AI) dünyayı yönetecek olabilir; peki o sistemler hastalandığında, delirdiğinde veya travma geçirdiğinde (Kaza) onlara kim bakacak? Bizler, Robot Doktorlarıyız."*
 

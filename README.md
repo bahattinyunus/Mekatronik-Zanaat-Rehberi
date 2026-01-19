@@ -227,6 +227,36 @@ Bu proje, bilginin özgürce dolaşımını ve herkesin erişimini desteklemek a
 
 ---
 
+## ⚖️ Saha Etiği & Usta-Çırak Kültürü
+
+Mekatronik sadece teknik bir yetkinlik değil, bir **ahlak ve güven** meselesidir.
+
+![Steel and Spirit Fusion](./assets/steel_spirit.png)
+
+*   **Dürüst Teşhis:** Çalışan bir parçayı "bozulmuş" diyerek değiştirmek, meslek ahlakına ihanettir. Metal Yaka, sorunun köküne iner ve dürüstçe raporlar.
+*   **Bilgi Paylaşımı:** Bilgi mezara değil, atölyeye aittir. Bir arızayı çözdüysen, onu `06_Failure_Log_Template.md`'ye kaydet ki senden sonraki çırak aynı hataya düşmesin.
+*   **Güvenlik (LOTO):** Lock-Out Tag-Out (Kilitle-Etiketle) kuralı kutsaldır. Enerjiyi kestiğinden emin olmadığın bir makinada elini değil, multimetreni bile kullanma.
+
+---
+
+## 🤖 Endüstri 5.0: İnsan-Robot Ortaklığının Zirvesi
+
+Endüstri 4.0 otomasyondu; Endüstri 5.0 ise **iş birliğidir**.
+*   **Cobot'lar (Collaborative Robots):** Biz robotlarla yarışmıyoruz, onlarla yan yana çalışıyoruz. Robotun gücü ve hızıyla, insanın karar verme ve ince el becerisini birleştiriyoruz.
+*   **Siber-Fiziksel Entegrasyon:** Artık bir tekniker olarak sadece mekanik bir tamir yapmıyorsunuz; bir bulut sisteminin (Cloud), bir AI modelinin fiziksel dünyadaki uzantısını temsil ediyorsunuz.
+
+---
+
+## 📚 Metal Yaka Kaynak Kütüphanesi
+
+Derinleşmek isteyenler için önerilen araçlar ve disiplinler:
+
+*   **Teorik Derinlik:** [Engineering Toolbox](https://www.engineeringtoolbox.com), [Electronics Tutorials](https://www.electronics-tutorials.ws).
+*   **Topluluk & Yardımlaşma:** [Stack Exchange Robotics](https://robotics.stackexchange.com), [EEVblog Forum](https://www.eevblog.com/forum/).
+*   **Sertifikasyon:** PLC (Siemens/Schneider), KUKA/ABB Robot Programlama, IPC Soldering Standards.
+
+---
+
 ## 👨‍💻 Mimar ve Baş Teknisyen Hakkında
 
 <table align="center">
@@ -252,3 +282,4 @@ Bu proje, bilginin özgürce dolaşımını ve herkesin erişimini desteklemek a
 <p align="center">
   <sub>© 2026 Türkiye Mekatronik ve Otomasyon İnisiyatifi. "Metal Yaka" devrimi burada başlıyor. Tüm hakları saklıdır.</sub>
 </p>
+

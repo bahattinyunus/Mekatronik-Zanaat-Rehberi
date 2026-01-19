@@ -13,42 +13,44 @@
 
 </div>
 
-![Mekatronik Banner](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=2070)
+![Metal Yaka Master Banner](./assets/main_banner.png)
 
-## 📖 Bu Depo Hakkında: Tasarım Çağının Sonu, Entegrasyon Çağının Başlangıcı
+## 🏆 Hierarchy of Mastery: Çıraklıktan Siber Mimarlığa Yolculuk
 
-**Türkiye Mekatronik Rehberi** deposuna, daha doğrusu **atölyesine** hoş geldiniz. Bu proje, sıradan bir üniversite ders notları arşivi olmanın, PDF'lerin ve slaytların saklandığı tozlu bir raf olmanın çok ötesindedir. Burası; Edirne'den Kars'a, Samsun'dan Hatay'a kadar tüm Türkiye'deki Mekatronik öğrencileri, organize sanayi bölgelerinde (OSB) ter döken mühendisler, üretim bandındaki teknikerler ve geleceğin teknolojisini elleriyle şekillendiren "Metal Yaka" zanaatkarları için canlı, nefes alan bir manifestodur.
+Mekatronik bir hobi değil, bir disiplinler arası savaş sanatıdır. Aşağıdaki harita, bir "Metal Yaka"nın evrimsel basamaklarını gösterir:
 
 ```mermaid
-graph TD
-    subgraph Kökler [📚 Akademik Temeller & Teori]
-        A[Matematik & Fizik]:::root --> B(Mühendislik Prensipleri):::root
+graph LR
+    subgraph Level1 [🐣 Apprentice - Fundamentals]
+        L1A[Digital Multimeter Mastery] --> L1B[Basic Soldering]
+        L1B --> L1C[Ohm's Law in Action]
     end
 
-    subgraph Gövde [⚙️ Mekatronik Çekirdek]
-        B --> C{Mekatronik Entegrasyon}:::core
-        C --> D[Elektronik & Devre]:::elec
-        C --> E[Mekanik & Malzeme]:::mech
-        C --> F[Yazılım & AI]:::soft
+    subgraph Level2 [🔧 Technician - Integration]
+        L1C --> L2A[PLC Logic & Wiring]
+        L2A --> L2B[Sensor Calibration]
+        L2B --> L2C[Motor Driver Tuning]
     end
 
-    subgraph Meyveler [🛡️ Metal Yaka Yetkinlikleri]
-        D --> G[Donanım Hata Ayıklama]:::skill
-        E --> H[Saha Tamiri & Montaj]:::skill
-        F --> I[Gömülü Sistem & Prompt Eng.]:::skill
-        G & H & I --> J((METAL YAKA\nTEKNOLOJİ MİMARI)):::goal
+    subgraph Level3 [🦾 Specialist - Robotics]
+        L2C --> L3A[Inverse Kinematics]
+        L3A --> L3B[Computer Vision]
+        L3B --> L3C[RTOS Threading]
     end
 
-    classDef root fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:black;
-    classDef core fill:#fff9c4,stroke:#fbc02d,stroke-width:4px,color:black,font-weight:bold;
-    classDef elec fill:#ffebee,stroke:#c62828,stroke-width:2px,color:black;
-    classDef mech fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:black;
-    classDef soft fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:black;
-    classDef skill fill:#eceff1,stroke:#455a64,stroke-width:1px,stroke-dasharray: 5 5,color:black;
-    classDef goal fill:#212121,stroke:#00e676,stroke-width:4px,color:#fff,font-weight:bold,font-size:16px;
-    
-    linkStyle default stroke:#333,stroke-width:2px;
+    subgraph Level4 [🌌 Sovereign Architect - Mastery]
+        L3C --> L4A[AI System Synthesis]
+        L4A --> L4B[Predictive Maintenance]
+        L4B --> L4C((THE SOVEREIGN ARCHITECT))
+    end
+
+    style L4C fill:#00e676,stroke:#000,stroke-width:4px,color:#000
+    style Level1 fill:#f5f5f5,stroke:#333,stroke-dasharray: 5 5
+    style Level2 fill:#e3f2fd,stroke:#0d47a1
+    style Level3 fill:#fff3e0,stroke:#e65100
+    style Level4 fill:#1a237e,stroke:#fff,color:#fff
 ```
+
 
 Amacımız, sadece vize ve finalleri geçirmek değil, **Yapay Zeka (AI)** devrimi sonrası temellerinden sarsılan ve yeniden kurulan endüstriyel dünyada ayakta kalacak, vazgeçilmez bir mesleki kimlik inşa etmektir. Türk sanayisinin ihtiyacı olan şey sadece diploma değil, **"sahada iş çözen"** nitelikli insan gücüdür.
 

@@ -57,6 +57,19 @@ Yeni başlayanların en büyük yanılgısı, lehimi bir "yapıştırıcı" gibi
 
 ---
 
+    *   **Lehim Emme Teli (Solder Wick):** Bakır örgüyü üzerine koy, havyayı bas ve fazlalığı sünger gibi emdir.
+
+### C. PCB Cerrahlığı: Jumper Atma (Trace Repair)
+Bazen yollar kopar veya yanar. O kart çöp mü? Asla.
+1.  **Malzeme:** "Kynar Wire" (Bobin teli gibi kaplamalı ince tel) veya 0.1mm emaye bobin teli.
+2.  **Teknik:**
+    *   Kopan yolun başını ve sonunu kazı, bakırı çıkar.
+    *   Teli lehimle.
+    *   **Sabitleme:** Teli havada bırakma, titreşimden kopar. Üzerine **UV Solder Mask** (Yeşil boya) damlat ve UV feneriyle dondur.
+    *   Bu işleme "Bypass Ameliyatı" denir.
+
+---
+
 ## 🔬 4. İleri Teknikler: SMD ve Sıcak Hava
 
 Artık devreler küçüldü. Through-hole (Delikten geçme) bitti, SMD (Yüzey Montaj) çağı başladı.

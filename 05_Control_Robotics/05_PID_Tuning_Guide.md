@@ -65,6 +65,17 @@ PID "Hata olunca düzeltirim" der (Reaktif). Feedforward "Hata olacağını bili
 *   **Formül:** `Çıkış = PID + (Yük * Yerçekimi_Katsayısı)`
 *   **Sonuç:** Hata hiç oluşmadan engellenir. Mükemmel takip.
 
+*   **Sonuç:** Hata hiç oluşmadan engellenir. Mükemmel takip.
+
+### 6. Cascade (Şelale) Kontrol: İç İçe Döngüler
+Tek bir PID, hem hızı hem pozisyonu kontrol edemez. Profesyonel sistemlerde döngüler iç içe geçer.
+
+1.  **En İç Döngü (Akım/Tork):** En hızlısı (10kHz). "Motora şu kadar Amper ver".
+2.  **Orta Döngü (Hız):** "Şu kadar RPM ile dön". Çıkışı, iç döngüye referans (Akım isteği) olur.
+3.  **Dış Döngü (Pozisyon):** En yavaşı (1kHz). "Şu konuma git". Çıkışı, orta döngüye referans (Hız isteği) olur.
+
+**Ayar Kuralı:** Her zaman **en içten** başla. Önce Torku, sonra Hızı, en son Pozisyonu ayarla. Temel sağlam olmadan bina çıkılmaz.
+
 ### Step Response (Basamak Cevabı) Referans Tablosu
 
 ```text

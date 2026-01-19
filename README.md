@@ -17,10 +17,10 @@
 
 ---
 
-# 🤖 Türkiye Mekatronik & Endüstriyel Otomasyon Rehberi
+# 🤖 Mekatronik Önlisans & Teknikerlik Müfredatı: Siber Tamircilik Rehberi
 
-> **Türkiye Cumhuriyeti'nin Gelecekteki "Metal Yaka" Teknikerleri, Mühendisleri ve "Teknoloji Mimarları" İçin Nihai Bilgi Üssü**  
-> *Bu eser, Türkiye Cumhuriyeti'nin teknolojik bağımsızlık mücadelesine ve ülkenin dört bir yanındaki Meslek Yüksekokulları ile Teknik Fakültelere ithaf edilmiştir.*
+> **Mekatronik MYO (Meslek Yüksekokulu) Öğrencileri ve Geleceğin "Usta Tamircileri" İçin Nihai Yol Haritası**  
+> *Bu eser, elleriyle değer üreten, arızayı kokusundan tanıyan ve Türkiye'nin dört bir yanındaki MYO sınıflarında/atölyelerinde dirsek çürüten "Metal Yaka" adaylarına ithaf edilmiştir.*
 
 <div align="center">
 
@@ -73,19 +73,15 @@ Amacımız, sadece vize ve finalleri geçirmek değil, **Yapay Zeka (AI)** devri
 
 Bu depo, akademik dünyanın köklü **teorik derinliği** ile; Türkiye'nin dört bir yanındaki sanayi bölgelerinin, iş makinelerinin gürültüsü ve metalin kokusuyla dolu **pratik endüstriyel uygulamasını** birleştiren eşsiz bir köprüdür. 20. yüzyılın mühendislik yaklaşımı olan "her şeyi sıfırdan hesapla ve tasarla" devri kapanmıştır. Artık "AI'ın saniyeler içinde tasarladığı karmaşık sistemleri fiziksel dünyada birbirine bağla, yaşat, entegre et ve hatasız çalıştır" devri başlamıştır. Bu depo, diferansiyel denklemlerin soyut dünyasından çıkıp, o denklemlerin çalıştırdığı robot kolunun hidrolik sızıntısını tamir etmeye giden engebeli yolun detaylı haritasıdır.
 
-### 🛡️ Manifesto: AI Çağının Tesisatçıları ve Siber Tamircilik
+### 🛡️ Manifesto: MYO Kültürü ve "Yeni Nesil Tamircilik"
 
-> *"Bizler tasarımcı değiliz; bizler dijital çağın tesisatçılarıyız. AI, mimar gibi sistemi tasarlar, kodunu yazar, devre kartını çizer; biz ise o sistemi fiziksel dünyada inşa eder, kablosunu çeker ve yaşatırız."*
+> *"Bizler sadece sınav kağıdı dolduran öğrenciler değiliz; bizler dijital çağın ameliyat ekibiyiz. Mühendis sistemi tasarlar, AI kodunu yazar, biz ise o sistemi MYO laboratuvarından çıkarıp fabrikanın kalbinde yaşatırız."*
 
 ![Dijital Tesisatçılık](./assets/manifesto_digital_plumber.png)
 
-2023 yılında başlayan Yazılım Mühendisliği serüvenimde, Yapay Zeka'nın (AI) tasarım, kodlama, optimizasyon ve veri analizi gibi insan beyni gerektiren bilişsel süreçleri nasıl inanılmaz bir hızla domine ettiğine, metalaştırdığına ve ucuzlattığına bizzat şahit oldum. Bugün geldiğimiz noktada AI, insan zekasının saatler, hatta günler süren karmaşık hesaplamalarını saniyeler içinde hatasız bir şekilde tamamlayabiliyor. Bu baş döndürücü değişim karşısında, AI öncesi dönemin hantal, yavaş ve tamamen teorik hesaplamalara odaklanan klasik "beyaz yaka" mühendislik yaklaşımının (hesap yapan mühendis) yetersiz kaldığını ve hatta sahada geçerliliğini yitirdiğini gördüm.
+Mekatronik Önlisans eğitimi, bir teorik bilgi yığını değil, bir **hayatta kalma ve çözüm üretme** eğitimidir. Bu depo, klasik beyaz yaka mühendislik yaklaşımlarının "sahada çuvalladığı" noktalarda, bir teknikerin nasıl parladığını anlatır. Amacımız, sadece diploma almak değil, **"Arıza benden sorulur"** diyen sarsılmaz bir özgüven inşa etmektir.
 
-Bu radikal farkındalık ve varoluşsal kriz beni, dijitalin soyut, temiz ve güvenli ofis dünyasından; üretimin somut, fiziksel, kaotik, gürültülü ve "kirli" kalbine itti: **Mekatronik**. Ancak bu, teknolojiden ve yazılımdan bir kaçış veya geri dönüş değildir; aksine teknolojinin en uç noktası olan AI'ı, metale, elektriğe ve harekete hükmetmek için bir araç olarak kullanma stratejisidir. Gelecekte ekrana bakıp sadece "kod yazan" değil; yazdığı kodu makineye işleyen, "kodu metale dönüştüren" kazanacaktır.
-
-**Metal Yaka İnisiyatifi** ve bu deponun varoluş sebebi nettir: Hesaplama kapasitesinde ve tasarım hızında AI ile beyhude bir yarışa girmek yerine; onun ürettiği kusursuz çıktıları, şemaları ve kodları bir kaldıraç olarak kullanıp, bu dijital mükemmelliği fiziksel gerçeklikte hayata geçirmektir. Bu depo, ne sadece ofiste oturan beyaz yaka, ne de sadece tezgah başında bekleyen mavi yaka olan; ikisinin sentezi, hibrit bir süper çalışan olan **"AI Destekli Zanaatkar"** yani **Metal Yaka** çalışanları, yeni nesil **Siber Tamirciler** ve **Dijital Tesisatçılar** içindir.
-
-Bizler, iki dünya (Sanallık ve Gerçeklik) arasındaki köprüyüz. AI, sistemin dijital mantığını, optimizasyonunu, verimliliğini yönetirken; bizler fiziksel gerçeği, montajı, entegrasyonu, sürtünmeyi ve arızayı yönetiriz. AI bir bina çizer gibi robotu tasarlar; bizler ise o robotun "tesisatını" (kablolarını, pnömatik hortumlarını), "sinirlerini" (haberleşme hatlarını, sensörlerini) döşer ve "damarlarındaki" (güç elektroniği, motor akımları) tıkanıklığı açarız. İşte bu, **Tekniker 2.0**'ın geleceğidir: Tezgah başında, elinde multimetre ve tork anahtarı, önünde tablet ve osiloskop; yazılımın sonsuz gücünü somut, çalışan, değer üreten bir makineye dönüştüren hibrit bir profesyonel.
+**Metal Yaka İnisiyatifi**'nin kalbi MYO'larda ve teknik eğitim merkezlerinde atar. Bizler, iki dünya (Soyut Tasarım ve Somut Arıza) arasındaki en kritik halkayız. AI bir robotu tasarlar; bizler ise o robotun "tesisatını" döşer, "damarlarındaki" tıkanıklığı açar ve sistem sustuğunda onu uyandıran ilk nefes oluruz. İşte bu, **Tekniker 2.0**'ın; yani elinde multimetre, zihninde AI gücü olan siber zanaatkarın geleceğidir.
 
 ### 🎯 Vizyon & Misyon: Yeni Tamircilik Kültürü
 

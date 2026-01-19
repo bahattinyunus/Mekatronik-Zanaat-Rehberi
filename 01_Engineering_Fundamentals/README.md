@@ -10,16 +10,15 @@
 
 ---
 
-# 01. Mühendislik Temelleri: Makinenin Dili ve Arıza Teşhisi
+# 01. Mühendislik Temelleri: MYO Öğrencisi İçin Arıza Teşhisi
 
-> *"Matematik bize okulda ödev çözmek için verilen sıkıcı bir araç değil; makinenin hayati verilerini okumak, 'can çekişen' bir sistemin çığlığını duymak için bahşedilmiş kutsal bir dildir."*
+> *"Matematik bizim için bir ders değil, makinenin hayati verilerini okumak için kullandığımız bir osiloskop probudur. Biz, 'can çekişen' bir sistemin çığlığını duymak için bu dili öğreniyoruz."*
 
 ---
 
+## 🛡️ Metal Yaka Perspektifi: MYO'da Başarı Sahada Çözümdür
 
-## 🛡️ Metal Yaka Perspektifi: Neden ve Nasıl Öğreniyoruz?
-
-Mühendislik temelleri (Matematik, Fizik, Kimya), genellikle öğrencilerin "Bunu gerçek hayatta nerede kullanacağız?" diye sorguladığı, ancak mezun olduktan sonra eksikliğini en acı şekilde hissettiği derslerdir. Bir **"Metal Yaka"** (AI Destekli Teknoloji Mimarı) için bu dersler, bir ressamın fırçası, bir cerrahın neşteri veya bir dedektifin büyüteci kadar hayatidir.
+Mühendislik temelleri, MYO (Önlisans) öğrencileri için sınav kağıdında bırakılacak formüller değildir. Bir tekniker için bu dersler, sahada karşılaştığı "Neden çalışmıyor?" sorusunun anahtarıdır.
 
 Biz bu dersleri; **akademik sınavları geçmek için değil, sanayi sahasında hayatta kalmak için** öğreniyoruz.
 

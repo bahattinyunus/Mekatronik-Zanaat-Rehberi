@@ -49,6 +49,19 @@ Tek bir sensöre asla güvenme.
     *   *Mantık:* "Jiroskop 'Sağa döndüm' diyor, İvmeölçer 'Düz duruyorum' diyor. Jiroskop hızlı hareketlerde daha güvenilir, ona inanayım. Ama dururken İvmeölçer haklıdır, ona döneyim."
     *   Metal Yaka için Kalman, matematiksel formül değil; **güven yönetimi (trust management)** algoritmasıdır.
 
+### Hızlı Çözüm: Tamamlayıcı Filtre (Complementary Filter)
+Kalman çok mu karışık geldi? İşte 2 satırda işin %90'ını çözen formül:
+
+```c
+// dt: Döngü süresi (Örn: 0.01sn)
+// 0.98: Jiroskopa güven oranı (Kısa vadede doğru)
+// 0.02: İvmeölçere güven oranı (Uzun vadede doğru - Drift yok)
+
+float aci;
+aci = 0.98 * (aci + gyro_verisi * dt) + 0.02 * (ivmeolcer_verisi);
+```
+Bu kod, jiroskobun kaymasını (drift) ivmeölçer ile sürekli sıfırlar. Basit ve etkilidir.
+
 ## ⚡ 6. Topraklama Döngüsü (Ground Loop) - Sessiz Katil
 
 İki cihazı birbirine bağlarken (Örn: PC ve PLC), eğer elektrik prizleri farklı yerlerden besleniyorsa, aralarında voltaj farkı oluşur.

@@ -45,4 +45,19 @@ Her proje için bu şablonu kopyalayın ve her büyük çöküşte/patlamada dol
 ### 5. Öğrenilen Ders (Lesson Learned)
 *   [ ] **Altın Kural:** Hareketli parçaların (dişli, kayış) yanından geçen kabloları **mutlaka** sabitle. Asla boşta bırakma.
 
+### 6. Ishikawa (Balık Kılçığı) Analizi
+Sorunun kaynağını kategorize et. Sadece "parça bozuk" deyip geçme.
+
+*   **Man (İnsan):** Yorgunluk, eğitim eksikliği, yanlış montaj?
+*   **Machine (Makine):** Bakımsızlık, kalibrasyon hatası, aşınma?
+*   **Material (Malzeme):** Yan sanayi parça, hatalı hammadde?
+*   **Method (Yöntem):** Prosedür yanlış mı? Hatalı spek?
+*   **Environment (Ortam):** Aşırı sıcak, tozlu, nemli?
+
+*Not: Çoğu arıza %80 İnsan veya Yöntem (Method) hatasıdır. Malzeme hatası nadirdir.*
+
+### 7. 8D Problem Çözme (Özet)
+Global şirketler (Ford, Toyota) bu formu kullanır. Bizim Metal Yaka versiyonumuz:
+D1: Ekibi Kur -> D2: Sorunu Tanımla -> D3: Geçici Yama -> **D4: Kök Neden (5 Why)** -> D5: Kalıcı Çözüm Seç -> D6: Uygula -> D7: Tekrarını Önle -> D8: Ekibi Kutla (Çay Ismarla).
+
 ---

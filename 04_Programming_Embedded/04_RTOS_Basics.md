@@ -50,6 +50,19 @@ NASA'nın Mars aracı bu yüzden az kalsın görevini kaybediyordu.
 
 ---
 
+## 🗑️ 3.5. Global Değişken Tehlikesi ve Kuyruklar (Queues)
+
+Acemi yazılımcı görevler arasında veri taşımak için `int global_veri;` kullanır.
+*   **Sorun:** Task A yazarken, Task B okursa "yarım yamalak" veri okur (Data Corruption).
+*   **Çözüm:** **Queue (Kuyruk)** kullanmak.
+
+Kuyruk, verilerin sıraya girdiği bir boru gibidir.
+*   **Task A (Sensör):** Kuyruğun arkasından veriyi atar. (`xQueueSend`)
+*   **Task B (Ekran):** Kuyruğun önünden veriyi alır. (`xQueueReceive`)
+*   **Fayda:** RTOS bu işlemi atomik yapar (bölünmez). Ayrıca kuyruk boşsa Task B uyur (CPU harcamaz), veri gelince uyanır. Mükemmel senkronizasyon!
+
+---
+
 ---
 
 ## ⚡ 4. Kesmeler (Interrupts): RTOS Düşmanı mı Dostu mu?

@@ -54,4 +54,26 @@ Masa üzerine rastgele bırakılan renkli blokları (Kırmızı, Mavi, Yeşil) k
 
 ---
 
+---
+
+## 📐 5. İlerlemiş Kalibrasyon Teknikleri
+
+"Kamera gördü ama robot tutamadı" sorununun %99 sebebi kalibrasyon hatasıdır.
+
+### A. Lens Distorsiyonu (Balık Gözü Etkisi)
+Ucuz kameralar görüntüyü büker. Düz çizgiler yumurta gibi görünür.
+*   **Çözüm:** Satranç tahtası (Chessboard) deseni kullan. `cv2.calibrateCamera` fonksiyonu ile kameranın matrisini çıkar ve görüntüyü "Düzelt" (Undistort).
+
+### B. Perspektif Düzeltme
+Kamera tam tepeden bakmıyorsa, kareler yamuk (trapez) görünür.
+*   **Çözüm:** Masanın 4 köşesine işaret koy. `cv2.getPerspectiveTransform` ve `cv2.warpPerspective` kullanarak görüntüyü "Kuş bakışı" (Top-down view) haline getir.
+
+### C. Işıklandırma Sanatı
+Robot görmüyorsa kodla uğraşma, lambayı değiştir.
+*   **Parlamayı Önleme:** Metal parçalar parlar ve kamerayı kör eder.
+*   **Difüzör:** Işığın önüne kağıt koyarak yumuşat.
+*   **Polarize Filtre:** Yansımayı yok eder.
+
+---
+
 > **Ustanın Tavsiyesi:** "Önce kör bir robot yap. Koordinat verince hatasız gidiyor mu? Sonra kamerayı ekle. İki bilinmeyenli denklem çözmeye çalışma. Önce mekaniğe güven, sonra göze güven."

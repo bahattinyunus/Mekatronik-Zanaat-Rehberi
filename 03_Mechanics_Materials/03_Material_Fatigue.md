@@ -46,4 +46,21 @@ Gerilim (Stress), su gibidir; köşelerde ve dar boğazlarda birikir.
 
 ---
 
+---
+
+## 🔬 4. İleri Kırılma Analizi (Advanced Fractography)
+
+Bir mil kırıldığında, o milin neden kırıldığı yüzeyinde yazılıdır. Bir adli tıp uzmanı gibi davranmalısın.
+
+| Kırılma Tipi | Yüzey Görünümü | Olası Suçlu |
+| :--- | :--- | :--- |
+| **Sünek Kırılma (Ductile)** | "Fincan ve Koni" (Cup & Cone) şekli. Metal uzamış, boyun vermiş ve kopmuş. | Aşırı Yük (Overload). Malzemeyi taşıma kapasitesinin üzerine çıkardın. |
+| **Gevrek Kırılma (Brittle)** | Düz, pürüzsüz, cam gibi kesik. Hiç uzama (deformasyon) yok. | Düşük sıcaklık, Şok darbe veya Yanlış ısıl işlem (Çok sertleştirilmiş). |
+| **Yorulma (Fatigue)** | Sahil çizgileri (Beach Marks). Başlangıç noktasından yayılan dalgalar. | Titreşim, Döngüsel yükler, Keskin köşeler. |
+
+### Ratchet Marks (Dişli İzleri)
+Eğer kırık yüzeyinde **birden fazla** başlangıç noktası (Origin) ve bu noktaların birleştiği setler (Ratchet marks) varsa; bu, parçanın çok yüksek bir stres altında döndüğünü ve **aynı anda birkaç çatlağın birden başladığını** gösterir. Bu, tasarım hatasının en büyük kanıtıdır.
+
+---
+
 > **Ustanın Notu:** "Kırılan parçayı hemen çöpe atma. O bir delildir. Kırık yüzeyine büyüteçle bak. Eğer 'İstiridye deseni' görüyorsan, bil ki o parça tasarlandığı gibi çalışmamış, titreyerek can vermiştir."

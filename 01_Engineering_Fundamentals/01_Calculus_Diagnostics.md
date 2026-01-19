@@ -85,6 +85,22 @@ Hızın türevi İvme ($a$), İvmenin türevi ise Sarsım ($Jerk$, $j$) dır.
 
 ---
 
+---
+
+## 🎼 4. Frekans Alanı (Frequency Domain): Makinenin Müziği
+
+Zaman alanında (Time Domain) gördüğün karmaşık bir sinyal, aslında basit dalgaların toplamıdır. Jean-Baptiste Fourier bunu 200 yıl önce buldu.
+
+*   **Zaman Grafiği:** Karmaşık, gürültülü bir çizgi. Hiçbir şey anlaşılmıyor.
+*   **FFT (Hızlı Fourier Dönüşümü):** Sinyali frekanslarına ayırır.
+    *   **50 Hz'de bir tepe (Peak):** Şebeke gürültüsü (Elektriksel).
+    *   **100 Hz'de bir tepe:** Motor balanssızlığı (Mekanik, devirle orantılı).
+    *   **3500 Hz'de bir tepe:** Rulman bilya hatası (Yüksek frekanslı sürtünme).
+
+**Metal Yaka Ders:** Bir makinenin sadece sesini kaydedip FFT alarak, hangi rulmanın (iç bilezik mi, dış bilezik mi) bozulduğunu **makineyi açmadan** söyleyebilirsin. Bu, diferansiyel denklemlerin sanayideki en büyük sihridir.
+
+---
+
 > **Ustanın Özeti:**
 > *   **Türev** alıyorsan **Gürültüye (Noise)** dikkat et. Gürültülü sinyalin türevi felakettir. (Low Pass Filter kullanmadan türev alma).
 > *   **İntegral** alıyorsan **Doyuma (Saturation)** dikkat et. Sonsuza kadar biriktirme, bir yerde sıfırla (Anti-Windup).

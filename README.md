@@ -303,27 +303,27 @@ Derinleşmek isteyenler için önerilen araçlar ve disiplinler:
 
 ---
 
-## 👨‍💻 Mimar ve Baş Teknisyen: Bahattin Yunus Çetin
+## 👨‍💻 Proje Mimarı: Bahattin Yunus Çetin
 
-Mekatronik dünyasında bir "Siber Tamirci" ve IT Mimarı olarak, dijital yapıların fiziksel dünyaya hükmettiği o ince çizgide yürüyorum.
+**IT Architect | Trabzon Of TA Üniversitesi Öğrencisi**
+
+Mekatronik ve Bilişim teknolojilerinin kesişim noktasında, dijital mimarileri fiziksel sistemlerle buluşturan bir vizyoner olarak çalışmalarımı sürdürüyorum.
 
 ![The Architect's Workspace](./assets/architect_workspace.png)
 
-### Bozkırın İradesi, Geleceğin Mimarisi
-Köklerim, İç Anadolu'nun kalbinde, **Şereflikoçhisar**'ın bozkırında; iradem ise en karmaşık dijital sistemlerin merkezindedir. Şereflikoçhisar'ın tuzu ne kadar safsa, mühendislik yaklaşımlarım da o kadar yalın, dayanıklı ve işlevseldir. Benim için bir sistemin "çalışması" yeterli değildir; o sistemin **egemen bir iradeyle** tasarlanması, sarsılmaz bir mimariye sahip olması ve yapay zekanın bilişsel gücüyle donatılması gerekir.
+### 🏛️ Kurumsal Kimlik ve Vizyon
+Köklerimi İç Anadolu'nun disiplinli ruhundan, **Şereflikoçhisar**'ın azminden alıyor; bu disiplini modern bilişim mimarileriyle harmanlıyorum. **Trabzon Of TA Üniversitesi** bünyesindeki akademik yolculuğum ile sahadaki pratik tecrübelerimi birleştirerek, "Metal Yaka" felsefesini dijital dünyaya entegre ediyorum.
 
-### 🛠️ Teknik Arsenal & Operasyon Alanları
-Sadece kod yazmıyor, sistemlerin "ruhunu" inşa ediyorum:
+### 🛠️ Profesyonel Arsenal & Uzmanlık Alanları
+Bir **IT Architect** olarak, sistemlerin sadece işlevsel değil, aynı zamanda sarsılmaz bir omurgaya sahip olmasını sağlıyorum:
 
-*   **IT & Veri Mimarisi:** Karmaşık ağ yapılarını, bulut sistemlerini ve verinin en verimli şekilde aktığı dijital otobanları tasarlamak.
-*   **Gömülü Sistemler Cerrahisi:** C, C++ ve RTOS kullanarak donanımın nabzını tutmak, mikrodenetleyicilere hayat vermek.
-*   **Endüstriyel Otomasyon (PLC/SCADA):** Fabrikaların devasa çarklarını yöneten, hatayı milisaniyeler içinde bulan ve çözen siber sistemler.
-*   **AI Protezleme:** Yapay zekayı bir "araç" değil, insanın kısıtlı kapasitesini on katına çıkaran bilişsel bir protez olarak sistemlere entegre etmek.
+*   **Veri ve Sistem Mimarisi:** Yüksek performanslı bilişim altyapıları ve veri akış sistemlerinin tasarımı.
+*   **Endüstriyel Bilişim Entegrasyonu:** IT (Bilişim Teknolojileri) ve OT (Operasyonel Teknolojiler) arasındaki köprüyü kurmak.
+*   **Gömülü Yazılım Mühendisliği:** Mikrodenetleyiciler üzerinde koşan, hata payı sıfır olan kritik sistem yazılımları.
+*   **Stratejik AI Uygulamaları:** Yapay zekayı karar alma süreçlerinde bir bilişsel kaldıraç olarak kullanmak.
 
-### 🏛️ Egemen Mimar (Sovereign Architect) Manifestosu
-"Virtual architectures for the sovereign architect." sloganı benim için bir logodan fazlasıdır. Bizler, dijital sistemlerin içinde hapsolan değil, o sistemleri kendi irademizle büken ve fiziksel dünyada karşılık bulmasını sağlayan mimarlarız. Biyolojik kısıtlarımızı AI ile aşar, tozlu atölyelerle laboratuvar hassasiyetini birleştiririz.
-
-> **"Kabloların karmaşasında düzeni, kodun soğukluğunda makinelerin sıcaklığını görenler; geleceği tamir edenlerdir."**
+### 📜 Egemen Mimar Manifestosu
+"Virtual architectures for the sovereign architect." vizyonu, teknolojinin bir araç olduğu ve nihai kontrolün mimarın iradesinde kalması gerektiği ilkesine dayanır. Bizler, karmaşıklığı sadeliğe dönüştüren, atölye tozunu dijital temizlikle birleştiren modern zaman kurucularıyız.
 
 <div align="center">
 

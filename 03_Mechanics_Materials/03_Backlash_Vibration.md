@@ -44,4 +44,22 @@ Motor mili ile yük milini (örneğin vidalı mil) birbirine bağlarken "Kaplin"
 
 ---
 
+---
+
+## 🧪 4. Kimyasal Kilit: Loctite (Civata Sabitleyici) Rehberi
+
+Titreşim, cıvataların en büyük düşmanıdır. "Ben çok sıktım, bir şey olmaz" demeyin, gevşer.
+
+| Renk | Tip | Mukavemet | Ne Zaman Kullanılır? | Nasıl Sökülür? |
+| :--- | :--- | :--- | :--- | :--- |
+| **Mor** | 222 | Düşük | Küçük vidalar (M3, M4), ayar vidaları. | Tornavida ile kolayca. |
+| **Mavi** | 243 | Orta | Standart somunlar, robot gövdeleri. (En sık kullanılan). | Biraz zorlayarak sökülür. |
+| **Kırmızı** | 270 | Yüksek | "Bir daha asla sökülmeyecek" yerler. Saplamalar. | **Isıtarak.** (Pürmüzle 250°C'ye ısıtmadan sökülmez!) |
+| **Yeşil** | 638 | Kenetleyici | Rulmanı yatağa, dişliyi mile yapıştırmak için. | Isıtarak ve Presle. |
+
+### Histerezis (Hysteresis) Döngüsü
+Robotun bir noktaya giderken izlediği yol ile, aynı noktadan geri dönerken izlediği yol asla aynı değildir. Aradaki farka histerezis denir. Bu fark, mekanik gevşekliklerin toplamıdır. İyi bir mekanikçi, bu döngü alanını sıfıra indirmeye çalışır.
+
+---
+
 > **Ustanın Notu:** "Redüktör çıkış milini elinle tut ve sağa-sola çevirmeye çalış. Eğer 'tak-tuk' sesi geliyor ve boşluk hissediyorsan, o robotla hassas iş (kaynak, montaj) yapamazsın. O boşluğu yazılımla kapatamazsın."

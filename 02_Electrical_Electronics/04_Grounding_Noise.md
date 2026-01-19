@@ -58,4 +58,24 @@ Yazılımla "Average filter" (Ortalama filtresi) atmak en son çaredir. Sorunu k
 
 ---
 
+---
+
+## 🏗️ 5. Yıldız Topraklama (Star Grounding) vs Papatya Zinciri (Daisy Chain)
+
+Kablolamada şekil her şeydir.
+
+*   **Papatya Zinciri (HATA):** Cihaz 1 -> Cihaz 2 -> Cihaz 3 -> Toprak.
+    *   *Sorun:* Cihaz 1'in çektiği akım, hem Cihaz 2'nin hem Cihaz 3'ün üzerinden geçer. Cihaz 3'ün toprağı kirlenir.
+*   **Yıldız Bağlantı (DOĞRU):**
+    *   Cihaz 1 -> Merkez Toprak
+    *   Cihaz 2 -> Merkez Toprak
+    *   Cihaz 3 -> Merkez Toprak
+    *   *Sonuç:* Herkesin toprağı "Bakir" ve temizdir. Kimse kimseyi kirletmez.
+
+### Faraday Kafesi: Metal Kale
+Pano neden plastik değil de metaldir? Çünkü metal, dışarıdan gelen radyo dalgalarını (telefon sinyali, telsiz vb.) yutar ve içindeki işlemciyi korur.
+*   **Metal Yaka Kuralı:** Panonun kapağı açıksa koruma yoktur. Pano kapağı ile gövdesi arasında "Topraklama Şeridi" (Örgülü kablo) kopuksa, o kapak bir antendir, kalkan değil.
+
+---
+
 > **Ustanın Özeti:** "Kablolama, devrenin şeması kadar önemlidir. Kabloları spagetti gibi atarsan, o makine asla stabil çalışmaz. Güç kabloları ile sinyal kablolarını **asla** yan yana, paralel döşeme. Aralarından en az 10cm boşluk bırak veya birbirlerini 90 derece ile kessinler."

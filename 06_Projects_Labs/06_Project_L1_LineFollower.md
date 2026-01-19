@@ -59,4 +59,28 @@ Hesaplanan `Sol_Motor_Hızı` değerini 0-255 (veya 0-1000) arasına sınırla (
 
 ---
 
+---
+
+## 📏 4. Ziegler-Nichols ile PID Ayarı (Bilimsel Tuning)
+
+"Ben kafama göre sayı verdim oldu" demek profesyonel değildir. Ziegler-Nichols yöntemi, PID katsayılarını bulmanın formülüdür.
+
+1.  **I ve D'yi Sıfırla:** Sadece Kp kalsın.
+2.  **Kritik Salınımı Bul (Ku):** Kp'yi yavaşça artır. Robot çizgi üzerinde sürekli "S" çizerek sağa sola vurmaya başladığı (stabil salınım) andaki Kp değerini not et (`Ku`, Ultimate Gain).
+3.  **Periyodu Ölç (Tu):** Robotun bir sağa bir sola gidip tekrar sağa gelmesi ne kadar sürdü? (Saniye cinsinden `Tu`).
+
+| Kntrl Türü | Kp | Ki | Kd |
+| :--- | :--- | :--- | :--- |
+| **P** | 0.5 * Ku | - | - |
+| **PI** | 0.45 * Ku | 1.2 * Kp / Tu | - |
+| **PID** | 0.6 * Ku | 2 * Kp / Tu | Kp * Tu / 8 |
+
+### Diferansiyel Sürüş Kinematiği (Differential Drive)
+Robotun ne kadar döneceğini tekerlek hız farkı belirler.
+*   `Lineer Hız (V) = (V_sag + V_sol) / 2`
+*   `Açısal Hız (omega) = (V_sag - V_sol) / Tekerlek_Arası_Mesafe`
+*   **Ders:** Tekerlekler birbirine ne kadar uzaksa, robot o kadar yavaş döner ama o kadar kararlı (stabil) gider.
+
+---
+
 > **Ustanın Tavsiyesi:** "Önce yavaş ama pürüzsüz (titreşimsiz) gitmesini sağla. Hız, kararlılıktan sonra gelir. Titreyen robot enerji kaybeder."

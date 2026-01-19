@@ -61,6 +61,7 @@ Titreşim altındaki her vida gevşemek ister.
 | **[`03_Material_Fatigue.md`](./03_Material_Fatigue.md)** | Metal Yorgunluğu ve Kırılma | Kırık yüzey analizi (Fraktografi), Yorulma önleme. |
 | **[`03_Backlash_Vibration.md`](./03_Backlash_Vibration.md)** | Boşluk ve Titreşim | Redüktör boşluğu ayarı, Rezonans tespiti. |
 | **[`03_Production_Methods.md`](./03_Production_Methods.md)** | Üretim Yöntemleri (CNC/3D) | Hangi parça nasıl üretilir? 3D baskı nerede kullanılır? |
+| **[`03_Hydraulics_Pneumatics.md`](./03_Hydraulics_Pneumatics.md)** | Hidrolik & Pnömatik | Kavitasyon tespiti, Sızıntı yönetimi ve Valf mantığı. |
 
 ---
 

@@ -55,6 +55,7 @@ Robotun uzayda nerede olduğunu bilmesi gerekir. Her robotun bir "Home" veya "Ze
 | **[`05_PID_Tuning_Guide.md`](./05_PID_Tuning_Guide.md)** | PID Ayar Sanatı | Ziegler-Nichols değil, elle ve kulakla (Heuristic) ayar yapma. |
 | **[`05_Robot_Safety.md`](./05_Robot_Safety.md)** | Robot Güvenliği (LOTO) | Kill Zone, Deadman Switch ve Enerji İzolasyonu. |
 | **[`05_Sensors_Feedback.md`](./05_Sensors_Feedback.md)** | Sensörler ve Gürültü | Encoder, Resolver ve Gürültü filtreleme. |
+| **[`05_PLC_Ladder_Logic.md`](./05_PLC_Ladder_Logic.md)** | PLC & Ladder Mantığı | Fail-Safe (NC/NO) güvenliği, Tarama döngüsü ve Reliability. |
 
 ---
 

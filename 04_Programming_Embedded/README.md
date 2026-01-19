@@ -59,6 +59,7 @@ Bellek adreslerine doğrudan erişim (0x20000000).
 | **[`04_Prompt_Engineering_Guide.md`](./04_Prompt_Engineering_Guide.md)** | AI ile Kodlama Sanatı | Doğru teknik terimlerle kod yazdırma şablonları. |
 | **[`04_RTOS_Basics.md`](./04_RTOS_Basics.md)** | RTOS ve Çoklu Görev | Task, Mutex, Semaphore ve Deadlock kavramları. |
 | **[`04_Embedded_C_Traps.md`](./04_Embedded_C_Traps.md)** | C Dilinin Tuzakları | Pointer hataları, Volatile kullanımı, Bitwise işlemler. |
+| **[`04_Python_Automation_Basics.md`](./04_Python_Automation_Basics.md)** | Python ile Otomasyon ve Test | PySerial ile donanım testi, Excel'e veri loglama. |
 
 ---
 

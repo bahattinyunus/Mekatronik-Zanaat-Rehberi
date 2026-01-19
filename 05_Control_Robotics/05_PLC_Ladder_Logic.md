@@ -58,5 +58,21 @@ Metal Yaka felsefesinin en önemli kuralı: **"Kablo koparsa ne olur?"**
 
 ---
 
+---
+
+## 🧠 5. State Machine (Durum Makinesi) Tasarımı
+
+Acemi PLC'ci "Spagetti Kod" yazar: Her şey birbirine girmiştir. Usta ise **State Machine** kullanır.
+Makine her an sadece **BİR** durumda olabilir.
+
+1.  **IDLE (Bekleme):** Start butonunu bekle. Basılırsa -> `INIT`'e git.
+2.  **INIT (Hazırlık):** Sensörleri kontrol et. Her şey tamamsa -> `RUNNING`'e git.
+3.  **RUNNING (Çalışma):** Motoru döndür. Stop'a basılırsa -> `STOPPING`'e git. Hata olursa -> `ERROR`'a git.
+4.  **ERROR (Hata):** Kırmızı lambayı yak. Reset butonunu bekle.
+
+**Avantaj:** Arıza olduğunda teknisyen sorar: "Makine hangi adımda takıldı?" Sen de dersin ki: "Adım 32'de (Presleme) takıldı." Arıza yeri anında bellidir.
+
+---
+
 > **Ustanın Tavsiyesi:**
 > "PLC programlarken 'Nasıl çalışır?' diye değil, '**Nasıl bozulabilir ve bozulduğunda güvenli kalır mı?**' diye düşünmelisin. İyi bir otomasyoncu, en kötü senaryoyu en başta planlayan kişidir."

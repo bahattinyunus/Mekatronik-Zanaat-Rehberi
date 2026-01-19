@@ -76,5 +76,32 @@ Python, AI dünyasının ana dilidir.
 
 İşte **Metal Yaka** vizyonunun zirvesi budur: Yapay Zekayı, fiziksel dünyadaki bir pistonu itmek için kullanmak.
 
+---
+
+## 🧵 3. Threading vs Blocking: Arayüz Donmasın
+
+En büyük acemi hatası: Butona basınca `time.sleep(10)` fonksiyonunu çalıştırmak.
+*   **Sonuç:** Program 10 saniye boyunca "Yanıt Vermiyor" (Not Responding) moduna girer, beyazlaşır. Çünkü ana döngüyü (Main Loop) uyuttun.
+
+**Metal Yaka Çözümü:**
+*   Uzun sürecek işleri (Motoru 1 saat döndür) **ayrı bir iş parçacığında (Thread)** yap.
+*   Ana program (GUI) sadece "Başla" emrini versin ve ekrandaki progress bar'ı güncellesin.
+
+```python
+import threading
+
+def motoru_dondur():
+    # Bu fonksiyon arka planda çalışacak
+    for i in range(100):
+        motor.step()
+        time.sleep(0.1)
+
+# Butona basınca bunu çağır
+t = threading.Thread(target=motoru_dondur)
+t.start() # Ana program burada beklemez, hemen devam eder!
+```
+
+---
+
 > **Ustanın Notu:**
 > "Python yavaştır (Milisaniye gecikebilir). Asla bir hava yastığını patlatmak veya acil freni tetiklemek için Python kullanma. Güvenlik kritikleri her zaman gömülü sistemde (C/C++) veya donanımda kalmalı. Python, o sistemin **orkestra şefidir**, enstrümanı çalan değil."

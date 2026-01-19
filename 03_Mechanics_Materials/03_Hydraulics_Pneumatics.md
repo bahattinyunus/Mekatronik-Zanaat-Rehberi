@@ -56,5 +56,26 @@ Hava sıkıştırılabilir. Bu yüzden pnömatik sistemler "yaylı" gibidir, esn
 
 ---
 
+---
+
+## 🩸 3. Temizliğin Matematiği: ISO 4406 Kodu
+
+Hidrolik yağının temizliği gözle anlaşılmaz. "Berrak" görünen bir yağ, aslında sisteme zımpara tozu basıyor olabilir.
+Laboratuvar raporunda **18/16/13** gibi 3 rakam görürsün. Bu ne demek?
+
+*   1. Rakam (18): 4 mikrondan büyük partikül sayısı. (Çok kirli).
+*   2. Rakam (16): 6 mikrondan büyük partikül sayısı.
+*   3. Rakam (13): 14 mikrondan büyük partikül sayısı. (Görünmez tehlike).
+
+**Metal Yaka Kuralı:** Servo valf kullanıyorsan bu kod **16/14/11** olmalıdır. Aksi takdirde valf sıkışır.
+
+### Seslerin Dili (The Language of Noises)
+Usta, makineye stetoskopla yaklaşır.
+1.  **Çakıl Taşı Sesi (Gravel Sound):** Kavitasyon. Pompa emiş yapamıyor, yağ içinde boşluklar patlıyor. Valfi aç!
+2.  **Yüksek Frekanslı Çığlık (High Pitch Whine):** Aerasyon. Sisteme hava giriyor. Bir yerlerde delik var.
+3.  **Metalik Tıkırtı:** Pompa kanatçıkları kırılmış. Geçmiş olsun.
+
+---
+
 > **Ustanın Tavsiyesi:**
 > "Hidrolik yağını değiştirmek, makineye 'kan nakli' yapmak gibidir. Kirli yağ ile çalışan makine, damarlarında zehir dolaşan insan gibidir; yavaşlar, ateşi çıkar ve sonunda kalbi (pompa) durur. Filtrelere ve yağ temizliğine, kendi böbreklerinize baktığınız gibi bakın."

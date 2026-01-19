@@ -145,19 +145,22 @@ Teori bazen sahada çöker. İşte "Usta" tecrübesiyle sabitlenmiş bazı kural
 
 ---
 
+## 🧠 Metal Yaka Çalışma Metodolojisi: Arıza Çözme Sanatı
+
+Bir "Siber Tamirci" için arıza çözmek bir şans işi değil, sarsılmaz bir algoritmadır.
+
+![Blueprint of the Soul](./assets/blueprint_soul.png)
+
+1.  **Gözlem ve Duyusal Analiz:** Makineyi dinle. Rulmanlardan gelen yüksek frekanslı ses mi? MOSFET'in yaydığı hafif ozon kokusu mu? Yoksa bir eksendeki mikro-titreşim mi?
+2.  **Veri Toplama (Telemetry):** AI destekli araçlarla ve osiloskopla canlı veri akışını izle. Sensörler yalan söylemez, ama gürültü (noise) gerçeği gizleyebilir.
+3.  **Hipo-Tez ve İndirgeme:** Sorunu alt sistemlere ayır. Güç mü? Haberleşme mi? Mekanik mi? Yazılım mı?
+4.  **Cerrahi Müdahale:** Arızalı parçayı minimum hasarla değiştir. "Don't fix what isn't broken."
+5.  **Post-Mortem (Otopsi):** Arıza neden oldu? Tasarım hatası mı yoksa kullanım ömrü mü? Bir daha olmaması için ne yapmalı? (Bkz. [`06_Failure_Log_Template.md`](./06_Projects_Labs/06_Failure_Log_Template.md))
+
+---
+
 ## 🛠️ Teknoloji Yığını & Tamir Çantası
 
-Modern bir Mekatronik Teknikerinin, yani Metal Yaka mühendisinin alet çantası; hem dijital (yazılım/AI) hem de fiziksel (donanım/tamir) araçlarla doludur ve bu iki dünya arasında akışkan bir geçiş gerektirir.
-
-![Modern Tamir Çantası](./assets/tech_stack_toolbox.png)
-
-### 💻 Yazılım & Gömülü Sistemler (Dijital Teşhis Cihazları)
-*   **Diller:** C ve C++ (Donanımla, bitlerle ve baytlarla konuşmak için), Python (AI modelleriyle ve veri analiziyle konuşmak için), MATLAB (Sistemin hastalığını simüle etmek için).
-*   **Gömülü Platformlar:** STM32 (Endüstriyel standart, ARM mimarisi) ve ESP32 (IoT). Bunlar sadece silikon çip değildir; makinenin beynidir. Bir beyin cerrahı titizliğiyle, register (yazmaç) seviyesinde müdahale ederiz.
-*   **RTOS (Gerçek Zamanlı İşletim Sistemi):** Makinenin kalp ritmini ve zamanlamasını yönetiriz. Görevleri (Tasks) önceliklendiririz.
-
-### ⚙️ Mekanik & Tasarım (Fiziksel Müdahale Araçları)
-*   **CAD (Bilgisayar Destekli Tasarım):** SolidWorks ve Fusion 360. Bozulan, kırılan bir parçayı yeniden çizmek ve 3D yazıcıda basmak için. "Yedek parça bekleme, kendin üret" felsefesi.
 *   **Tersine Mühendislik:** Bir makinenin nasıl çalıştığını (veya neden bozulduğunu) anlamak için onu söküp sanal ortamda yeniden oluşturmak.
 
 ### 🔌 Elektronik & Kontrol (Sinir Ağı Onarımı)

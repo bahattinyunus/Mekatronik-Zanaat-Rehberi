@@ -1,4 +1,23 @@
-﻿# 🤖 Türkiye Mekatronik & Endüstriyel Otomasyon Rehberi: Dijital Tesisatçılık ve Siber Tamir Atölyesi
+﻿<div align="center">
+  <img src="https://img.shields.io/badge/Status-Operational-success?style=for-the-badge&logo=statuspage" alt="Status">
+  <img src="https://img.shields.io/badge/Security-Hardened-blue?style=for-the-badge&logo=iterm2" alt="Security">
+  <img src="https://img.shields.io/badge/Era-AI_Assisted-purple?style=for-the-badge&logo=openai" alt="Era">
+</div>
+
+---
+
+<p align="center">
+  <b>[ 📚 <a href="./01_Engineering_Fundamentals/">Fundamentals</a> ]</b> &nbsp; | &nbsp; 
+  <b>[ ⚡ <a href="./02_Electrical_Electronics/">Electronics</a> ]</b> &nbsp; | &nbsp; 
+  <b>[ ⚙️ <a href="./03_Mechanics_Materials/">Mechanics</a> ]</b> &nbsp; | &nbsp; 
+  <b>[ 💾 <a href="./04_Programming_Embedded/">Embedded</a> ]</b> &nbsp; | &nbsp; 
+  <b>[ 🦾 <a href="./05_Control_Robotics/">Robotics</a> ]</b> &nbsp; | &nbsp; 
+  <b>[ 🧪 <a href="./06_Projects_Labs/">Laboratory</a> ]</b>
+</p>
+
+---
+
+# 🤖 Türkiye Mekatronik & Endüstriyel Otomasyon Rehberi
 
 > **Türkiye Cumhuriyeti'nin Gelecekteki "Metal Yaka" Teknikerleri, Mühendisleri ve "Teknoloji Mimarları" İçin Nihai Bilgi Üssü**  
 > *Bu eser, Türkiye Cumhuriyeti'nin teknolojik bağımsızlık mücadelesine ve ülkenin dört bir yanındaki Meslek Yüksekokulları ile Teknik Fakültelere ithaf edilmiştir.*
@@ -8,8 +27,6 @@
 ![GitHub stars](https://img.shields.io/github/stars/bahattinyunus/AU-ASOSB-Mechatronics-Notes?style=for-the-badge&color=gold)
 ![GitHub forks](https://img.shields.io/github/forks/bahattinyunus/AU-ASOSB-Mechatronics-Notes?style=for-the-badge&color=orange)
 ![GitHub last commit](https://img.shields.io/github/last-commit/bahattinyunus/AU-ASOSB-Mechatronics-Notes?style=for-the-badge&color=blue)
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)
-![Made with Love](https://img.shields.io/badge/Made%20with-Metal%20%26%20Code-red?style=for-the-badge)
 
 </div>
 

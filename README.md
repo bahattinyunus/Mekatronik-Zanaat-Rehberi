@@ -15,39 +15,56 @@
 
 ## 🏆 Hierarchy of Mastery: Çıraklıktan Siber Mimarlığa Uzanan Yolculuk
 
-Mekatronik, yalnızca bir hobi ya da basit bir iş alanı değil; mekanik, elektronik ve yazılımın kesişim kümesinde icra edilen, disiplinler arası bir modern çağ savaş sanatıdır. Bir sistemin kalbine inmek, onun dilini çözmek ve ona hükmetmek sabır, teknik sarsılmazlık ve vizyon gerektirir. Burada "Tamir", bir şeyi eski haline getirmekten fazlasıdır; o, sistemin ruhunu ve tasarım niyetini yeniden tesis etme eylemidir. Aşağıdaki hiyerarşik harita, bir "Metal Yaka"nın evrimsel basamaklarını, bir çırağın acemiliğinden bir mimarın egemenliğine kadar olan teknik ve zihinsel dönüşümünü simgeler:
+Mekatronik, yalnızca bir hobi ya da basit bir iş alanı değil; mekanik, elektronik ve yazılımın kesişim kümesinde icra edilen, disiplinler arası bir modern çağ savaş sanatıdır. Bir sistemin kalbine inmek, onun dilini çözmek ve ona hükmetmek sabır, teknik sarsılmazlık ve vizyon gerektirir. Burada "Tamir", bir şeyi eski haline getirmekten fazlasıdır; o, sistemin ruhunu ve tasarım niyetini yeniden tesis etme eylemidir.
+
+### 🗺️ The Metal Yaka Master Skill Tree
+Aşağıdaki harita, bir teknikerin sadece ne bildiğini değil, o bilgiyi fiziksel dünyada nasıl bir "kudrete" dönüştürdüğünü gösteren evrimsel gelişim yoludur:
 
 ```mermaid
-graph LR
-    subgraph Level1 [🐣 Apprentice - Fundamentals]
-        L1A[Digital Multimeter Mastery - The First Sight] --> L1B[Basic Soldering - Bonding with Hardware]
-        L1B --> L1C[Ohm's Law in Action - The Power Flow]
+graph TD
+    subgraph S1 [🐣 apprentice / çırak]
+        A1["Multimetre Kullanımı (V, A, Ohm)"] --> A2["Temel Lehimleme ve PCB Onarımı"]
+        A2 --> A3["Pasif Komponent Teşhisi (R, L, C)"]
     end
 
-    subgraph Level2 [🔧 Technician - Integration]
-        L1C --> L2A[PLC Logic & Wiring - Industrial Neurons]
-        L2A --> L2B[Sensor Calibration - Sensory Awareness]
-        L2B --> L2C[Motor Driver Tuning - Mastering Motion]
+    subgraph S2 [🔧 technician / kalfa]
+        A3 --> T1["PLC Donanım ve I/O Kablolama"]
+        T1 --> T2["Sensör Kalibrasyon ve Fieldbus (Profinet)"]
+        T2 --> T3["Motor Sürücü Parametrelendirme (VFD/Servo)"]
     end
 
-    subgraph Level3 [🦾 Specialist - Robotics]
-        L2C --> L3A[Inverse Kinematics - Mathematical Limbs]
-        L3A --> L3B[Computer Vision - The Digital Eye]
-        L3B --> L3C[RTOS Threading - The Pulse of Time]
+    subgraph S3 [🦾 specialist / usta]
+        A3 --> SP1["Mikrodenetleyici Programlama (Bare-Metal C)"]
+        SP1 --> SP2["Endüstriyel Haberleşme (Modbus/CAN)"]
+        SP2 --> SP3["Robot Manipülatör Kinematiği"]
     end
 
-    subgraph Level4 [🌌 Sovereign Architect - Mastery]
-        L3C --> L4A[AI System Synthesis - Cognitive Fusion]
-        L4A --> L4B[Predictive Maintenance - Whispering to Machines]
-        L4B --> L4C((THE SOVEREIGN ARCHITECT))
+    subgraph S4 [🌌 sovereign architect / mimar]
+        T3 --> AR1["Predictive Maintenance (AI/FFT)"]
+        SP3 --> AR1
+        AR1 --> AR2["Stratejik Sistem Entegrasyonu (IT/OT)"]
+        AR2 --> AR3((THE SOVEREIGN ARCHITECT))
     end
 
-    style L4C fill:#00e676,stroke:#000,stroke-width:4px,color:#000
-    style Level1 fill:#f5f5f5,stroke:#333,stroke-dasharray: 5 5
-    style Level2 fill:#e3f2fd,stroke:#0d47a1
-    style Level3 fill:#fff3e0,stroke:#e65100
-    style Level4 fill:#1a237e,stroke:#fff,color:#fff
+    style AR3 fill:#00e676,stroke:#000,stroke-width:4px,color:#000
+    style S1 fill:#f9f9f9,stroke:#333,stroke-dasharray: 5 5
+    style S2 fill:#e3f2fd,stroke:#0d47a1
+    style S3 fill:#fff3e0,stroke:#e65100
+    style S4 fill:#1a237e,stroke:#fff,color:#fff
 ```
+
+---
+
+## 🎒 Field Readiness: Profesyonel Saha Çantası ve Zihinsel Hazırlık
+
+Gerçek bir Metal Yaka, sahaya (field) hazırlıksız çıkmaz. Yanındaki aletler, onun siber-fiziksel dünyadaki uzuvlarıdır.
+
+> [!IMPORTANT]
+> **Minimalist ama Sarsılmaz Ekipman Listesi:**
+> 1.  **Duyuların Ötesinde Bir Multimetre:** Sadece voltaj ölçen değil, RMS değeri veren, kapasitans ve frekans ölçebilen endüstriyel tip bir ölçü aleti (CAT III/IV standartlarında).
+> 2.  **Siber-Fiziksel Arayüz (Laptop):** Üzerinde tüm haberleşme yazılımları (TIA Portal, Codesys, Arduino IDE, Python/C++ toolchains) kurulu, tam şarjlı ve Ethernet portu olan (veya kaliteli bir dönüştürücü) ana kumanda merkeziniz.
+> 3.  **Haberleşme Kabloları (The Nervous System):** USB-TTL dönüştürücüler, Profinet kabloları, RS-485 (Modbus) arayüzleri. Sahada "kablo yok" demek, "ellerim yok" demektir.
+> 4.  **Cerrahi Müdahale Seti:** Hassas tornavidalar, kaliteli bir yan keski, izolasyon sıyırıcı ve ferul (yüksük) sıkma pensesi.
 
 Temel amacımız, sadece okuldaki vize ve final sınavlarını geçmek, kuru bir diploma sahibi olmak değildir. Gerçek hedefimiz, **Yapay Zeka (AI)** ve otonom sistemler devriminin ardından temellerinden sarsılan, her gün yeniden tanımlanan global endüstriyel ekosistemde ayakta kalacak, vazgeçilmez bir mesleki kimlik ve "Master Technician" markası inşa etmektir. Unutmayın ki, Türk sanayisinin (ve dünyanın) şu an her zamankinden daha fazla ihtiyacı olan şey, teorik formüllerle boğulan değil, **"sahada o karmaşık işi bizzat çözen"** ve sistemi ayağa kaldıran nitelikli, vizyoner ve korkusuz insan gücüdür.
 

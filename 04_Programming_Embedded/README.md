@@ -12,14 +12,15 @@
 
 # 04. Yazılım & Gömülü Sistemler: Silikon Beyin Cerrahlığı
 
-> *"Kod, silikonun ruhudur. Ancak kötü yazılmış bir kod, silikonu ısıtır, yorar, kafasını karıştırır ve sonunda sistemi öldürür. Bizler kod yazıcı değil, silikon cerrahlarıyız."*
+![Embedded Banner](../assets/embedded_banner.png)
+
+> *"Kod, silikonun ruhudur. Ancak kötü yazılmış bir kod, silikonu ısıtır, yorar, kafasını karıştırır ve sonunda sistemi öldürür. Bizler kod yazıcı değil, silikon cerrahlarıyız. Yapay zekanın yazdığı kodu metale enjekte eden ve o donanıma 'can' veren modern simyacılarınızız."*
 
 ---
 
 ## 💾 Metal Yaka Perspektifi: Kod Enjeksiyonu ve Optimizasyon
 
-Yapay Zeka (AI) çağında, "Sıfırdan I2C Sürücüsü Yazmak" artık insan için bir övünç kaynağı değildir; bunu bir LLM modeli saniyeler içinde hatasız yapabilir.
-Yeni çağın meziyeti; o kodu alıp STM32'nin 128KB'lık kısıtlı hafızasına sığdırmak (Optimization), sonsuz döngüye girip sistemi kilitlemesini engellemek (Watchdog), donanımın fiziksel limitlerine (Timing) uydurmak ve milisaniyelik gecikmelere bile tahammülü olmayan makineyle "kekelemeden" konuşturmaktır.
+Yapay Zeka (AI) çağında, "Sıfırdan I2C Sürücüsü Yazmak" artık insan için bir övünç kaynağı değildir; bunu bir LLM modeli saniyeler içinde hatasız yapabilir. Yeni çağın meziyeti; o kodu alıp STM32'nin 128KB'lık kısıtlı hafızasına sığdırmak (Optimization), sonsuz döngüye girip sistemi kilitlemesini engellemek (Watchdog), donanımın fiziksel limitlerine (Timing) uydurmak ve milisaniyelik gecikmelere bile tahammülü olmayan makineyle "kekelemeden" konuşturmaktır.
 
 Biz artık "Coder" (Kodlayıcı) değiliz; biz **"Gömülü Sistem Entegratörü"** ve **"Donanım Fısıldayıcısı"**yız.
 
@@ -28,10 +29,7 @@ Biz artık "Coder" (Kodlayıcı) değiliz; biz **"Gömülü Sistem Entegratörü
 ## 🤖 1. İstemi Mühendisliği (Prompt Engineering)
 
 C++ sözdizimini (syntax) ezberlemek hamallıktır. Önemli olan "ne istediğini" teknik bir dille ifade edebilmektir.
-*   **Amatör:** "Bana motor sürme kodu yaz."
-    *   *Sonuç:* `delay(1000)` kullanan, işlemciyi kilitleyen, endüstriyel standartlardan uzak çöp kod.
-*   **Metal Yaka:** "STM32G4 serisi için, HAL kütüphanesi ve DMA kullanarak, Timer 1'in 4 kanalını PWM modunda süren, %0-%100 duty cycle arasında 'Soft-Start' (Rampa) özelliği olan ve TIM_Update kesmesi ile motor akımını ADC üzerinden okuyan, Non-Blocking (Bloke etmeyen) bir C fonksiyonu oluştur."
-    *   *Sonuç:* Üretime hazır, optimize edilmiş, profesyonel kod.
+*   **Metal Yaka Yaklaşımı:** "STM32G4 serisi için, HAL kütüphanesi ve DMA kullanarak, Timer 1'in 4 kanalını PWM modunda süren, %0-%100 duty cycle arasında 'Soft-Start' (Rampa) özelliği olan ve TIM_Update kesmesi ile motor akımını ADC üzerinden okuyan, Non-Blocking (Bloke etmeyen) bir C fonksiyonu oluştur."
 
 ---
 
@@ -39,28 +37,26 @@ C++ sözdizimini (syntax) ezberlemek hamallıktır. Önemli olan "ne istediğini
 
 Bir web sitesi 1 saniye geç açılırsa kullanıcı sadece oflar. 100km/s hızla giden otonom bir aracın fren sistemi 10 milisaniye geç tepki verirse, kaza olur.
 *   **Determinizm:** "Hızlı olmak" değil, "Her seferinde tam zamanında olmak" demektir.
-*   **RTOS (Gerçek Zamanlı İşletim Sistemi):** İşlemcinin zamanını mikrosaniyeler mertebesinde dilimleyen, görevleri (Task) önem sırasına göre dizen trafik polisidir. Mavi ekran verme lüksü yoktur.
+*   **RTOS (Gerçek Zamanlı İşletim Sistemi):** İşlemcinin zamanını mikrosaniyeler mertebesinde dilimleyen trafik polisidir. Mavi ekran verme lüksü yoktur.
 
 ---
 
-## 🧠 3. C/C++: Donanımın Ana Dili ve Tuzakları
+## 🔥 Metal Yaka Saha İpuçları (Field Hacks)
 
-### Pointer'lar ve Bellek Yönetimi
-Bellek adreslerine doğrudan erişim (0x20000000).
-*   **Tehlike:** Eğer dikkatsizce yanlış bir adrese veri yazarsanız (Buffer Overflow), sistemi anında çökertirsiniz. Bu, elektronikteki "kısa devre"nin yazılım dünyasındaki karşılığıdır: **Hard Fault**.
-*   **Metal Yaka Kuralı:** Dinamik bellek (`malloc`, `free`) kullanma! Sürekli hafıza alıp geri vermek (Heap Fragmentation), 3 ay sonra sistemin sebepsizce donmasına yol açar. Her şeyi statik ayır.
+> [!TIP]
+> **Watchdog (Bekçi Köpeği) Kullanımı:** Sistemin takılma ihtimaline karşı her zaman donanımsal Watchdog Timer (WDT) kullanın. Eğer kodun en kritik döngüsü beklenen sürede tamamlanmazsa, Watchdog işlemciye "elektroşok" vererek (Reset) sistemi yeniden başlatır. Unutmayın: "Kilitlenmiş bir sistem, ölü bir sistemdir; resetlenmiş bir sistem ise hayata dönen bir umuttur."
 
-### Bit Manipülasyonu
-32-bitlik bir register'ın tamamını değiştirmek yerine, sadece 3. bitini '1' yapmak (`Register |= (1<<3)`).
-*   Çünkü o 3. bit, lazeri ateşleyen tetiktir. Yanlışlıkla 4. biti değiştirirsen, soğutma sistemini kapatırsın.
+> [!CAUTION]
+> **Floating Point (Kayar Nokta) Tuzağı:** Düşük seviyeli işlemcilerde (Cortex-M0 gibi) `float` işlemler donanımsal FPU (Floating Point Unit) yoksa yazılımla simüle edilir ve işlemciyi aşırı yorar. Ondalıklı sayılarla çalışmak yerine, sayıları 100 veya 1000 ile çarpıp "Fixed Point" (Tam Sayı) mantığıyla işlem yapın. Bu, işlemciye %500-%1000 oranında hız kazandırabilir.
 
 ---
 
-## 📡 4. Haberleşme Protokolleri: Makine Dili
+## ⚠️ Yaygın Hatalar ve Kök Neden Analizi
 
-*   **I2C / SPI:** Kart içi fısıldaşmalar. SPI hızlıdır (Ekran, SD Kart), I2C pratiktir (Sensörler).
-*   **UART:** İnsanla veya GPS/Bluetooth ile konuşmak.
-*   **CAN-Bus (Controller Area Network):** Endüstriyel şebeke. Otomobillerin ve fabrikaların sinir sistemidir. Diferansiyel sinyal kullandığı için gürültüden etkilenmez. Kabloyu kessen bile kalan hattan veri gitmeye çalışır.
+*   **Hata:** Sistem rastgele zamanlarda, bazen 1 saat, bazen 1 hafta sonra tamamen kilitleniyor.
+    *   **Kök Neden:** "Stack Overflow" veya "Dinamik Bellek Fragmantasyonu". `malloc()` kullanımı sonucunda hafıza parçalanmış veya iç içe giren (recursive) fonksiyonlar yığın (stack) limitini aşmış.
+*   **Hata:** Seri haberleşmede (UART) veriler bazen bozuk geliyor (Garbage data).
+    *   **Kök Neden:** İki cihaz arasındaki "Baud Rate" farkı veya donanımsal bir "Common Ground" (Ortak Şase) eksikliği. Şase bir değilse, sinyal seviyeleri birbirine göre kayar ve veri bozulur.
 
 ---
 
@@ -76,4 +72,4 @@ Bellek adreslerine doğrudan erişim (0x20000000).
 ---
 
 > **Ustanın Bilgelik Notu:**  
-> "`delay(1000)` komutunu kodunda kullanmak, bir gömülü sistem mühendisi için suçtur. İşlemciyi 1 tam saniye boyunca (ki bu işlemci için 1 asır gibidir) uyutamazsınız; o sırada dünya dönmeye devam ediyor, sensörler veri gönderiyor. `millis()` kullanın, Timer kullanın, RTOS kullanın ama işlemciyi asla boşa bekletmeyin (Non-blocking code)."
+> "`delay(1000)` komutunu kodunda kullanmak, bir gömülü sistem mühendisi için sahada işlenen bir günahtır. İşlemciyi 1 tam saniye boyunca (ki bu işlemci için 1 asır gibidir) uyutamazsınız; o sırada dünya dönmeye devam ediyor, acil durdurma butonuna basılıyor, sensörler alarm veriyor. `millis()` kullanın, Timer kullanın, RTOS kullanın ama işlemciyi asla kör ve sağır bırakmayın (Non-blocking code). Kodunuz, makinenin nabzı gibi sürekli ve kesintisiz atmalıdır."

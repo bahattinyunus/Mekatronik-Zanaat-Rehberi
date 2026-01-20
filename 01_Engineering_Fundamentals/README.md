@@ -12,15 +12,15 @@
 
 # 01. Mühendislik Temelleri: MYO Öğrencisi İçin Arıza Teşhisi
 
-> *"Matematik bizim için bir ders değil, makinenin hayati verilerini okumak için kullandığımız bir osiloskop probudur. Biz, 'can çekişen' bir sistemin çığlığını duymak için bu dili öğreniyoruz."*
+![Fundamentals Banner](../assets/fundamentals_banner.png)
+
+> *"Matematik bizim için bir ders değil, makinenin hayati verilerini okumak için kullandığımız bir osiloskop probudur. Biz, 'can çekişen' bir sistemin çığlığını duymak için bu dili öğreniyoruz. Teorik bir formül, sahada ya bir robotun sarsılmaz dengesidir ya da feci bir mekanik çöküşün habercisidir."*
 
 ---
 
 ## 🛡️ Metal Yaka Perspektifi: MYO'da Başarı Sahada Çözümdür
 
-Mühendislik temelleri, MYO (Önlisans) öğrencileri için sınav kağıdında bırakılacak formüller değildir. Bir tekniker için bu dersler, sahada karşılaştığı "Neden çalışmıyor?" sorusunun anahtarıdır.
-
-Biz bu dersleri; **akademik sınavları geçmek için değil, sanayi sahasında hayatta kalmak için** öğreniyoruz.
+Mühendislik temelleri, MYO (Önlisans) öğrencileri için sınav kağıdında bırakılacak formüller değildir. Bir tekniker için bu dersler, sahada karşılaştığı "Neden çalışmıyor?" sorusunun anahtarıdır. Biz bu dersleri; **akademik sınavları geçmek için değil, sanayi sahasında hayatta kalmak için** öğreniyoruz.
 
 *   Diferansiyel denklemi sadece teorik olarak çözemezseniz; sahada deli gibi titreyen, kararsızlığa düşmüş bir PID kontrolcüsünü asla sakinleştiremezsiniz.
 *   Statik ve Mukavemet bilmezseniz; tasarladığınız robot kolunun neden yük altında esnediğini, neden beklenen hassasiyette (tekrarlanabilirlik) çalışmadığını asla anlayamazsınız.
@@ -38,7 +38,7 @@ Sanayide "duran" bir makine ya kapalıdır ya da bozuktur. Çalışan, değer ü
 Bizim için türev, grafikteki bir teğetin eğimi değildir. Türev, **geleceğin bilgisidir**.
 *   **Hata Hızı (Rate of Error):** Sensör verisindeki anlık değişim hızı, bize hatanın ne kadar hızlı büyüdüğünü söyler.
 *   **Öngörü:** PID kontrolcüsündeki 'D' (Derivative) terimi, türev sayesinde geleceği tahmin eder. "Hata şu an küçük ama çok hızlı artıyor, hemen fren yapmalıyım!" diyerek sistemi kaza yapmaktan kurtarır.
-*   **Saha Karşılığı:** Motorun sıcaklığı 1 saatte 5 derece arttıysa sorun yok (D düşük). Ama 1 dakikada 5 derece arttıysa (D çok yüksek), fan bozulmuş demektir. Termal koruma devreye girmelidir.
+*   **Saha Karşılığı:** Motorun sıcaklığı 1 saatte 5 derece arttıysa sorun yok (D düşük). Ama 1 dakikada 5 derece arttıysa (D çok yüksek), fan bozulmuş veya bir kısa devre oluşmuş demektir. Termal koruma devreye girmelidir.
 
 ### İntegral (Integral): Geçmişin Yükü ve Hafıza
 İntegral, birikimdir. Geçmişte yaşananların bugüne etkisidir.
@@ -56,11 +56,22 @@ Yazılım dünyasında kuralları programcı koyar; gerekirse o kuralları deği
 
 ---
 
-## 📐 3. Lineer Cebir: Robotik Uzayın Haritası
+## 🔥 Metal Yaka Saha İpuçları (Field Hacks)
 
-Bir robot kolunun, uç noktasının (Tool Center Point - TCP) uzayda nerede olduğunu bilmesi için sadece geometri yetmez, **Lineer Cebir** gerekir.
-*   **Matrisler ve Dönüşüm:** Robotun her bir eklemi bir matris, her hareketi bir matris çarpımıdır.
-*   **Singularity (Tekillik):** Robotun kilitlendiği, sonsuz hıza çıkmaya çalıştığı o korkunç an, aslında matematiksel bir **determinantın sıfır olması** durumudur. Matrisin tersinin alınamadığı (inverse kinematics fail) noktadır. Sahada robotu tamir eden tekniker, aslında matristeki o "sıfırı" yok etmeye çalışır.
+> [!TIP]
+> **Titreşim Analizi (Dokunsal Teşhis):** Bir pompanın veya motorun üzerine elinizi koyduğunuzda hissettiğiniz titreşim, aslında düşük frekanslı bir "Fourier Analizi"dir. Eğer titreşim düzensiz ve "vuruntulu" ise (impulse), bu mekanik bir boşluk (backlash) veya rulman dağılmasıdır. Eğer titreşim yüksek frekanslı ve "ince" bir zırıltı ise, bu genellikle elektriksel bir dengesizlik veya gevşek bir kaplinin işaretidir.
+
+> [!CAUTION]
+> **Termal Teşhis:** Bir kablonun veya klemensin ısınması, direncin arttığının (Kötü temas, korozyon) fiziksel kanıtıdır. Elektrik akımı geçerken o noktada oluşan voltaj düşümü ısıya dönüşür. Eğer bir klemens kapağı hafifçe sararmışsa, arıza henüz başlamamıştır ama "yoldadır".
+
+---
+
+## ⚠️ Yaygın Hatalar ve Kök Neden Analizi
+
+*   **Hata:** PID kontrolcü sürekli osilasyon (salınım) yapıyor, bir türlü hedefe oturmuyor.
+    *   **Kök Neden:** Muhtemelen P (Proportional) kazancı çok yüksek veya sistemde mekanik bir gecikme (dead-time) var ve Differential (D) terimi bu gecikmeyi kompanse edemiyor.
+*   **Hata:** Robot kolu repetitif (tekrarlı) hareketlerde her seferinde birkaç milimetre sapıyor.
+    *   **Kök Neden:** Rijidite (esneklik) sorunu. Statik hesaplamalarda göz ardı edilen yük momenti, kolun mekanik sınırlarını zorluyor veya bir kaplin kaydırıyor.
 
 ---
 

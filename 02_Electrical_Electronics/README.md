@@ -12,10 +12,12 @@
 
 # 02. Elektrik & Elektronik: Devre Cerrahlığı ve Dumanın Ruhu
 
+![Electronics Banner](../assets/electronics_banner.png)
+
 ![High Voltage](https://img.shields.io/badge/DANGER-High%20Voltage-red?style=for-the-badge&logo=electricity)
 ![Skill](https://img.shields.io/badge/Skill-Soldering-blue?style=for-the-badge&logo=espressif)
 
-> *"Yazılımda hata yaparsan ekranda bir uyarı çıkar; elektronikte hata yaparsan bir patlama sesi duyarsın ve o korkunç yanık silikon kokusunu alırsın. Ve unutma, duman bir kez çıktıysa, o komponentin ruhu bedeni terk etmiştir; geri döndürülemez."*
+> *"Yazılımda hata yaparsan ekranda bir uyarı çıkar; elektronikte hata yaparsan bir patlama sesi duyarsın ve o korkunç yanık silikon kokusunu alırsın. Ve unutma, duman bir kez çıktıysa, o komponentin ruhu bedeni terk etmiştir; geri döndürülemez. Bizler, o sessiz dumanın yasını tutan değil, o kaosu engelleyen siber-fiziksel koruyucularız."*
 
 ---
 
@@ -29,7 +31,7 @@ Yazılım "Sanal Beyin" ise, Elektronik "Sinir Sistemi" ve "Kardiyovasküler Sis
 *   **Kablo Kesiti:** Damar genişliğidir.
 *   **Kısa Devre:** Aort damarının parçalanmasıdır.
 
-Bu modül, sadece teorik şemaları değil, **"Çalışmayan"** veya **"Yanmış"** bir devreyi teşhis etme (diagnosis) ve onarma sanatını; yani **Devre Cerrahlığını** anlatır.
+Bu modül, sadece teorik şemaları değil, **"Çalışmayan"** veya **"Yanmış"** bir devreyi teşhis etme (diagnosis) ve onarma sanatını; yani **Devre Cerrahliğini** anlatır. Bir tamirci, devredeki akışın ritmini hisseder.
 
 ---
 
@@ -51,22 +53,31 @@ Dijital dünyada mantık temizdir (0 veya 1). Fiziksel dünyada ise kaos vardır
 ## 🧰 2. Teşhis Aletleri: Cerrahın Çantası
 
 ### A. Multimetre: Stetoskop
-*   **Voltaj:** Devrede can var mı?
-*   **Direnç:** Kablo kopuk mu (sonsuz ohm), kısa devre mi (0 ohm)?
-*   **Diiyot Modu:** Yarı iletkenler (Transistör, Regülatör) sağlam mı? PN jonksiyonu 0.6V-0.7V gösteriyor mu?
+*   **Diiyot Modu:** Yarı iletkenler (Transistör, Regülatör) sağlam mı? PN jonksiyonu 0.6V-0.7V gösteriyor mu? Eğer her iki yönde de 0V veya "Open Loop" (OL) görüyorsanız, cerrahi müdahale şarttır.
 
 ### B. Osiloskop: Zamanın Mikroskobu ve Röntgen
 Multimetre size yalan söyler. Multimetre size voltajın "ortalamasını" gösterir.
 *   3.3V sandığınız DC gerilim, belki de saniyede 1 milyon kez 0V ile 5V arasında dalgalanıyordur (Ripple).
-*   PWM sinyalinin kare dalgası bozulmuş mu? Köpekbalığı yüzgecine mi benziyor? (Kapasitif yük sorunu).
-*   Haberleşme hattında (I2C/UART) parazit var mı?
-*   **Osiloskopsuz elektronikçi, kör bir nişancı gibidir.**
+*   **Osiloskopsuz elektronikçi, karanlıkta el yordamıyla yürüyen bir kör gibidir.**
 
-### C. Laboratuvar Güç Kaynağı: Yaşam Destek Ünitesi
-*   **Akım Sınırlama (Current Limiting):** Kartı tamir ettikten sonra direkt prize takarsan tekrar patlayabilir. Güç kaynağını 0.1 Amper'e ayarla. Eğer kısa devre varsa, güç kaynağı voltajı keser (CC Mode) ve kartı korur.
+---
 
-### D. Termal Kamera: Isı Haritası
-*   Kısa devre olan parça, enerjiyi ısıya çevirir. Karta enerji verip termal kamerayla bakarsan, arızalı parça **"Ben Buradayım!"** diye parlar.
+## 🔥 Metal Yaka Saha İpuçları (Field Hacks)
+
+> [!TIP]
+> **Parmak Testi (Güvenli Alanlarda):** Bir regülatörün veya işlemcinin üzerine parmağınızı yaklaştırdığınızda (dokunmadan hemen önce) yayılan "Isı Baskısı", osiloskoptan daha hızlı teşhis koymanızı sağlayabilir. Eğer parmağınız 1 saniyeden fazla dayanamıyorsa, o komponent "termal kaçak" (thermal runaway) aşamasındadır. Ya yük fazladır ya da çıkışta sinsi bir kısa devre vardır.
+
+> [!IMPORTANT]
+> **Kablo Sıyırma Sanatı:** Bir kabloyu sıyırırken içindeki bakır tellere asla zarar vermeyin. Sıyırdığınız her bir kılcal damar, o kablonun akım taşıma kapasitesini ve mekanik dayanıklılığını (yorgunluk ömrünü) %10-%20 oranında azaltır. Titreşimli bir ortamda o zedelenen nokta, sistemin en zayıf halkasıdır.
+
+---
+
+## ⚠️ Yaygın Hatalar ve Kök Neden Analizi
+
+*   **Hata:** Devre kartına enerji verildiğinde sigorta veya sigorta direnci anında yanıyor.
+    *   **Kök Neden:** Köprü diyot arızası veya ana anahtarlama transistöründe (MOSFET/IGBT) drain-source arası direkt kısa devre.
+*   **Hata:** PLC girişi (Input) "High" görünüyor ama sensör tetiklenmemiş.
+    *   **Kök Neden:** "GND (Toprak) Kayması". Sensör hattındaki bir direnç artışı veya zayıf şase bağlantısı nedeniyle sensör low seviyesini tam 0V'a çekemiyor, voltaj "Threshold" değerinin üzerinde kalıyor.
 
 ---
 
@@ -81,13 +92,5 @@ Multimetre size yalan söyler. Multimetre size voltajın "ortalamasını" göste
 
 ---
 
-## 🩸 Güç Elektroniği: Sistemin Kasları
-
-Sistem sadece 5V ve 3.3V'dan ibaret değildir. Motorları süren 24V, 48V veya 380V güç katı vardır.
-*   **H-Köprüsü (H-Bridge):** Motoru ileri-geri süren 4 anahtarlı yapı.
-*   **Shoot-Through (Kısa Devre Vuruşu):** Aynı hattaki üst ve alt anahtarı (MOSFET) aynı anda açarsan, güç kaynağını kısa devre edersin (Bom!). Donanımsal **"Dead-Time"** (Ölü Zaman) koymak zorundasın.
-
----
-
 > **Ustanın Bilgelik Notu:**  
-> "İyi bir elektronikçi, devrenin şemasına değil, kokusuna ve sıcaklığına güvenir. Yanık bir direnç, sebep değil sonuçtur. O direnci yakan asıl suçluyu (genellikle kısa devre olmuş bir kondansatör veya transistör) bulmadan sakın yenisini takma."
+> "İyi bir elektronikçi, devrenin şemasına değil, kokusuna ve sıcaklığına güvenir. Yanık bir direnç, sebep değil sonuçtur. O direnci yakan asıl suçluyu (genellikle kısa devre olmuş bir kondansatör veya transistör) bulmadan sakın yenisini takma. Aksi takdirde sadece yedek parçanı israf etmiş olursun."

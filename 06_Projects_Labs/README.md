@@ -12,10 +12,16 @@
 
 # 06. Projeler & Laboratuvar: İspat Meydanı ve Hurdalık
 
+![Projects Banner](../assets/projects_banner.png)
+
 ![Challenge](https://img.shields.io/badge/Challenge-ACCEPTED-success?style=for-the-badge&logo=target)
 ![Mode](https://img.shields.io/badge/Mode-Survival-critical?style=for-the-badge)
 
-> *"Teoride, teori ile pratik aynıdır. Pratikte ise, dağlar kadar farklıdır."*
+> *"Teoride, teori ile pratik aynıdır. Pratikte ise, dağlar kadar farklıdır. Burası, bilgisayar ekranındaki o 'mükemmel' dünyanın, metalin sert gerçekliğine çarptığı sınırdır."*
+
+---
+
+## 🛠️ Metal Yaka Kültürü: Hata Yap, Kaydet, Öğren
 
 Burası steril bir sınıf veya sessiz bir kütüphane değil; burası bir **hurdalıktır**. Burası, bilgisayar ekranında mükemmel çalışan algoritmaların donanımla buluşunca patladığı, simülasyonda kusursuz oturan tasarımların montajda deliklerinin birbirini karşılamadığı, kabloların koptuğu, dumanların çıktığı ve gerçek öğrenmenin başladığı yerdir.
 
@@ -23,42 +29,31 @@ Bir "Metal Yaka" teknisyeninin CV'si (Özgeçmişi), "başarıyla tamamlanmış 
 
 ---
 
-## 🛠️ Metal Yaka Kültürü: Hata Yap, Kaydet, Öğren
-
-### 1. Başarısızlık Günlüğü (Failure Log)
-Çalışan ve ışıldayan bir robotun videosunu herkes çeker ve LinkedIn'e koyar. Bu **pazarlamadır**.
-Bizim için değerli olan o son video değil; o robotu çalıştırana kadar kaç tane sürücü yaktığın, kaç gece uykusuz kaldığın ve sorunu nasıl çözdüğündür. Bu **mühendisliktir**.
-
-*   **Çöp Veri:** "3 Eksen CNC yaptım, çalıştı." (Kimseye faydası yok).
-*   **Altın Veri:** "Step motorlar eksen kaçırıyordu. Osiloskopla baktım, kablolar birbirine paralel gittiği için EMI (Gürültü) biniyordu. Kabloları örgü (twisted pair) yaptım ve blendajladım. Sorun çözüldü." (İşte bu, sektörel tecrübedir).
-
-### 2. "Hello World" Değil, "Smoke Test"
-Bir yazılımcı için "Hello World", ekrana yazı yazdırmaktır, risksizdir.
-Bir donanımcı için ilk adım **"Smoke Test" (Duman Testi)** dir. Sisteme ilk kez enerji verdiğin o korku dolu andır. Patlama yoksa, duman yoksa başarılısındır. Sonra LED yakarsın (Blink), sonra motor döndürürsün.
-
----
-
 ## 🥋 Proje Ağacı ve Seviye Sistemi
-
-Bu modülde, bir Çırak'tan bir Usta'ya dönüşüm yolculuğunuzu simüle eden projeler bulunur.
 
 ### 🟡 Seviye 1: Çırak (The Apprentice)
 *Hedef: Bileşenleri tanıma, lehim yapma, basit kontrol döngüsü.*
+*   **P1.1 - Analog Hat İzleyen (Çizgisiz):** İşlemci yok. Sadece OpAmp, transistörler ve sensörler.
+*   **P1.2 - Akıllı Sera (Histerezis):** Motorun "zırt-pırt" açılıp kapanmasını (Chattering) engellemek için yazılımsal histerezis uygulamak.
 
-*   **P1.1 - Analog Hat İzleyen (Çizgisiz):** İşlemci yok. Sadece OpAmp (Karşılaştırıcı), transistörler ve sensörler. Elektroniğin temel mantığını (Logic) donanımla kurmak.
-*   **P1.2 - Akıllı Sera (Histerezis):** Sıcaklık/Nem sensörü ve Röle. Amaç: Motorun "zırt-pırt" açılıp kapanmasını (Chattering) engellemek için yazılımsal histerezis (Hysteresis) uygulamak.
+---
 
-### 🟠 Seviye 2: Kalfa (The Journeyman)
-*Hedef: Sistem entegrasyonu, mekanik tasarım, güç elektroniği.*
+## 🔥 Metal Yaka Saha İpuçları (Field Hacks)
 
-*   **P2.1 - Masaüstü CNC / Plotter:** Step motor kontrolü, G-Code işleme, şase rijitliği. X-Y-Z eksenlerinin dikliğini (Squareness) ayarlamak.
-*   **P2.2 - Dengede Duruş (Self-Balancing Robot):** Ters sarkaç. PID kontrolün ve Sensör Füzyonunun (Jiroskop + İvmeölçer = Kalman Filtresi) zorunlu olduğu proje. Ayakta duramayan robot düşer ve kırılır; yazılımın fiziksel cezası vardır.
+> [!TIP]
+> **Prototipte "Spider Web" Kablolama:** Prototip aşamasında kabloların karmaşık olması (örümcek ağı) kabul edilebilir; ancak her bir hattı mutlaka etiketleyin. Eğer bir kablo koparsa, o karmaşanın içinde doğru ucu bulmak bir "Siber Dedektiflik" gerektirir. Kalıcı projede ise "Industrial Aesthetic" kurallarına (Kablo kanalları, makaronlar) mutlaka uyun.
 
-### 🔴 Seviye 3: Usta (The Master)
-*Hedef: Yapay Zeka, Görüntü İşleme, Endüstriyel Haberleşme.*
+> [!IMPORTANT]
+> **Debug via LEDs:** Elektronik bir sistemde bir şeylerin yanlış gittiğini anlamanın en hızlı yolu, kodun içine "Status LED"leri eklemektir. Bir LED'in yanıp sönme frekansı, işlemcinin o anki "kalp atış hızı"dır. Eğer LED donmuşsa, silikon beyin cerrahisi başlıyor demektir.
 
-*   **P3.1 - Görüntü İşlemeli Ayıklama Kolu (Vision Pick & Place):** Kamera (OpenCV) nesneyi tanır, rengini ve koordinatını bulur. 3 Eksenli robot koluna "Ters Kinematik" ile emir gider. Robot parçayı alır ve doğru kutuya atar.
-*   **P3.2 - Fabrika İçi Otonom Taşıyıcı (AMR):** Lidar ile haritalama (SLAM). A noktasından B noktasına insana çarpmadan giden lojistik robotu.
+---
+
+## ⚠️ Yaygın Proje Hataları ve Otopsi
+
+*   **Hata:** Simülasyonda her şey mükemmel ama gerçek robot her seferinde farklı yerlere gidiyor.
+    *   **Kök Neden:** "Mekanik Geri Tepme" (Backlash) veya sensör gürültüsü. Simülasyonlar genellikle sürtünmeyi ve metalin esnemesini (Elastic Deformation) basitleştirir. Gerçek hayatta yerçekimi ve toz asla basitleştirilemez.
+*   **Hata:** Kod yüklendikten 5 dakika sonra mikrodenetleyici aşırı ısınıyor ve sistem kilitleniyor.
+    *   **Kök Neden:** Bir I/O pininden çekilen akım limitlerin üzerinde. Muhtemelen bir transistör sürmek yerine direkt bir motoru veya yüksek güçlü bir röleyi pinden sürmeye çalışıyorsunuz. Pini yavaşça "pişiriyorsunuz".
 
 ---
 
@@ -74,4 +69,4 @@ Bu modülde, bir Çırak'tan bir Usta'ya dönüşüm yolculuğunuzu simüle eden
 ---
 
 > **Ustanın Bilgelik Notu:**  
-> "Çalışmayan projenizi asla çöpe atmayın. O bir başarısızlık değil, henüz çözülmemiş bir bulmacadır. Dünyanın en iyi mühendisleri, en çok parça bozanlardır; çünkü her bozdukları parçada o malzemenin limitlerini, o kodun açığını ve fiziğin kurallarını yaşayarak öğrenmişlerdir. **Boza boza yapmayı öğreneceksiniz.**"
+> "Çalışmayan projenizi asla çöpe atmayın. O bir başarısızlık değil, henüz çözülmemiş bir bulmacadır. Dünyanın en iyi mühendisleri, en çok parça bozanlardır; çünkü her bozdukları parçada o malzemenin limitlerini, o kodun açığını ve fiziğin kurallarını yaşayarak öğrenmişlerdir. Boza boza yapmayı öğreneceksiniz. **Hata, bilginin metaldeki izidir.**"

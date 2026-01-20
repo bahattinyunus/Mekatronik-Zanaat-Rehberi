@@ -15,7 +15,7 @@
 
 ## 🏆 Hierarchy of Mastery: Çıraklıktan Siber Mimarlığa Uzanan Yolculuk
 
-Mekatronik, yalnızca bir hobi ya da basit bir iş alanı değil, mekanik, elektronik ve yazılımın kesişim kümesinde icra edilen, disiplinler arası bir modern çağ savaş sanatıdır. Bir sistemin kalbine inmek, onun dilini çözmek ve ona hükmetmek sabır ve vizyon gerektirir. Aşağıdaki hiyerarşik harita, bir "Metal Yaka"nın evrimsel basamaklarını, bir çırağın acemiliğinden bir mimarın egemenliğine kadar olan teknik ve zihinsel dönüşümünü simgeler:
+Mekatronik, yalnızca bir hobi ya da basit bir iş alanı değil; mekanik, elektronik ve yazılımın kesişim kümesinde icra edilen, disiplinler arası bir modern çağ savaş sanatıdır. Bir sistemin kalbine inmek, onun dilini çözmek ve ona hükmetmek sabır, teknik sarsılmazlık ve vizyon gerektirir. Burada "Tamir", bir şeyi eski haline getirmekten fazlasıdır; o, sistemin ruhunu ve tasarım niyetini yeniden tesis etme eylemidir. Aşağıdaki hiyerarşik harita, bir "Metal Yaka"nın evrimsel basamaklarını, bir çırağın acemiliğinden bir mimarın egemenliğine kadar olan teknik ve zihinsel dönüşümünü simgeler:
 
 ```mermaid
 graph LR
@@ -59,7 +59,7 @@ Bu dijital kütüphane, akademik dünyanın o muazzam fakat bazen statik kalan *
 
 ![Cyber Repair Workshop](./assets/cyber_repair.png)
 
-Mekatronik Önlisans eğitimi, bir teorik bilgi yığını veya sadece zaman geçirme yeri değil, sarsılmaz bir **hayatta kalma, kriz yönetimi ve pratik çözüm üretme** okuludur. Bu depo, klasik beyaz yaka mühendislik yaklaşımlarının sahadaki beklenmedik bir "noise" (gürültü) veya mekanik sıkışma karşısında çaresiz kaldığı o kritik "X" anında, bir teknikerin nasıl parladığını ve sistemin kaderini değiştirdiğini anlatır. Temel misyonumuz, sadece bir mezuniyet belgesi almak değil, karşılaştığınız her türlü teknolojik enkaza bakıp **"Bu arıza benden sorulur, bu makine mutlaka dönecek"** diyebilen sarsılmaz bir özgüven ve mesleki vakar inşa etmektir.
+Mekatronik Önlisans eğitimi, bir teorik bilgi yığını veya sadece zaman geçirme yeri değil, sarsılmaz bir **hayatta kalma, kriz yönetimi ve pratik çözüm üretme** okuludur. Bu depo, klasik beyaz yaka mühendislik yaklaşımlarının sahadaki beklenmedik bir "noise" (gürültü) veya mekanik sıkışma karşısında çaresiz kaldığı o kritik "X" anında, bir teknikerin nasıl parladığını ve sistemin kaderini değiştirdiğini anlatır. Temel misyonumuz, sadece bir mezuniyet belgesi almak değil, karşılaştığınız her türlü teknolojik enkaza bakıp **"Bu arıza benden sorulur, bu makine mutlaka dönecek"** diyebilen sarsılmaz bir özgüven ve mesleki vakar inşa etmektir. Bizler, hatanın içinde saklı olan düzeni görenleriz.
 
 #### 🌌 Dijital İkizlerden Gerçek Yağ Lekelerine: Köprü Olmak
 Modern endüstri, "Digital Twin" (Dijital İkiz) kavramıyla simülasyonların büyülü dünyasına sırtını yaslıyor. Her şey ekranlarda kusursuz, her hareket simule edilmiş durumda. Ancak, hiçbir simülasyon yazılımı, bir hidrolik hortumun en kritik üretim anında patladığı o saniyedeki kaosu, bir MOSFET'in aşırı yüklenip havayı o meşhur ozon kokusuyla doldurduğu anı veya bir optik sensörün üzerine binen mikronluk toz tabakasının yarattığı veri gürültüsünü tam olarak öngöremez. İşte bizler, o pırıltılı simülasyonların sınırlarına ulaştığı ve gerçek dünyanın fiziksel, yıpratıcı ve kaotik kurallarının başladığı "O Sınır Hattı"nda devreye gireriz.

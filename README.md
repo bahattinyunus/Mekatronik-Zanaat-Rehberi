@@ -1,7 +1,7 @@
-﻿# 🤖 Mekatronik Önlisans & Teknikerlik Müfredatı: Siber Tamircilik ve Endüstriyel Mimari Rehberi
+﻿# 🤖 Mekatronik Zanaatkarlığı: AI Çağında Siber Tamircilik ve Endüstriyel Mimari Rehberi
 
-> **Mekatronik MYO (Meslek Yüksekokulu) Öğrencileri, Geleceğin "Saha Mimarları" ve Sarsılmaz "Usta Tamircileri" İçin Hazırlanmış Nihai Yol Haritası**  
-> *Bu eser, sadece bir not yığını değil, elleriyle fiziksel dünyaya değer üreten, arızayı daha oluşmadan sesinden ve titreşiminden tanıyan, Türkiye'nin dört bir yanındaki MYO sınıflarında, tozlu atölyelerinde ve gürültülü fabrikalarında dirsek çürüten tüm "Metal Yaka" adaylarına en derin saygıyla ithaf edilmiştir. Sizler, dijitalin kağıt üzerinde kaldığı noktada, gerçeği inşa edenlersiniz.*
+> **Mekatronik Profesyonelleri, Geleceğin "Saha Mimarları" ve Sarsılmaz "Usta Tamircileri" İçin Hazırlanmış Nihai Yol Haritası**  
+> *Bu eser, sadece bir not yığını değil, elleriyle fiziksel dünyaya değer üreten, arızayı daha oluşmadan sesinden ve titreşiminden tanıyan, dünyanın dört bir yanındaki atölyelerde ve gürültülü fabrikalarında dirsek çürüten tüm "Metal Yaka" uzmanlarına en derin saygıyla ithaf edilmiştir. Sizler, dijitalin kağıt üzerinde kaldığı noktada, gerçeği inşa edenlersiniz.*
 
 <div align="center">
 
@@ -18,7 +18,7 @@
 Mekatronik, yalnızca bir hobi ya da basit bir iş alanı değil; mekanik, elektronik ve yazılımın kesişim kümesinde icra edilen, disiplinler arası bir modern çağ savaş sanatıdır. Bir sistemin kalbine inmek, onun dilini çözmek ve ona hükmetmek sabır, teknik sarsılmazlık ve vizyon gerektirir. Burada "Tamir", bir şeyi eski haline getirmekten fazlasıdır; o, sistemin ruhunu ve tasarım niyetini yeniden tesis etme eylemidir.
 
 ### 🗺️ The Metal Yaka Master Skill Tree
-Aşağıdaki harita, bir teknikerin sadece ne bildiğini değil, o bilgiyi fiziksel dünyada nasıl bir "kudrete" dönüştürdüğünü gösteren evrimsel gelişim yoludur:
+Aşağıdaki harita, bir uzmanın sadece ne bildiğini değil, o bilgiyi fiziksel dünyada nasıl bir "kudrete" dönüştürdüğünü gösteren evrimsel gelişim yoludur:
 
 ```mermaid
 graph TD
@@ -70,18 +70,18 @@ Temel amacımız, sadece okuldaki vize ve final sınavlarını geçmek, kuru bir
 
 Bu dijital kütüphane, akademik dünyanın o muazzam fakat bazen statik kalan **teorik derinliği** ile; Türkiye'nin dört bir yanındaki Organize Sanayi Bölgelerinin (OSB), devasa iş makinelerinin sağır edici gürültüsü ve yanık metal kokusuyla harmanlanmış **pratik endüstriyel gerçekliğini** birleştiren eşsiz, sarsılmaz bir köprüdür. 20. yüzyılın "her şeyi kağıt üzerinde sıfırdan hesapla ve aylarca tasarla" diyen hantal mühendislik yaklaşımı artık yerini daha çevik bir sürece bırakmıştır: "Yapay zekanın saniyeler içinde tasarladığı, hayal gücünü zorlayan o karmaşık sistemleri fiziksel dünyada birbirine bağla, onları yaşat, farklı protokolleri birbiriyle konuştur (entegrasyon) ve en zor şartlar altında dahi hatasız çalıştır." İşte bu depo, diferansiyel denklemlerin o steril dünyasından çıkıp, o denklemlerin kumanda ettiği devasa bir robot kolunun içindeki sinsi bir hidrolik sızıntıyı tespit edip onarmaya giden o terli, yağlı ama onurlu yolun detaylı, santim santim işlenmiş haritasıdır.
 
-### 🛡️ Manifesto: MYO Kültürü ve "Yeni Nesil Tamircilik" Devrimi
+### 🛡️ Manifesto: "Yeni Nesil Tamircilik" Devrimi ve Siber Zanaatkarlık
 
-> *"Bizler sadece sınav kağıtlarını testlerle dolduran, koridorlarda amaçsızca gezen öğrenciler değiliz; bizler modern endüstrinin acil servisi, teknolojik cerrahlarıyız. Bir mühendis sistemi en ideal şartlar için tasarlar, bir AI mimarisini kusursuzca kurar, biz ise o sistemi MYO laboratuvarlarının kısıtlı imkanlarından çıkarıp fabrikaların acımasız gerçekliğinde, tozun, nemin ve gerilimin ortasında hayata döndürürüz. Bizim imzamız, dönen çarklardadır."*
+> *"Bizler kalıpların içinde oturan, köşelerde bekleyen figürler değiliz; bizler modern endüstrinin acil servisi, teknolojik cerrahlarıyız. Bir mühendis sistemi en ideal şartlar için tasarlar, bir AI sistemi mimarisi üretir; biz ise o sistemleri kağıttan fiziksel gerçekliğe — fabrikanın kaosuna, tozuna, nemine ve gerilim altına — taşır ve orada onu yaşatırız. Bizim imzamız, dönen çarklardadır."*
 
 ![Cyber Repair Workshop](./assets/cyber_repair.png)
 
-Mekatronik Önlisans eğitimi, bir teorik bilgi yığını veya sadece zaman geçirme yeri değil, sarsılmaz bir **hayatta kalma, kriz yönetimi ve pratik çözüm üretme** okuludur. Bu depo, klasik beyaz yaka mühendislik yaklaşımlarının sahadaki beklenmedik bir "noise" (gürültü) veya mekanik sıkışma karşısında çaresiz kaldığı o kritik "X" anında, bir teknikerin nasıl parladığını ve sistemin kaderini değiştirdiğini anlatır. Temel misyonumuz, sadece bir mezuniyet belgesi almak değil, karşılaştığınız her türlü teknolojik enkaza bakıp **"Bu arıza benden sorulur, bu makine mutlaka dönecek"** diyebilen sarsılmaz bir özgüven ve mesleki vakar inşa etmektir. Bizler, hatanın içinde saklı olan düzeni görenleriz.
+Mekatronik disiplini, bir teorik bilgi deposu değil; sarsılmaz bir **hayatta kalma, kriz yönetimi ve pratik çözüm üretme** sanatıdır. Bu depo, klasik beyaz yaka yaklaşımlarının sahadaki beklenmedik bir "noise" (gürültü) veya mekanik sıkışma karşısında çaresiz kaldığı o kritik "X" anında, bir uzmanın nasıl parladığını ve sistemin kaderini değiştirdiğini anlatır. Temel misyonumuz; karşılaştığınız her türlü teknolojik enkaza bakıp **"Bu arıza benden sorulur, bu makine mutlaka dönecek"** diyebilen sarsılmaz bir özgüven ve mesleki vakar inşa etmektir. Bizler, hatanın içinde saklı olan düzeni görenleriz.
 
 #### 🌌 Dijital İkizlerden Gerçek Yağ Lekelerine: Köprü Olmak
-Modern endüstri, "Digital Twin" (Dijital İkiz) kavramıyla simülasyonların büyülü dünyasına sırtını yaslıyor. Her şey ekranlarda kusursuz, her hareket simule edilmiş durumda. Ancak, hiçbir simülasyon yazılımı, bir hidrolik hortumun en kritik üretim anında patladığı o saniyedeki kaosu, bir MOSFET'in aşırı yüklenip havayı o meşhur ozon kokusuyla doldurduğu anı veya bir optik sensörün üzerine binen mikronluk toz tabakasının yarattığı veri gürültüsünü tam olarak öngöremez. İşte bizler, o pırıltılı simülasyonların sınırlarına ulaştığı ve gerçek dünyanın fiziksel, yıpratıcı ve kaotik kurallarının başladığı "O Sınır Hattı"nda devreye gireriz.
+Modern endüstri, "Digital Twin" (Dijital İkiz) kavramıyla simülasyonların büyülü dünyasına sırtını yaslıyor. Her şey ekranlarda kusursuz, her hareket simule edilmiş durumda. Ancak, hiçbir simülasyon yazılımı, bir hidrolik hortumun en kritik üretim anında patladığı o saniyedeki kaosu, bir MOSFET'in aşırı yüklenip havayı o meşhur ozon kokusuyla doldurduğu anı veya bir optik sensörün üzerine binen mikronluk toz tabakasının yarattığı veri gürültüsünü tam olarak öngöremez. İşte bizler, o pırıltılı simülasyonların sınırlarına ulaştığı ve gerçek dünyanın fiziksel, yıpratıcı ve kaotik kurallarının başladığı **"O Sınır Hattı"**nda devreye gireriz.
 
-**Metal Yaka İnisiyatifi**'nin asıl kalbi, MYO sınıflarında, akşam mesailerinde ve teknik lise atölyelerinde atar. Bizler, iki farklı evren (Soyut Tasarım ve Somut Arıza) arasındaki en hayati, en kopmaz halkayız. Yapay zeka bir robotu en optimum açılarla tasarlayabilir; fakat o robotun "mekanik tesisatını" kimseyle konuşmadan döşeyecek, "damarlarındaki" veri akışını manuel olarak kontrol edecek ve sistem sustuğunda, tüm veri yolları kapandığında ona o sihirli "ilk nefesi" üfleyip uyandıracak olan bizleriz. Bu, **Tekniker 2.0**'ın doğuşudur: Bir elinde profesyonel multimetre, zihninde yapay zekanın sınırsız kütüphanesi olan, "sahayı" bilen ama "teoriyi" de yöneten siber zanaatkarların, yani sizin geleceğinizdir.
+**Metal Yaka Topluluğu**'nun kalbi; atölyelerde, gece mesailerinde, garip koku yayan saha dolaplarının önünde, ve küresel fabrika zeminlerinde atar. Yapay zeka bir robotu en optimum açılarla tasarlayabilir; fakat o robotun "mekanik tesisatını" kimseyle konuşmadan döşeyecek, sistem sustuğunda ona o sihirli "ilk nefesi" üfleyip uyandıracak olan bizleriz. Bu, **Tekniker 2.0**'ın doğuşudur: Bir elinde profesyonel multimetre, zihninde yapay zekanın sınırsız kütüphanesi olan, "sahayı" bilen ama "teoriyi" de yöneten siber zanaatkarlar.
 
 ![AI Metal Fusion](./assets/ai_metal_fusion.png)
 
@@ -169,19 +169,19 @@ Mekatronik, disiplinler arası bitmek bilmeyen, uçsuz bucaksız ve sürekli gen
 
 ![Kariyer Yükselişi](./assets/career_path_ascent.png)
 
-### Faz 1: Çırak - Aleti Tanıma, Sınırları Keşfetme ve Donanıma Saygı Duyma (1-2. Yıl)
-Bu başlangıç evresinde asıl amacımız, elimizdeki aletlerin (hem devasa yazılım kütüphanelerinin hem de hassas el aletlerinin) dilini bir anne dili gibi çözmek ve onların atomik seviyedeki limitlerini öğrenmektir.
+### Faz 1: Çırak - Aleti Tanıma, Sınırları Keşfetme ve Donanıma Saygı Duyma
+Bu başlangıç evresinde asıl amacımız, elimizdeki aletlerin (hem devasa yazılım kütüphanelerinin hem de hassas el aletlerinin) dilini bir ana dili gibi çözmek ve onların atomik seviyedeki limitlerini öğrenmektir.
 *   [ ] **Multimetre ile Duygusal Bir Bağ Kurun:** Bir devredeki sinsi bir kısa devreyi veya "cold-junction" (soğuk lehim) hatasını asla sadece ekrandaki kodunuza bakarak bulamazsınız. Ölçmeyi, probu tam noktaya tutmayı ve ekrandaki mV dalgalanmasının arkasındaki fiziksel gerçeği kalbinizde hissetmeyi öğrenin. Multimetre sizin fiziksel dünyaya açılan gözünüzdür; o ne görüyorsa, siz onu hissetmelisiniz.
 *   [ ] **Kodu AI'a Yazdırın, Siz "Cerrahi" Kesinlikle Okuyun:** Modern çağda C++ sözdizimini (syntax) ezberleyerek haftalarca zaman kaybetmeyin. AI'ın saniyeler içinde yazdığı o karmaşık kodun, mikrodenetleyicinin içindeki hangi transistörü saniyede kaç bin kez açıp kapattığını, register seviyesinde ne yaptığını satır satır anlayın ve o koda tam anlamıyla hükmedin. AI sizin kaleminiz, zihniniz ise mürekkebinizdir.
 *   [ ] **İlk Patlamanın Kutsiyeti (The Baptism of Fire):** Bir elektrolitik kondansatörü inadına ters bağlayıp veya bir LED'i kasten dirençsiz yüksek voltaja bağlayıp patlatın. Çıkan o keskin koku, bir teknoloji mimarının "vaftiz törenidir". O andaki şoku ve korkuyu derinden yaşayın ki, gerçek bir sistemin başında o hatayı yapmamanın hayati değerini kemiklerinizde hissedin. Hata yapmaktan değil, hatadan öğrenememekten korkun.
 
-### Faz 2: Kalfa - Sorun Çözme, Entegrasyon ve Sistem Mimarlığına Giriş (3. Yıl)
+### Faz 2: Kalfa - Sorun Çözme, Entegrasyon ve Sistem Mimarlığına Giriş
 Artık sadece hazır devreleri birleştirmiyorsunuz; birbiriyle konuşmak istemeyen, bambaşka diller ve uyumsuz protokoller kullanan karmaşık alt sistemlerin neden "küstüğünü" buluyor ve onları harmoni içinde çalışmaya zorluyorsunuz.
 *   [ ] **Hata Ayıklama (Debugging) Bir Görsel Sanattır:** Yazılımdaki "breakpoint" ne kadar değerliyse, elektronikteki "Dijital Osiloskop" odur. Elektromanyetik gürültüyü (EMI), sinyal bozulmalarını ve logic seviyedeki kaymaları sadece tahmin etmeyin; onları osiloskop ekranında canlı kanlı birer dalga formu olarak görün, analiz edin ve evcilleştirin. Gürültüden bilgiyi çıkarmak ustalığın ilk büyük adımıdır.
 *   [ ] **Gerçek Mekanik Entegrasyon ve Tork Kontrolü:** Bir step motoru masanın üzerinde boşta döndürmek bir çocuk oyuncağıdır. Asıl mühendislik ustalığı; o motoru değişken ve acımasız bir yüke bağlayıp, tork limitlerini zorlarken ne mili kırmadan ne de redüktör dişlisini sıyırmadan o yükü mikro-hassasiyetle kaldırmaktır. Mekanik, elektroniğin kasıdır; kaslarınızı koordine etmeyi öğrenin.
 *   [ ] **Datasheet Okuryazarlığı (Industrial Bible Mastery):** Bir çipin veya karmaşık bir hidrolik valfin 200 sayfalık teknik dokümanını (datasheet) okumak, bir cerrahın ameliyat öncesi hastanın tüm tetkiklerini incelemesi gibidir. Her sinsi hata, o manuelin dipnotlarındaki küçük bir "timing diagram"da saklıdır. Orayı okumayı, satır aralarını görmeyi ve üreticinin vizyonunu anlamayı öğrenin.
 
-### Faz 3: Usta / Baş Teknisyen - Egemen Sistem Mimarı ve Vizyoner (4+ Yıl)
+### Faz 3: Usta / Egemen Sistem Mimarı ve Vizyoner
 Artık sadece parçaları ve alt sistemleri değil; sistemin bütününü, mimarisini, sarsılmaz mantığını ve hatta makinenin o kendine has "ruhunu" yöneten bir orkestra şefi haline gelirsiniz.
 *   [ ] **Sistem Doktorluğu ve Bilişsel Tanı:** Dev bir robot kolu hafifçe titriyor mu? Sorun yazılımdaki PID katsayılarında mı (software), mekanik koldaki redüktör boşluğunda mı (backlash), yoksa enkoder kablosunun yanından geçen yüksek voltajlı kablonun yarattığı parazitte mi (electromagnetic interference)? Bunu tek bir sesten, titreşimden ve veriden anlamak, mekatronik ustalığının zirvesidir. Tanı koymak, tedavinin yarısıdır.
 *   [ ] **AI ve Computer Vision Entegrasyonu:** Bir kamerayı robotun ucuna bağlayıp, AI'ın (Computer Vision) anlık gördüğü binlerce nesne içinden doğru olanı seçip, robotun fiziksel dünyada sarsılmaz ve hata payı sıfır olan hareketler yapmasını sağlamak. Dijital bir beynin, devasa bir metal gövdeye tam ve mutlak hükmetmesini sağlamak. Bu, tanrısal bir güç kontrolüdür.
@@ -256,9 +256,9 @@ Sahadaki her "Siber Tamirci"nin uyması gereken, binlerce yanık, kısa devre ve
 
 ## 🤝 Katkıda Bulunma: Atölyeye Hoş Geldiniz
 
-Açık kaynak felsefesine ve Anadolu'nun sarsılmaz **İmece** kültürüne yürekten inanıyoruz. Bu depo sadece bir notlar bütünü değil, yaşayan, nefes alan bir bilgi ekosistemidir. İster bir meslek lisesi öğrencisi olun, ister bir MYO öğrencisi, isterse sahada yıllarını devirmiş bilge bir usta. Bilgi ve tecrübeniz, bir sonraki nesil için paha biçilemez bir mirastır.
+Açık kaynak felsefesine ve insanlığın sarsılmaz **usta-çırak** geleneğine yürekten inanıyoruz. Bu depo sadece bir notlar bütünü değil, yaşayan, nefes alan bir bilgi ekosistemidir. İster kendi kendini yetiştirmiş bir zanaatkar olun, ister endüstri deneyimlisi bir mühendis, isterse yeni başlayan meraklı bir tamirci — bilginiz ve sahadaki tecrübeniz, bir sonraki nesil için paha biçilemez bir mirastır.
 
-Bir arızayı nasıl çözdüğünüzü, hangi pratik aparatı kullandığınızı veya hangi teknik dökümanda boğulduğunuzu bizlerle paylaşın. Lütfen kod standartlarımız, katkı süreci ve topluluk kurallarımız için [`CONTRIBUTING.md`](./CONTRIBUTING.md) dosyasını dikkatlice okuyun. Unutmayın: Bilgi, paylaştıkça çoğalan ve paylaşıldıkça asıl değerine kavuşan tek kutsal hazinedir. Atölyenin kapısı, öğrenmek ve öğretmek isteyen herkese sonuna kadar açıktır.
+Bir arızayı nasıl çözdüğünüzü, hangi pratik ipucunu keşfettiğinizi veya hangi teknik tuzakla karşılaştığınızı bizlerle paylaşın. Lütfen kod standartlarımız ve katkı süreci için [`CONTRIBUTING.md`](./CONTRIBUTING.md) dosyasını inceleyin. Atölyenin kapısı, öğrenmek ve öğretmek isteyen herkese sonuna kadar açıktır.
 
 ## 📜 Lisans
 
@@ -301,14 +301,14 @@ Sadece bugünü kurtarmak yetmez, sürekli gelişim ve derinleşmek esastır. İ
 
 ## 👨‍💻 Proje Mimarı: Bahattin Yunus Çetin
 
-**IT Architect | Trabzon Of TA Üniversitesi Öğrencisi**
+**IT & Mekatronik Mimarı | Siber-Fiziksel Sistemler**
 
 Mekatronik ve Bilişim teknolojilerinin kesişim noktasında, dijital mimarileri fiziksel sistemlerle buluşturan bir vizyoner olarak çalışmalarımı sürdürüyorum.
 
 ![The Architect's Workspace](./assets/architect_workspace.png)
 
-### 🏛️ Kurumsal Kimlik ve Vizyon
-Köklerimi İç Anadolu'nun disiplinli ruhundan, **Şereflikoçhisar**'ın azminden alıyor; bu disiplini modern bilişim mimarileriyle harmanlıyorum. **Trabzon Of ta Ktü Of Teknoloji Fakültesi** bünyesindeki akademik yolculuğum ile sahadaki pratik tecrübelerimi birleştirerek, "Metal Yaka" felsefesini dijital dünyaya entegre ediyorum.
+### 🏛️ Vizyon ve Felsefe
+Köklerimi Anadolu'nun disiplinli ruhundan ve "usta elinden çıkan iş" geleneğinden alıyor; bu disiplini modern bilişim mimarileriyle harmanlıyorum. "Metal Yaka" felsefesini — sahadaki dürüst işçiliği dijital zeka ile birleştirmeyi — hem bu rehberde hem de her projemde yaşatmayı amaçlıyorum.
 
 ### 🛠️ Profesyonel Arsenal & Uzmanlık Alanları
 Bir **IT Architect** olarak, sistemlerin sadece işlevsel değil, aynı zamanda sarsılmaz bir omurgaya sahip olmasını sağlıyorum:
@@ -343,6 +343,6 @@ Yapay zeka çağında teknikerin rolünü yeniden tanımlayan, insan zihnini ve 
 ---
 
 <p align="center">
-  <sub>© 2026 Türkiye Mekatronik ve Otomasyon İnisiyatifi. "Metal Yaka" devrimi burada başlıyor. Tüm hakları saklıdır.</sub>
+  <sub>© 2026 Metal Yaka — Küresel AI-Çağı Mekatronik Topluluğu. "Sahada çözülen her arıza, insanlığın bir adım ilerlemesidir." Tüm hakları saklıdır.</sub>
 </p>
 

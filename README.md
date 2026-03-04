@@ -11,7 +11,7 @@
 
 </div>
 
-![Metal Yaka Master Banner](./assets/main_banner.png)
+![Metal Yaka Visionary Banner](./assets/visionary_banner_2026.png)
 
 ## 🏆 Hierarchy of Mastery: Çıraklıktan Siber Mimarlığa Uzanan Yolculuk
 

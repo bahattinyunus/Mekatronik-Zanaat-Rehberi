@@ -108,6 +108,8 @@ Bu depo, bir teknikerin zihnindeki "Arıza Çözme Algoritması"na göre yapıla
 | [`05_Control_Robotics`](./05_Control_Robotics/) | Senkronizasyon | Karmaşık hareketleri yönetir, robotları hizaya sokar. |
 | [`06_Projects_Labs`](./06_Projects_Labs/) | Deneyim | Hata yapar, patlatır, öğrenir ve tecrübeyi günlüğe yazar. |
 | [`07_Cyber_Industrial_Security`](./07_Cyber_Industrial_Security/) | Savunma | Sistemi siber saldırılara karşı korur, OT güvenliğini sağlar. |
+| [`08_AI_Cognitive_Augmentation`](./08_AI_Cognitive_Augmentation/) | Zekâ | AI'yı bir bilişsel protez olarak kullanır, hibrit mühendislik yapar. |
+| [`09_Digital_Twins_Simulations`](./09_Digital_Twins_Simulations/) | Öngörü | Dijital ikizlerle geleceği simüle eder, hata payını sıfırlar. |
 
 
 ---
@@ -318,6 +320,18 @@ Bir **IT Architect** olarak, sistemlerin sadece işlevsel değil, aynı zamanda 
 
 ### 📜 Egemen Mimar Manifestosu
 "Virtual architectures for the sovereign architect." vizyonu, teknolojinin bir araç olduğu ve nihai kontrolün mimarın iradesinde kalması gerektiği ilkesine dayanır. Bizler, karmaşıklığı sadeliğe dönüştüren, atölye tozunu dijital temizlikle birleştiren modern zaman kurucularıyız.
+
+</div>
+
+---
+
+## 🏛️ [Egemen Mimar Manifestosu 2030 (The Sovereign Architect)](./SOVEREIGN_ARCHITECT_MANIFESTO.md)
+
+![Sovereign Architect 2030](./assets/sovereign_architect_2030.png)
+
+Yapay zeka çağında teknikerin rolünü yeniden tanımlayan, insan zihnini ve fiziksel ustalığı sistemin mutlak hakimi yapan temel felsefemiz. **"Geleceği onarmıyoruz; onu bizzat inşa ediyoruz."** [Manifestoyu Oku...](./SOVEREIGN_ARCHITECT_MANIFESTO.md)
+
+---
 
 <div align="center">
 

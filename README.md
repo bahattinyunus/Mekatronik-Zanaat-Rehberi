@@ -107,6 +107,7 @@ Bu depo, bir teknikerin zihnindeki "Arıza Çözme Algoritması"na göre yapıla
 | [`04_Programming_Embedded`](./04_Programming_Embedded/) | Canlandırma | Kodu metale enjekte eder, donanımı hayata döndürür. |
 | [`05_Control_Robotics`](./05_Control_Robotics/) | Senkronizasyon | Karmaşık hareketleri yönetir, robotları hizaya sokar. |
 | [`06_Projects_Labs`](./06_Projects_Labs/) | Deneyim | Hata yapar, patlatır, öğrenir ve tecrübeyi günlüğe yazar. |
+| [`07_Cyber_Industrial_Security`](./07_Cyber_Industrial_Security/) | Savunma | Sistemi siber saldırılara karşı korur, OT güvenliğini sağlar. |
 
 
 ---
@@ -156,6 +157,7 @@ Bir "Siber Tamirci" için karmaşık bir sistemi ayağa kaldırmak rastgele bir 
 *   **EDA (Elektronik Tasarım Otomasyonu):** Altium Designer ve KiCAD. Yanmış bir kontrol kartının yerine daha iyisini, daha dayanıklısını tasarlayıp üretmek için.
 *   **PLC & Otomasyon:** Siemens TIA Portal. Fabrikanın işletim sistemi. Bir fabrikayı durduran o sinsi "bug"ı bulup, milyon dolarlık üretimi yeniden başlatmak.
 *   **ROS (Robot İşletim Sistemi):** Modern robotların dili. Otonom bir aracın sensör verilerini nasıl işlediğini anlamak ve sensör körleştiğinde (Lidar arızası vb.) müdahale etmek.
+*   **Siber Güvenlik (OT Security):** Endüstriyel ağların korunması. Bir fabrikayı fiziksel sabotajlardan ve fidye yazılımlarından (Ransomware) koruma zırhı.
 
 ---
 
